@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+ <TEXT>
+  <Tag>TXT_KEY_INTERFACE_ACHIEVE_ADVISOR</Tag>
+  <English>[COLOR_CYAN]Chronicle[COLOR_REVERT] [COLOR_GREEN]%s1_ModKey[COLOR_REVERT]</English>
+  <French>[COLOR_CYAN]Chronique[COLOR_REVERT] [COLOR_GREEN]%s1_ModKey[COLOR_REVERT]</French>
+  <German>[COLOR_CYAN]Chronik[COLOR_REVERT] [COLOR_GREEN]%s1_ModKey[COLOR_REVERT]</German>
+  <Italian>[COLOR_CYAN]Chronicle[COLOR_REVERT] [COLOR_GREEN]%s1_ModKey[COLOR_REVERT]</Italian>
+  <Spanish>[COLOR_CYAN]Chronicle[COLOR_REVERT] [COLOR_GREEN]%s1_ModKey[COLOR_REVERT]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
+  <English>Chronicle</English>
+  <French>Chronique</French>
+  <German>Ereignischronik</German>
+  <Italian>Chronicle</Italian>
+  <Spanish>Chronicle</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVES</Tag>
+  <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
+  <French>%s1 - %d2 [NUM2:Accomplissement:Accomplissements]</French>
+  <German>%s1 - %d2 [NUM2:Leistung:Leistungen]</German>
+  <Italian>%s1 - %d2 [NUM2:Achievement:Achievements]</Italian>
+  <Spanish>%s1 - %d2 [NUM2:Achievement:Achievements]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DEFAULT</Tag>
+  <English>Default Achievement</English>
+  <French>Accomplissement standard</French>
+  <German>Standard Errungenschaft</German>
+  <Italian>Default Achievement</Italian>
+  <Spanish>Default Achievement</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DEFAULT_HEAD</Tag>
+  <English>Default Achievement Head</English>
+  <French>Partie principale de l'accomplissement standard</French>
+  <German>Haupterrungenschaften</German>
+  <Italian>Default Achievement Head</Italian>
+  <Spanish>Default Achievement Head</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DEFAULT_TEXT</Tag>
+  <English>Default Achievement Text</English>
+  <French>Texte de l'accomplissement standard</French>
+  <German>Standard Errungenschaftstext</German>
+  <Italian>Default Achievement Text</Italian>
+  <Spanish>Default Achievement Text</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_PACIFIC</Tag>
+  <English>Discovered Pacific</English>
+  <French>D&#233;couverte du Pacifique</French>
+  <German>Pazifik entdeckt</German>
+  <Italian>Discovered Pacific</Italian>
+  <Spanish>Discovered Pacific</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_PACIFIC_HEAD</Tag>
+  <English>You have discovered the Pacific</English>
+  <French>Vous avez d&#233;couvert l'oc&#233;an Pacifique</French>
+  <German>Ein Meer, so still und friedlich wie der Himmel</German>
+  <Italian>You have discovered the Pacific</Italian>
+  <Spanish>You have discovered the Pacific</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
+  <English>As your vessel sails away from land, you realise you have found the Pacific. Isn't it ironic that it took this much longer to find India than Columbus originally anticipated?</English>
+  <French>Lorsque votre navire s'&#233;loigne de la c&#244;te, vous r&#233;alisez que vous avez d&#233;couvert l'Oc&#233;an Pacifique. La route des Indes est enfin ouverte, longtemps apr&#232;s la mort de Christophe Colomb.</French>
+  <German>Ungl&#228;ubig starrt Euer Entdecker in die Ferne. Jenseits der K&#252;stenlinie dehnt sich eine schier endlose Wasserfl&#228;che bis zum Horizont. Ein Meer, so weit wie der Himmel. "Er hatte recht", murmelt er, "der Gouverneur hatte recht." Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen f&#252;hrt, hinaus in die endlose Weite eines neuen Ozeans. Eines Ozeans, dessen ruhiger Wellengang so friedlich wirkt, als w&#228;re der Gedanke an Unwetter nur Seemannsgarn. "Der Stille Ozean soll er hei&#223;en. Der 'Pacificus'!"[NEWLINE][NEWLINE]</German>
+  <Italian>As your vessel sails away from land, you realise you have found the Pacific. Isn't it ironic that it took this many more years to find India than Columbus originally anticipated.</Italian>
+  <Spanish>As your vessel sails away from land, you realise you have found the Pacific. Isn't it ironic that it took this many more years to find India than Columbus originally anticipated.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ATLANTIC</Tag>
+  <English>You have a dream</English>
+  <French>Vous r&#234;vez d'un monde nouveau</French>
+  <German>Traum von Ruhm und Glorie</German>
+  <Italian>You have a dream</Italian>
+  <Spanish>You have a dream</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ATLANTIC_HEAD</Tag>
+  <English>You have a dream</English>
+  <French>Vous r&#234;vez d'un monde nouveau</French>
+  <German>Traum von Ruhm und Glorie</German>
+  <Italian>You have a dream</Italian>
+  <Spanish>You have a dream</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ATLANTIC_TEXT</Tag>
+  <English>You are dreaming. Dreaming of the discovery of a new continent, a new world far away.. The next morning you know what you have to do ...[NEWLINE][NEWLINE]</English>
+  <French>Vous r&#234;vez. Vous r&#234;vez d'un nouveau continent, un Nouveau Monde lointain. Le lendemain matin, vous savez ce que vous devez faire ...</French>
+  <German>Eben habt Ihr noch bei Kerzenschein an Eurem Schreibtisch gesessen und &#252;ber alten Pergamenten gebr&#252;tet, die von einem unbekanntem Land an fernen Gestaden raunen. Da sucht Euch eine Vision heim. Licht und L&#228;rm des Lebens verstummen, nachtschwarze Dunkelheit und Stille bet&#228;uben Eure Sinne. Dann seht Ihr Euch selbst, an einer K&#252;ste fern der Heimat. Ihr steht im Kreise Eurer M&#228;nner. Ihr h&#246;rt Eure Stimme, wie sie diese Wildnis als Euer Eigen beansprucht. Ein Sergeant pflanzt Eure Flagge in das Erdreich dieser Neuen Welt, und ein frommer Kirchenmann dankt dem Sch&#246;pfer, dass er Euch sie entdecken lie&#223;. Ihr erkennt, dass dies der Euch vorherbestimmte Pfad ist. Der Weg, der Euren Namen in die Annalen schreiben wird, auf dass er noch im n&#228;chsten Milennium als Symbol f&#252;r Wagemut und Tapferkeit jedem Kind bekannt ist. - Als Eure Vision erlischt, wisst Ihr, was Ihr am n&#228;chsten Morgen zu tun habt.[NEWLINE][NEWLINE]</German>
+  <Italian>You are dreaming. Dreaming to discover a new continent, a new world far away. Next morning you know what you have to do ...</Italian>
+  <Spanish>You are dreaming. Dreaming to discover a new continent, a new world far away. Next morning you know what you have to do ...</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
+  <English>Found the New World</English>
+  <French>D&#233;couverte du Nouveau Monde</French>
+  <German>"Land in Sicht!"</German>
+  <Italian>Found the New World</Italian>
+  <Spanish>Found the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_LANDFALL_HEAD</Tag>
+  <English>You have discovered the New World</English>
+  <French>Vous avez d&#233;couvert le Nouveau Monde</French>
+  <German>Eine Neue Welt</German>
+  <Italian>You have discovered the New World</Italian>
+  <Spanish>You have discovered the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_LANDFALL_TEXT</Tag>
+  <English>With a shout of "Land Ho" from the crow's nest of your vessel, the crew cheers loudly. Your long voyage from Europe is over![NEWLINE][NEWLINE]</English>
+  <French>"Terre en vue", crie le matelot en haut de la vigie. Des cris de joie retentissent! Votre voyage touche enfin &#224; sa fin.</French>
+  <German>"Land in Sicht!" erschallt eines Morgens der Ruf aus dem Kr&#228;hennest, und Eure M&#228;nner st&#252;rzen an Bord. Ihr ersp&#228;ht am Horizont einen grauen Schattenriss. Endlich! Nach langen Wochen auf See habt Ihr ein Land entdeckt, auf das noch kein frommer Christenmensch seinen Fu&#223; gesetzt hat. Eine Neue Welt wartet darauf, dass Ihr sie Euch untertan macht. Welche Wunder und welche Schrecknisse werden Euch erwarten?[NEWLINE][NEWLINE]</German>
+  <Italian>With a shout of "Land Ho" from the crowsnest of your vessel, the crew cheers loudly. Your long voyage from Europe is over.</Italian>
+  <Spanish>With a shout of "Land Ho" from the crowsnest of your vessel, the crew cheers loudly. Your long voyage from Europe is over.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUNDING</Tag>
+  <English>Your first colony</English>
+  <French>Votre premi&#232;re colonie</French>
+  <German>Eure erste Siedlung</German>
+  <Italian>Your first colony</Italian>
+  <Spanish>Your first colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUNDING_HEAD</Tag>
+  <English>Your first colony</English>
+  <French>Votre premi&#232;re colonie</French>
+  <German>Richtfest</German>
+  <Italian>Your first colony</Italian>
+  <Spanish>Your first colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUNDING_TEXT</Tag>
+  <English>Finding a suitable stretch of land with timber and a quiet bay for fishing, your colonists set about the task of establishing new homes in the New World.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons ont d&#233;couvert un lieu propice &#224; l'&#233;tablissement d'une colonie dans le Nouveau Monde, riche en bois de construction et en gibier de toute sorte.[NEWLINE][NEWLINE]</French>
+  <German>Die Zimmerleute legen ihre H&#228;mmer beiseite, und Ihr lasst das letzte F&#228;sschen Branntwein &#246;ffnen, das Ihr aus der alten Heimat mitgebracht habt. Ersch&#246;pft und zufrieden blicken Eure Leute auf das erste Lager, das sie errichtet haben. Es ist nicht gro&#223;, aber es ist ein Anfang. Ihr habt nun Eure erste Niederlassung in der Neuen Welt. Das Gestr&#252;pp wird gerodet, das fruchtbare Land bestellt werden. Ihr r&#228;uspert Euch und blickt in die Runde. Die K&#246;pfe senken sich, und Ihr erhebt Eure Stimme zu einem Dankgebet an den Herrn, der &#252;ber Euch wacht.[NEWLINE][NEWLINE]</German>
+  <Italian>Finding a suitable stretch of land with both timber and a quiet bay for fishing, your colonists start the task of establishing new homes in the New World.</Italian>
+  <Spanish>Finding a suitable stretch of land with both timber and a quiet bay for fishing, your colonists start the task of establishing new homes in the New World.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES</Tag>
+  <English>Your second colony</English>
+  <French>Votre deuxi&#232;me colonie</French>
+  <German>Eure zweite Siedlung</German>
+  <Italian>Your second colony</Italian>
+  <Spanish>Your second colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_HEAD</Tag>
+  <English>You have two settlements in the New World</English>
+  <French>Vous avez deux colonies dans le Nouveau Monde</French>
+  <German>Weiterfahrt</German>
+  <Italian>You have two settlements in the New World</Italian>
+  <Spanish>You have two settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_TEXT</Tag>
+  <English>You have two settlements in the New World[NEWLINE][NEWLINE]</English>
+  <French>Vous avez deux colonies dans le Nouveau Monde[NEWLINE][NEWLINE]</French>
+  <German>Verbl&#252;ffte Schreie erschallen, dann klappert es die schmale Stiege herauf, und eine zerlumpte Schar Auswandererkinder in Holzschuhen purzelt auf die Schiffsbr&#252;cke. "Immer mit der Ruhe!", brummt der Kapit&#228;n freundlich. Ihre Eltern folgen, die Mutter ringt die H&#228;nde, und der Vater blickt so emp&#246;rt, als habe man ihm in die Morgengr&#252;tze gespuckt. "Jesses, Maria und Josef!", ruft er und zeigt auf das nahe K&#252;stendorf, an dem das Schiff vorbeisegelt, "warum bringt ihr uns nicht an Land?" Misstrauen und Angst stehen ihm pl&#246;tzlich ins Gesicht geschrieben. "Wollt ihr uns vielleicht in einer entlegenen Bucht an die Piraten verkaufen?" Da lacht der Kapit&#228;n, so herzhaft, dass die Kinder mitkichern m&#252;ssen. "Keine Sorge, guter Mann! Schaut mal die K&#252;ste entlang und blickt auf die Rauchfahnen am Horizont. Der gute Gouverneur nennt l&#228;ngst eine zweite Siedlung sein Eigen, und dort werdet Ihr Eure neue Heimat finden."[NEWLINE][NEWLINE]</German>
+  <Italian>You have two settlements in the New World</Italian>
+  <Spanish>You have two settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES</Tag>
+  <English>Your fourth colony</English>
+  <French>Votre quatri&#232;me colonie</French>
+  <German>Eure vierte Siedlung</German>
+  <Italian>Your fourth colony</Italian>
+  <Spanish>Your fourth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_HEAD</Tag>
+  <English>You have four settlements in the New World</English>
+  <French>Vous avez quatre colonies dans le Nouveau Monde</French>
+  <German>Dieses Land ist gesegnet</German>
+  <Italian>You have four settlements in the New World</Italian>
+  <Spanish>You have four settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_TEXT</Tag>
+  <English>You have four settlements in the New World[NEWLINE][NEWLINE]</English>
+  <French>Vous avez quatre colonies dans le Nouveau Monde</French>
+  <German>Eine laute Stimme erschallt &#252;ber den Platz vor Eurem schmucklosen Gouverneurspalast. Ihr schreitet zum schmalen Fenster und blickt hinunter auf die Menge, die den Ausrufer umringt. "Dieses Land ist gesegnet", verk&#252;ndet der Mann mit klarer Stimme. "Ein St&#252;ck weiter die Wildnis herab wurde in der vergangenen Woche die vierte unserer Siedlungen errichtet. Fruchtbare &#196;cker werden bestellt, feste H&#228;user gebaut, gesunde Kinder geboren und das Wort des Herrn verk&#252;ndet werden. Zweifellos verdanken wir dies nicht nur unserem Flei&#223; und dem Wohlwollen des Allm&#228;chtigen. Sondern auch der Klugheit und Umsicht unseres Anf&#252;hrers." Die Menge nickt beif&#228;llig.[NEWLINE][NEWLINE]</German>
+  <Italian>You have four settlements in the New World</Italian>
+  <Spanish>You have four settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES</Tag>
+  <English>Your sixth colony</English>
+  <French>Votre sixi&#232;me colonie</French>
+  <German>Eure sechste Siedlung</German>
+  <Italian>Your sixth colony</Italian>
+  <Spanish>Your sixth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
+  <English>You have six settlements in the New World</English>
+  <French>Vous avez six colonies dans le Nouveau Monde</French>
+  <German>Das Orakel</German>
+  <Italian>You have six settlements in the New World</Italian>
+  <Spanish>You have six settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>
+  <English>You have founded six settlements in the New World! The natives have fear to lose their land.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez fond&#233; six colonies dans le Nouveau Monde! Les indig&#232;nes craignent de perdre leur terre.</French>
+  <German>Ehrf&#252;rchtig schweigt der Rat, als der blinde Alte den Kreis betritt. Der Orakelpriester st&#252;tzt sich auf einen Stab, sein R&#252;cken ist krumm, die Stimme leise und ersch&#246;pft. "Ich habe den G&#246;ttern Eure Sorgen vorgetragen. Eure Furcht, dass der Wei&#223;e Mann sich nicht f&#252;gen will in unsere Welt. Er gr&#252;ndet ein Dorf nach dem n&#228;chsten und nimmt mehr Platz, als ihm zusteht. Ich habe den G&#246;ttern die Frage gestellt, die Euch im Herzen brennt. Sollen wir die Wei&#223;en t&#246;ten? Nun, dies ist die Antwort der G&#246;tter ..." Gespannt beugen sich die M&#228;nner vor.[NEWLINE][NEWLINE]</German>
+  <Italian>You have founded six settlements in the New World! The natives have fear to lose their land.</Italian>
+  <Spanish>You have founded six settlements in the New World! The natives have fear to lose their land.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES</Tag>
+  <English>Your eighth colony</English>
+  <French>Votre huiti&#232;me colonie</French>
+  <German>Eure achte Siedlung</German>
+  <Italian>Your eighth colony</Italian>
+  <Spanish>Your eighth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_HEAD</Tag>
+  <English>You have eight settlements in the New World</English>
+  <French>Vous avez huit colonies dans le Nouveau Monde</French>
+  <German>Die Antwort der G&#246;tter</German>
+  <Italian>You have eight settlements in the New World</Italian>
+  <Spanish>You have eight settlements in the New World</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_TEXT</Tag>
+  <English>Your colonies continue to spread across the land. The natives are full of fear and anger. Will they fight for their homeland?[NEWLINE][NEWLINE]</English>
+  <French>Vous avez fond&#233; de plus en plus de colonies! Les indig&#232;nes sont remplis de crainte. Voont-ils se battre pour d&#233;fendre leur terre?[NEWLINE][NEWLINE]</French>
+  <German>"Sollen wir die Wei&#223;en t&#246;ten? Dies wolltet ihr wissen", sagt der blinde Alte mit br&#252;chiger Stimme, "ich habe die G&#246;tter gefragt. Dies ist ihre Antwort ..." Gespannt beugen sich die indianischen Ratsmitglieder vor. Als der Orakelpriester weiterredet, &#252;berrascht der Klang seiner st&#228;hlernen Stimme, die wie ein Schwert durch die and&#228;chtige Stille schneidet. "Schlagt dieser Schlange den Kopf ab, und drei neue K&#246;pfe werden nachwachsen. Werft die Schlange ins Feuer, und f&#252;nf neue Schlangen werden aus dem Meer heranschwimmen und in Eure Mitte kriechen. Dient der Schlange und f&#252;ttert sie, und sie wird zehn Eier legen. Euer Tun und Euer Lassen sind ohne Belang f&#252;r die Zukunft dieser Welt."[NEWLINE][NEWLINE]</German>
+  <Italian>You have founded more and more colonies. The natives are full of fear and anger. Will they fight for their homeland?</Italian>
+  <Spanish>You have founded more and more colonies. The natives are full of fear and anger. Will they fight for their homeland?</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES</Tag>
+  <English>Your tenth colony</English>
+  <French>Votre dixi&#232;me colonie</French>
+  <German>Eure zehnte Siedlung</German>
+  <Italian>Your tenth colony</Italian>
+  <Spanish>Your tenth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_HEAD</Tag>
+  <English>Your tenth colony</English>
+  <French>Votre dixi&#232;me colonie</French>
+  <German>Das Gelobte Land</German>
+  <Italian>Your tenth colony</Italian>
+  <Spanish>Your tenth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_TEXT</Tag>
+  <English>You have ten settlements in the New World. Your people are truly blessed to have such a great leader.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez fond&#233; dix colonies dans le Nouveau Monde. Votre peuple est fier d'avoir un si grand dirrigeant.[NEWLINE][NEWLINE]</French>
+  <German>Das Licht der Kerze flackert. Ihr beugt Euch vor und gl&#228;ttet die Karte. Mit einem Zirkel messt ihr die Entfernung. Von Eurem Gouverneurssitz bis zu der neuen Stadt, die Ihr habt gr&#252;nden lassen, ist es weit. Ein halber Erdkreis spannt sich dazwischen. Zehn Gemeinden sind es jetzt. Eure B&#252;rger haben W&#228;lder gerodet, Minen in Berge getrieben, Stra&#223;en gebaut und die Wilden das Wort Gottes gelehrt. Zehn St&#228;dte! Dem&#252;tig blickt ihr zu dem silbernen Kreuz, das an der Wand h&#228;ngt. "F&#252;rwahr", sprecht ihr leise, "f&#252;rwahr, dies ist das Gelobte Land."[NEWLINE][NEWLINE]</German>
+  <Italian>You have ten settlements in the New World. Your people are happy to have such a great leader.</Italian>
+  <Spanish>You have ten settlements in the New World. Your people are happy to have such a great leader.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES</Tag>
+  <English>Your fifteenth colony</English>
+  <French>Votre quinzi&#232;me colonie</French>
+  <German>Eure f&#252;nfzehnte Siedlung</German>
+  <Italian>Your fifteenth colony</Italian>
+  <Spanish>Your fifteenth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_HEAD</Tag>
+  <English>Your fifteenth colony</English>
+  <French>Votre quinzi&#232;me colonie</French>
+  <German>Eine Nation erbl&#252;ht</German>
+  <Italian>Your fifteenth colony</Italian>
+  <Spanish>Your fifteenth colony</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_TEXT</Tag>
+  <English>A new nation is growing gradually. But is this nation strong enough to fight for independence?[NEWLINE][NEWLINE]</English>
+  <French>Une nouvelle nation est en train de na&#238;tre. Une nation suffisamment puissante pour r&#233;clamer son ind&#233;pendance.[NEWLINE][NEWLINE]</French>
+  <German>Schon wieder z&#228;hlt eine neue Siedlung zu Eurem erbl&#252;henden Reich. Aus W&#228;ldern werden Felder. Stra&#223;en durchziehen die Wildnis. Immer mehr St&#228;dte ersprie&#223;en und &#252;berziehen das Land. Eine neue Nation entsteht. Eine Nation, stark genug, ihre Unabh&#228;ngigkeit zu erstreiten.[NEWLINE][NEWLINE]</German>
+  <Italian>A new nation is growing gradually. A nation strong enough to fight for independence.</Italian>
+  <Spanish>A new nation is growing gradually. A nation strong enough to fight for independence.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH</Tag>
+  <English>Your first church</English>
+  <French>Votre premi&#232;re &#233;glise</French>
+  <German>Euer erstes Gotteshaus</German>
+  <Italian>Your first church</Italian>
+  <Spanish>Your first church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_HEAD</Tag>
+  <English>Your first church</English>
+  <French>Votre premi&#232;re &#233;glise</French>
+  <German>Das Haus Gottes</German>
+  <Italian>Your first church</Italian>
+  <Spanish>Your first church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_TEXT</Tag>
+  <English>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.[NEWLINE][NEWLINE]</English>
+  <French>Vous colons ont d&#233;sormais un lieu de culte. Les europens sont plus enclins &#224; venir s'intaller dans le Nouveau Monde.</French>
+  <German>Fenster, die hoch oben unter der Decke schweben. Fenster, durch die bei der ersten Andacht ein Sonnenstrahl herabf&#228;llt, Euch direkt ins Gesicht. Die Gl&#228;ubigen raunen. Gott, der Herr, mag &#252;ber sein Himmelsreich wachen und &#252;ber das Jenseits. Doch hier, in der Neuen Welt, seid Ihr sein Stellvertreter. Und Ihr habt Euren Schutzbefohlenen dieses Haus geschenkt. Das erste Gotteshaus in diesem Teil des Erdkreises. M&#246;ge es Gott zur Ehre und Euch zum Ruhme gereichen![NEWLINE][NEWLINE]</German>
+  <Italian>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.</Italian>
+  <Spanish>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES</Tag>
+  <English>Your second church</English>
+  <French>Votre deuxi&#232;me &#233;glise</French>
+  <German>Zwei Gottesh&#228;user</German>
+  <Italian>Your second church</Italian>
+  <Spanish>Your second church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_HEAD</Tag>
+  <English>Your second church</English>
+  <French>Votre deuxi&#232;me &#233;glise</French>
+  <German>Lobet den Herrn</German>
+  <Italian>Your second church</Italian>
+  <Spanish>Your second church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_TEXT</Tag>
+  <English>You have built your second church. "Praise the Lord!", the faithful are shouting. "And praise our governor!"[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de construire votre deuxi&#232;me &#233;glise. "Lou&#233; soit le Seigneur!" murmurent la population. "Et lou&#233; soit notre gouverneur!"</French>
+  <German>Wieder wurde ein frommes Richtfest gefeiert. Ein weiteres Gotteshaus steht nun in diesem Teil der Welt. "Lobet den Herrn!" murmelt das Volk. "Lobet den Herrn im Himmel! Und den Herrn Gouverneur, der Gott zu Ehren diese prachtvollen Kirchen errichten l&#228;sst."[NEWLINE][NEWLINE]</German>
+  <Italian>You have built your second church. "Praise the Lord!", the people are whispering. "And praise our governor!"</Italian>
+  <Spanish>You have built your second church. "Praise the Lord!", the people are whispering. "And praise our governor!"</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES</Tag>
+  <English>Your third church</English>
+  <French>Votre troisi&#232;me &#233;glise</French>
+  <German>Drei Gottesh&#228;user</German>
+  <Italian>Your third church</Italian>
+  <Spanish>Your third church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_HEAD</Tag>
+  <English>Your third church</English>
+  <French>Votre troisi&#232;me &#233;glise</French>
+  <German>Die Gottesfurcht des Gouverneurs</German>
+  <Italian>Your third church</Italian>
+  <Spanish>Your third church</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_TEXT</Tag>
+  <English>You have built your third church. Praise Providence that our noble Governor is a man of God![NEWLINE][NEWLINE]</English>
+  <French>Vous venez de construire votre troisi&#232;me &#233;glise. De nombreux gens commencent &#224; croire que leur gouverneur est un saint homme.</French>
+  <German>Ehrf&#252;rchtig senken die B&#252;rger die H&#228;upter, wenn Sie Euch erblicken. Eure Gottesfurcht ist zur Legende geworden. Drei Gottesh&#228;user habt Ihr nun bereits in dieser fremden Welt errichten lassen. Es gibt viele B&#252;rger, die &#252;berzeugt sind, dass Ihr ein heiliger Mann seid.[NEWLINE][NEWLINE]</German>
+  <Italian>You have built the third church. Many people are believing that their governor is a holy man.</Italian>
+  <Spanish>You have built the third church. Many people are believing that their governor is a holy man.</Spanish>
+ </TEXT> 
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE</Tag>
+  <English>Your first schoolhouse</English>
+  <French>Votre premi&#232;re &#233;cole</French>
+  <German>Eure erste Schule</German>
+  <Italian>Your first schoolhouse</Italian>
+  <Spanish>Your first schoolhouse</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_HEAD</Tag>
+  <English>Your first schoolhouse</English>
+  <French>Votre premi&#232;re &#233;cole</French>
+  <German>Holzkopf</German>
+  <Italian>Your first schoolhouse</Italian>
+  <Spanish>Your first schoolhouse</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_TEXT</Tag>
+  <English>You have built your first schoolhouse. The cornerstone of public education is laid.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de construire votre premi&#232;re &#233;cole. Les fondements de l'&#233;ducation viennent d'&#234;tre pos&#233;s</French>
+  <German>"Also ne Kirch ham wa doch, also ich versteh das nich, was brauchn wa noch so´n riesen Kasten mit die ganze B&#228;nke und ner Kanzel?" Ratlos st&#252;tzt sich der vierschr&#246;tige Mann auf seine grobschl&#228;chtige Axt. "Nicht Kanzel, Katheder! Hier werde ich deinem Buben beibringen, die Heilige Schrift zu lesen. Sp&#228;ter lernt er dann alles, was es braucht, um an der rechten Stelle in der Kolonie mit Verstand anzupacken!" "Herr Pfarrer, bei allm Respekt, aba mein Jung wird Holzf&#228;ller!" "So Gott will, vielleicht besser ein brauchbarer Schmied und Werkzeugmacher. Sieh dir dein altes Beil doch an, ich erkenne nicht, auf welcher Seite die Schneide einst war!"[NEWLINE][NEWLINE]</German>
+  <Italian>You have built the first schoolhouse. The cornerstone of public education is laid.</Italian>
+  <Spanish>You have built the first schoolhouse. The cornerstone of public education is laid.</Spanish>
+ </TEXT> 
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE</Tag>
+  <English>Your first stockade</English>
+  <French>Votre premi&#232;re palissade</French>
+  <German>Euer erstes Verteidigungswerk</German>
+  <Italian>Your first stockade</Italian>
+  <Spanish>Your first stockade</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_HEAD</Tag>
+  <English>Your first stockade</English>
+  <French>Votre premi&#232;re palissade</French>
+  <German>Ausgesperrt</German>
+  <Italian>Your first stockade</Italian>
+  <Spanish>Your first stockade</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
+  <English>You have built your first stockade.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de construire votre premi&#232;re palissade.</French>
+  <German>Ein Schatten steht pl&#246;tzlich im T&#252;rrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten ber&#252;hrt - doch als sie aufsieht, l&#228;chelt sie. "Guten Abend, Eheweib", brummt der Mann freundlich. "Wo steckt denn unser Kleiner?" "Spielt er denn nicht vor der T&#252;r mit den H&#252;hnern?" fragt sie zur&#252;ck und ist erneut besorgt. "Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den H&#228;usern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Gr&#246;&#223;erem."[NEWLINE][NEWLINE]</German>
+  <Italian>You have built your first stockade.</Italian>
+  <Spanish>You have built your first stockade.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE</Tag>
+  <English>Your third stockade</English>
+  <French>Votre troisi&#232;me palissade</French>
+  <German>Einige Verteidigungswerke</German>
+  <Italian>Your third stockade</Italian>
+  <Spanish>Your third stockade</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_HEAD</Tag>
+  <English>You have built your third stockade</English>
+  <French>Vous venez de construire votre troisi&#232;me palissade</French>
+  <German>Besch&#252;tzer und Besch&#252;tzte</German>
+  <Italian>You have built your third stockade</Italian>
+  <Spanish>You have built your third stockade</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_TEXT</Tag>
+  <English>You have built your third stockade[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de construire votre troisi&#232;me palissade</French>
+  <German>Gerade, feste Baumst&#228;mme, entrindet und im Erdgrund verankert, umschlie&#223;en und beschirmen die Siedlungen. Wacht&#252;rme, von denen aufmerksame Augenpaare misstrauisch das Umland mustern, erheben sich &#252;ber den H&#228;usern. Die Verteidigungswerke, die Ihr in Euren St&#228;dten errichten lasst, bringen Euren B&#252;rgern Schutz - und Euch den Respekt Eurer Untertanen.[NEWLINE][NEWLINE]</German>
+  <Italian>You have built your third stockade</Italian>
+  <Spanish>You have built your third stockade</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE</Tag>
+  <English>Eight stockades</English>
+  <French>Huit Palissades</French>
+  <German>Viele Verteidigungswerke</German>
+  <Italian>Eight stockades</Italian>
+  <Spanish>Eight stockades</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_HEAD</Tag>
+  <English>Eight stockades</English>
+  <French>Huit Palissades</French>
+  <German>Frieden auf Erden</German>
+  <Italian>Eight stockades</Italian>
+  <Spanish>Eight stockades</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_TEXT</Tag>
+  <English>Stockades of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez construit de nombreuses Palissades. Votre peuple vit en s&#233;curit&#233;.</French>
+  <German>In immer mehr Eurer St&#228;dte sorgen feste Mauern und Wacht&#252;rme f&#252;r den Schutz Eurer B&#252;rger. F&#252;rwahr, f&#252;r das Menschengl&#252;ck im Jenseits kann nur Gott sorgen. Doch f&#252;r das Diesseits seid Ihr, der Gouverneur, da. Ihr schenkt Euren Untertanen Frieden auf Erden. M&#246;ge Euer Gl&#252;ck niemals den Neid anderer wecken! Insbesondere nicht die Missgunst eines Euch wohlbekannten Tyrannen, der sich als Euer Landesherr aufspielt ...[NEWLINE][NEWLINE]</German>
+  <Italian>You have built many stockades. Your people are thankful that they can live in peace.</Italian>
+  <Spanish>You have built many stockades. Your people are thankful that they can live in peace.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS</Tag>
+  <English>Fifty bells per turn</English>
+  <French>Cinquante cloches par tour</French>
+  <German>Viele Freiheitsglocken</German> 
+  <Italian>Fifty bells per turn</Italian>
+  <Spanish>Fifty bells per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_HEAD</Tag>
+  <English>Fifty bells per turn</English>
+  <French>Cinquante cloches par tour</French>
+  <German>Eine Ahnung von Freiheit</German>
+  <Italian>Fifty bells per turn</Italian>
+  <Spanish>Fifty bells per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_TEXT</Tag>
+  <English>Many people are proud to call themselves citizens of the New World.[NEWLINE][NEWLINE]</English>
+  <French>Votre peuple est fier d'habiter le Nouveau Monde.</French>
+  <German>Immer h&#228;ufiger lassen Eure B&#252;rger die Glocken ihrer Versammlungshalle l&#228;uten und verleihen damit ihrem Wunsch nach Freiheit Ausdruck. Ihr sch&#252;ttelt milde Euer Haupt. Noch braucht Ihr das Wohlwollen Eures K&#246;nigs. In der Wildnis verstecken sich Raubtiere, solche auf vier - und solche auf zwei Beinen. Noch m&#252;ssen Eure Untertanen um ihr Leben bangen, wenn sie den Schutz der Siedlungen verlassen. Nur wer im Frieden lebt, hat die Kraft, f&#252;r die Freiheit in den Krieg zu ziehen. Ihr wisst, Ihr braucht Geduld und einen langen Atem.[NEWLINE][NEWLINE]</German>
+  <Italian>Many people are proud to live in the New World.</Italian>
+  <Spanish>Many people are proud to live in the New World.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS</Tag>
+  <English>Two hundred bells per turn</English>
+  <French>Deux cent cloches par tour</French>
+  <German>Sehr viele Freiheitsglocken</German>
+  <Italian>Twohundred bells per turn</Italian>
+  <Spanish>Twohundred bells per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_HEAD</Tag>
+  <English>Two hundred bells per turn</English>
+  <French>Deux cent cloches par tour</French>
+  <German>Flammende Sehnsucht</German>
+  <Italian>Twohundred bells per turn</Italian>
+  <Spanish>Twohundred bells per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_TEXT</Tag>
+  <English>More and more people embrace the patriotism of a growing nation.[NEWLINE][NEWLINE]</English>
+  <French>Votre peuple est de plus en plus fier d'habiter le Nouveau Monde.</French>
+  <German>Immer mehr B&#252;rger lassen die Glocken ihrer Versammlungshallen l&#228;uten, um ein Zeichen f&#252;r die Freiheit zu setzen. Ihr Klang erschallt durchs ganze Land, durch die ganze Neue Welt - sogar &#252;ber den Ozean hinweg. Der ferne K&#246;nig vernimmt ihr Schwingen, dessen seid Ihr Euch bewusst. Sein Zorn w&#228;chst. Die Zeit ist nicht mehr fern, in der er seine Marsch&#228;lle kommen l&#228;sst, um einen Krieg zu planen. Und Ihr, Gouverneur, Ihr werdet dann nicht mehr Glockengel&#228;ute, sondern Schlachtenl&#228;rm h&#246;ren.[NEWLINE][NEWLINE]</German>
+  <Italian>More and more people are proud to live in the New World.</Italian>
+  <Spanish>More and more people are proud to live in the New World.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES</Tag>
+  <English>Ten crosses per turn</English>
+  <French>Dix croix par tour</French>
+  <German>Eifrige Prediger</German>
+  <Italian>Ten crosses per turn</Italian>
+  <Spanish>Ten crosses per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_HEAD</Tag>
+  <English>Ten crosses per turn</English>
+  <French>Dix croix par tour</French>
+  <German>Bete in Freiheit</German>
+  <Italian>Ten crosses per turn</Italian>
+  <Spanish>Ten crosses per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_TEXT</Tag>
+  <English>Many people are preaching in the churches.[NEWLINE][NEWLINE]</English>
+  <French>Les croyants viennent en nombre dans les &#201;glises</French>
+  <German>Nicht nur Gott wird in Eurer Kirche Achtung gezollt, sondern auch der Freiheit des Wortes. Hier d&#252;rfen M&#228;nner frei predigen, die in ihrer alten Heimat schweigen mussten. Ihre Konfession war dem sturen Landesherrn nicht erw&#252;nscht. Das spricht sich zu Hause herum. Immer mehr Menschen dr&#228;ngeln auf den Hafenkais, um einen Platz auf einem Auswandererschiff zu finden.[NEWLINE][NEWLINE]</German>
+  <Italian>Many people are preaching in the churches.</Italian>
+  <Spanish>Many people are preaching in the churches.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES</Tag>
+  <English>Many crosses per turn</English>
+  <French>De nombreuses croix par tour</French>
+  <German>Sehr eifrige Prediger</German>
+  <Italian>Many crosses per turn</Italian>
+  <Spanish>Many crosses per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_HEAD</Tag>
+  <English>Many crosses per turn</English>
+  <French>De nombreuses croix par tour</French>
+  <German>W&#228;hle deinen Herrn</German>
+  <Italian>Many crosses per turn</Italian>
+  <Spanish>Many crosses per turn</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_TEXT</Tag>
+  <English>More and more people are preaching in the churches.[NEWLINE][NEWLINE]</English>
+  <French>Les croyants viennent en masse dans les &#201;glises</French>
+  <German>Immer wieder stehen w&#228;hrend der sonnt&#228;glichen Andachten M&#228;nner auf und schreiten auf die Kanzel. Sie preisen Gott - und sie r&#252;hmen auch Euch, den Gouverneur, der es Ihnen gestattet, selbst die Konfession zu w&#228;hlen, in der sie ihr Seelenheil finden m&#246;chten. Die Kunde, dass in der Neuen Welt ein jeder in der ihm eigenen Weise den Gottesdienst feiern kann, dass er die Regeln, nach denen er leben will, selber bestimmen darf - diese Kunde findet in der Alten Welt offene Ohren.[NEWLINE][NEWLINE]</German>
+  <Italian>More and more people are preaching in the churches.</Italian>
+  <Spanish>More and more people are preaching in the churches.</Spanish>
+ </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_EDUCATION</Tag>
+		<English>Many students</English>
+		<French>De nombreux Etudiants</French>
+		<German>Viele Sch&#252;ler</German>
+		<Italian>Many students</Italian>
+		<Spanish>Many students</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_EDUCATION_HEAD</Tag>
+		<English>Many students</English>
+		<French>De nombreux Etudiants</French>
+		<German>Tr&#228;umen erlaubt</German>
+		<Italian>Many students</Italian>
+		<Spanish>Many students</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_EDUCATION_TEXT</Tag>
+		<English>More and more young people are becoming students and improving their abilities.[NEWLINE][NEWLINE]</English>
+		<French>De plus en plus de jeunes veulent devenir Etudiants afin d'apprendre de nouvelles comp&#233;tences[NEWLINE][NEWLINE]</French>
+		<German>"Erz&#228;hl uns doch mal, was du siehst, du Tr&#228;umer!" Erschrocken f&#228;hrt der Student zusammen. Gerade hatte er noch aus dem Fenster geschaut, da steht unvermittelt die Dozentin neben ihm und r&#252;ttelt sanft an seiner Schulter. "&#196;h, tja ...", stammelt er und sucht nach einem Einfall, der ihn rettet. "Hinaus in die Lieblichkeit dieser Neuen Welt blickte ich. Und sann &#252;ber die Natur nach, wie Gott sie erschaffen hat. Und &#252;ber die Natur des Menschen. Dass er frei geboren ist und nicht als Untertan. Und dass kein K&#246;nig von ihm Gehorsam verlangen sollte, sondern nur Gott." "So, so", erwidert die Dozentin und muss l&#228;cheln, "da haben wir wohl den gleichen Traum."[NEWLINE][NEWLINE]</German>
+		<Italian>More and more young people want to become students and gain new abilities.[NEWLINE][NEWLINE]</Italian>
+		<Spanish>More and more young people want to become students and gain new abilities.[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT</Tag>
+  <English>Met another colonial power</English>
+  <French>Vous avez rencontr&#233; une autre nation europ&#233;enne</French>
+  <German>Europ&#228;er getroffen</German>
+  <Italian>Met another european nation</Italian>
+  <Spanish>Met another european nation</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_HEAD</Tag>
+  <English>You have met another colonial power</English>
+  <French>Vous avez rencontr&#233; une autre nation europ&#233;enne</French>
+  <German>Nicht allein in der Fremde</German>
+  <Italian>You have met another european nation</Italian>
+  <Spanish>You have met another european nation</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_TEXT</Tag>
+  <English>You have discovered that other european powers seek to claim the New World for themselves.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez d&#233;couvert l'existence d'autres colons europ&#233;ens dans le Nouveau Monde.</French>
+  <German>Erschrocken blicken Eure M&#228;nner Euch an. Sie sind nicht gewohnt, dass Ihr Gouverneur flucht. Und erst recht nicht so derbe, so gottesl&#228;sterlich. Eine Magd blickt zu Boden und bekreuzigt sich stumm. Doch Euch k&#252;mmert nur das, was Ihr in der Ferne ersp&#228;ht habt. Eine altbekannte Flagge. Die Flagge eines K&#246;nigs - und es ist nicht der Eure. Eure Bef&#252;rchtungen sind wahrgeworden. Auch andere M&#228;chte haben Schiffe, Siedler und Sp&#228;her entsandt, um sich diese Neue Welt untertan zu machen. Pl&#246;tzlich fr&#246;stelt Euch und Ihr zieht Euch den Umhang fester um die Schultern.[NEWLINE][NEWLINE]</German>
+  <Italian>You have discovered that there are other european colonists in the new world too.</Italian>
+  <Spanish>You have discovered that there are other european colonists in the new world too.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_EURO_CONTACT</Tag>
+  <English>Met four other colonial powers</English>
+  <French>Vous avez rencontr&#233; quatre autre nations europ&#233;ennes</French>
+  <German>Vier europ&#228;ische Konkurrenten</German>
+  <Italian>Met four other european nations</Italian>
+  <Spanish>Met four other european nations</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_EURO_CONTACT_HEAD</Tag>
+  <English>Met four other colonial powers</English>
+  <French>Vous avez rencontr&#233; quatre autre nations europ&#233;ennes</French>
+  <German>Familientreffen in &#220;bersee</German>
+  <Italian>Met four other european nations</Italian>
+  <Spanish>Met four other european nations</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_EURO_CONTACT_TEXT</Tag>
+  <English>You have discovered many european colonies from other nations in the New World.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez d&#233;couvert l'existence de quantit&#233;s de colons europ&#233;ens dans le Nouveau Monde.</French>
+  <German>Freundlich schwenkt der fremde Offizier seinen Hut mit der wippenden Pfauenfeder. Und ebenso freundlich winkt Ihr mit Eurem Hut zur&#252;ck. Doch Euer L&#228;cheln ist nur Maskerade. Wieder seid Ihr einer fremden Patrouille begegnet. Erneut seid Ihr auf andere Europ&#228;er gesto&#223;en, die wie Ihr in die Fremde gezogen seid. So unendlich weit schien Euch dieser Kontinent einst zu sein ...[NEWLINE][NEWLINE]</German>
+  <Italian>You have discovered that there are many european colonists from other nations in the new world.</Italian>
+  <Spanish>You have discovered that there are many european colonists from other nations in the new world.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT</Tag>
+  <English>Met a native tribe</English>
+  <French>Vous avez rencontr&#233; une truibu indig&#232;ne</French>
+  <German>Wilde getroffen</German>
+  <Italian>Met a native tribe</Italian>
+  <Spanish>Met a native tribe</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_HEAD</Tag>
+  <English>Met a native tribe</English>
+  <French>Vous avez rencontr&#233; une tribu indig&#232;ne</French>
+  <German>Wilde getroffen</German>
+  <Italian>Met a native tribe</Italian>
+  <Spanish>Met a native tribe</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_TEXT</Tag>
+  <English>You have met natives.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez rencontr&#233; votre premi&#232;re tribu indig&#232;ne</French>
+  <German>Fr&#246;hliche Augen in braunen, schmutzigen Gesichtern. Junge M&#228;nner mit Speeren und B&#246;gen, bemalten Gesichtern und einem kindlichen Staunen. Junge Frauen, die in Tonkr&#252;gen K&#246;rner mahlen und Euch verstohlen anblicken. Zahnlose Alte, die zutraulich heranhumpeln. Ihr ahntet, dass dieses fremde Land Wunder und Gefahren birgt. Doch dass hier so viele gottlose Heidenkinder hausen, ohne Kenntnis von der Barmherzigkeit Jesu, das h&#228;ttet Ihr nicht f&#252;r m&#246;glich gehalten. Ihr werdet Ihnen in den n&#228;chsten Wochen von der Erl&#246;sung berichten, die der wahre christliche Glaube ihren mit S&#252;nde beladenen Seelen schenken wird. Und vielleicht k&#246;nnt Ihr sie auch tats&#228;chlich erl&#246;sen - von den Sch&#228;tzen, die sie gewisslich verstecken, dem Gold, das Eure M&#228;nner in diesem Teil der Welt zu erbeuten hoffen.[NEWLINE][NEWLINE]</German>
+  <Italian>You have met natives.</Italian>
+  <Spanish>You have met natives.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT</Tag>
+  <English>Three native tribes</English>
+  <French>Trois tribus indig&#232;nes</French>
+  <German>Drei St&#228;mme getroffen</German>
+  <Italian>Three native tribes</Italian>
+  <Spanish>Three native tribes</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_HEAD</Tag>
+  <English>Three native tribes</English>
+  <French>Vous avez rencontr&#233; trois tribus indig&#232;nes</French>
+  <German>Das Gold der Wilden</German>
+  <Italian>Three native tribes</Italian>
+  <Spanish>Three native tribes</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_TEXT</Tag>
+  <English>You have made first contact with three native nations.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez &#233;t&#233; le premier &#224; rencontrer trois nations indiennes.[NEWLINE][NEWLINE]</French>
+  <German>Mit einem L&#228;cheln n&#228;hern sich die Eingeborenen. Sie &#246;ffnen ihre H&#228;nde. Im Mittagslicht der Sonne glitzern die silbernen Amulette, die Goldringe und edelsteingeschm&#252;ckten Totemmasken, die sie Euch anbieten. Ein Trapper, der den letzten Winter bei den Heiden verbracht hat, &#252;bersetzt die Worte ihres H&#228;uptlings. Drei Eisenh&#228;mmer erbittet der Wilde im Tausch, ein Hanfs&#228;ckcken mit N&#228;geln, ein F&#228;sschen Branntwein und eine Donnerb&#252;chse. Ihr m&#252;sst schmunzeln. Vielleicht k&#246;nnt Ihr diesem fremden Land seine Sch&#228;tze nehmen, ohne daf&#252;r mit dem Blut Eurer M&#228;nner zu zahlen.[NEWLINE][NEWLINE]</German>
+  <Italian>You have had the first contact with three native nations</Italian>
+  <Spanish>You have had the first contact with three native nations</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT</Tag>
+  <English>Five native tribes</English>
+  <French>Cinq tribus indiennes</French>
+  <German>F&#252;nf St&#228;mme getroffen</German>
+  <Italian>Five native tribes</Italian>
+  <Spanish>Five native tribes</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_HEAD</Tag>
+  <English>Five native tribes</English>
+  <French>Cinq tribus indiennes</French>
+  <German>Dieses Land geh&#246;rt uns nicht alleine</German>
+  <Italian>Five native tribes</Italian>
+  <Spanish>Five native tribes</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_TEXT</Tag>
+  <English>You have made first contact with five native nations[NEWLINE][NEWLINE]</English>
+  <French>Vous avez &#233;t&#233; le premier &#224; rencontrer cinq nations indiennes.[NEWLINE][NEWLINE]</French>
+  <German>Ein Seufzen entschl&#252;pft Eurer Brust. Wieder kr&#228;uselt in der Ferne der Rauch von Lagerfeuern in den Himmel. Wieder trefft Ihr auf einen Stamm dieser Wilden, die dieses fruchtbare Land in Beschlag nehmen und behaupten, ihre Ahnen h&#228;tten es ihnen vermacht. Doch Ihr wisst es besser. Nur derjenige erhebt einen Anspruch zu Recht, der dieses Recht auch durchzusetzen vermag. Ihr befehlt Euren M&#228;nnern, ihre Gewehre zu laden, und dem Priester, Euch zu segnen.[NEWLINE][NEWLINE]</German>
+  <Italian>You have had the first contact with five native nations</Italian>
+  <Spanish>You have had the first contact with five native nations</Spanish>
+ </TEXT>
+<TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE</Tag>
+  <English>Your first trade agreement</English>
+  <French>Votre premier trait&#233; commercial</French>
+  <German>Erstes Handelsgesch&#228;ft</German>
+  <Italian>Your first trade agreement</Italian>
+  <Spanish>Your first trade agreement</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_HEAD</Tag>
+  <English>Your first trade agreement</English>
+  <French>Votre premier trait&#233; commercial</French>
+  <German>Der erste Handelskontrakt</German>
+  <Italian>Your first trade agreement</Italian>
+  <Spanish>Your first trade agreement</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_TEXT</Tag>
+  <English>You have bought or sold goods for the first time.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez d'acheter ou vendre des biens pour la premi&#232;re fois</French>
+  <German>Einen Lederbeutel, prall gef&#252;llt mit Goldm&#252;nzen, legt Euer Schiffskapit&#228;n auf den Tresen des Kontors. Der feiste Kaufmann zuckt mit keiner Wimper. F&#252;r ihn sind solche Gesch&#228;fte so allt&#228;glich wie der G&#228;nseschmalz auf seinem Mittagsbrot. F&#252;r Euren Kapit&#228;n dagegen sind sie eine Last. Die Verantwortung f&#252;r das Gold ist er los, doch nun gilt es, mit der kostbaren Fracht wieder unbeschadet heimzukommen. Taucht eine Totenkopfflagge am Horizont auf, k&#246;nnte die Reise vergeblich gewesen sein.[NEWLINE][NEWLINE]</German>
+  <Italian>You have bought or sold goods the first time.</Italian>
+  <Spanish>You have bought or sold goods the first time.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE</Tag>
+  <English>Many trade agreements</English>
+  <French>De nombreux trait&#233;s commerciaux</French>
+  <German>Tausend Waren gehandelt</German>
+  <Italian>Many trade agreements</Italian>
+  <Spanish>Many trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_HEAD</Tag>
+  <English>Many trade agreements</English>
+  <French>De nombreux trait&#233;s commerciaux</French>
+  <German>Tausend Waren gehandelt</German>
+  <Italian>Many trade agreements</Italian>
+  <Spanish>Many trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_TEXT</Tag>
+  <English>You are a shrewd businessman with many deals.[NEWLINE][NEWLINE]</English>
+  <French>Vous &#234;tes un véritable homme d'affaire!</French>
+  <German>Das Tuscheln auf den Kirchenb&#228;nken verstummt. Der Prediger schreitet nach vorne und beginnt mit fester und frommer Stimme das Vaterunser. Ihr zieht Eure H&#228;nde aus den Westentasche und faltet sie zum Gebet. Ein Raunen geht durch die Menge. Der Prediger stutzt und folgt mit den Augen den Blicken der B&#252;rger. Sie kleben an einem funkelnden Edelstein, gro&#223; wie ein Augapfel. Ein goldener Ring fasst ihn ein, Eure zum Gebet erhobene Hand zeigt ihn beil&#228;ufig den Gl&#228;ubigen. Der Prediger sch&#252;ttelt missbilligend sein Haupt. Ihr l&#228;chelt gelassen zur&#252;ck, im Wissen, nur den Wohlstand zu offenbaren, den Euer Handelsgeschick Euch eingetragen hat.[NEWLINE][NEWLINE]</German>
+  <Italian>You are a real businessman with many deals.</Italian>
+  <Spanish>You are a real businessman with many deals.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE</Tag>
+  <English>A large number of trade agreements</English>
+  <French>Un nombre incalculable de trait&#233;s commerciaux</French>
+  <German>3.000 Waren gehandelt</German>
+  <Italian>A large number of trade agreements</Italian>
+  <Spanish>A large number of trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_HEAD</Tag>
+  <English>A large number of trade agreements</English>
+  <French>Un nombre incalculable de trait&#233;s commerciaux</French>
+  <German>Dreitausend Waren gehandelt</German>
+  <Italian>A large number of trade agreements</Italian>
+  <Spanish>A large number of trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_TEXT</Tag>
+  <English>You are a great merchant with many deals to your name.[NEWLINE][NEWLINE]</English>
+  <French>Vous &#234;tes un homme d'affaire remarquable!</French>
+  <German>"Schon wieder?" Der alte Mann hebt seine buschigen Brauen. "Wart Ihr nicht vergangenen Monat das letzte Mal hier?" Euer Bote nickt gelassen. "Und jetzt braucht Ihr erneut eines?", fragt der Ladenbesitzer. "Was ist mit dem Kontobuch geschehen, das ich Euch verkauft hatte?" Euer Bote l&#228;chelt. "Mein Herr hat es vollgeschrieben. Die Gesch&#228;fte des Gouverneurs gehen gut."[NEWLINE][NEWLINE]</German>
+  <Italian>You are a great businessman with many deals.</Italian>
+  <Spanish>You are a great businessman with many deals.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE</Tag>
+  <English>A very large number of trade agreements</English>
+  <French>Un nombre infini de trait&#233;s commerciaux</French>
+  <German>10.000 Waren gehandelt</German>
+  <Italian>A very large number of trade agreements</Italian>
+  <Spanish>A very large number of trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_HEAD</Tag>
+  <English>A very large number of trade agreements</English>
+  <French>Un nombre infini de trait&#233;s commerciaux</French>
+  <German>Zehntausend Waren gehandelt</German>
+  <Italian>A very large number of trade agreements</Italian>
+  <Spanish>A very large number of trade agreements</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_TEXT</Tag>
+  <English>Are you a businessman? Nay, you are a banker to Kings themselves![NEWLINE][NEWLINE]</English>
+  <French>Etes vous un homme d'affaire? Non. Vous &#234;tes L'Homme d'affaire</French>
+  <German>Sechssp&#228;nnig ist die Kutsche aus edelstem Mahagoni, die im Schritttempo den belebten Boulevard zum Regierungspalast hinaufrollt. Ein junges Marktweib wendet sich voller Neugierde an einen der Garnisonssoldaten, der hoch zu Ross das Gef&#228;hrt begleitet. "Wer ist denn so bedeutsam", fragt sie ihn, "dass der Hohe Herr seine private Kutsche schickt, ihn vom Hafen abzuholen?" "Es ist ein Kaufmann aus Europa", ruft der Soldat zur&#252;ck, "er will mit dem Gouverneur Gesch&#228;fte machen." Er beugt sich herab vom Sattel und raunt vertraulich. "Dieser Jakob Fugger soll einer der reichsten M&#228;nner der Welt sein." "Er wird", gibt die Marketenderin l&#228;chelnd zur&#252;ck, "er wird wohl h&#246;chstens der zweitreichste der Welt sein."[NEWLINE][NEWLINE]</German>
+  <Italian>You are a businessman? No. You are The Businessman!</Italian>
+  <Spanish>You are a businessman? No. You are The Businessman!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY</Tag>
+  <English>Your first military victory</English>
+  <French>Votre premi&#232;re victoire militaire</French>
+  <German>Erster Sieg im Gefecht</German>
+  <Italian>Your first military victory</Italian>
+  <Spanish>Your first military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_HEAD</Tag>
+  <English>Your first military victory</English>
+  <French>Votre premi&#232;re victoire militaire</French>
+  <German>Ein Leben gegen das andere</German>
+  <Italian>Your first military victory</Italian>
+  <Spanish>Your first military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_TEXT</Tag>
+  <English>You have won your first military victory.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de remporter votre premi&#232;re victoire militaire</French>
+  <German>Ein Windsto&#223; f&#228;hrt heran, so pl&#246;tzlich, als habe jemand im Himmel einen Seufzer getan. Der Pulverrauch verfliegt. Ihr habt nun freie Sicht auf das Ungl&#252;ck des Feindes, dass Euer Gl&#252;ck ist. Das erste Gefecht ist gewonnen! Ihr nehmt Euren breitkrempigen Hut ab und senkt dankbar das Haupt. "Vater unser", sprecht Ihr, "Vater unser im Himmel, geheiligt werde dein Name ..."[NEWLINE][NEWLINE]</German>
+  <Italian>You have won your first military victory.</Italian>
+  <Spanish>You have won your first military victory.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY</Tag>
+  <English>Your tenth military victory</English>
+  <French>Votre dixi&#232;me victoire militaire</French>
+  <German>Zehn Gefechte gewonnen</German>
+  <Italian>Your tenth military victory</Italian>
+  <Spanish>Your tenth military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_HEAD</Tag>
+  <English>Your tenth military victory</English>
+  <French>Votre dixi&#232;me victoire militaire</French>
+  <German>Zehn Gefechte gewonnen</German>
+  <Italian>Your tenth military victory</Italian>
+  <Spanish>Your tenth military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_TEXT</Tag>
+  <English>You have won your tenth military victory.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de remporter votre dixi&#232;me victoire militaire</French>
+  <German>Staubig und verschwitzt ist der Bote. Er springt vom Pferd, stolpert, die Wachen k&#246;nnen ihn gerade noch st&#252;tzen. "Wo ist der Gouverneur?" keucht der junge Mann. "Ich habe eine Botschaft von seinen Offizieren." "Ich bringe dich zu ihm", sagt der Unteroffizier der Palastwache, ein graub&#228;rtiger, sehniger Alter. "Sag mir," spricht er bereits im Gehen, "haben wir das Gefecht gewonnen?" Der Bote schmunzelt. "W&#228;re ich sonst hier?" Die Mittagssonne lacht ihn an.[NEWLINE][NEWLINE]</German>
+  <Italian>You have won your tenth military victory</Italian>
+  <Spanish>You have won your tenth military victory</Spanish>
+ </TEXT>
+  <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY</Tag>
+  <English>Forty military victories</English>
+  <French>Votre quaranti&#232;me victoire militaire</French>
+  <German>Vierzig Gefechte gewonnen</German>
+  <Italian>Forty military victories</Italian>
+  <Spanish>Forty military victories</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_HEAD</Tag>
+  <English>Forty military victories</English>
+  <French>Votre quaranti&#232;me victoire militaire</French>
+  <German>Blutrot</German>
+  <Italian>Forty military victories</Italian>
+  <Spanish>Forty military victories</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_TEXT</Tag>
+  <English>You have won forty military victories.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de remporter votre quaranti&#232;me victoire militaire</French>
+  <German>Die Sonne vergl&#252;ht am Horizont, ihr sterbendes Licht entflammt die Steppe. Schweigend reitet Euer Kavallerietrupp durch die Ebene. Die M&#228;nner haben kein Auge f&#252;r den Liebreiz der Landschaft. Sie denken bereits voller kaltem Grimm an den n&#228;chsten Morgen, in dessen D&#228;mmerlicht sie in die Stadt des Feindes einreiten werden. Durch keine W&#228;lle gesch&#252;tzt, liegt sie im Hinterland und glaubt sich sicher vor den weit entfernten Schrecken des Krieges. Doch mit Eurer Kavallerie entsendet Ihr den Tod in alle Winkel der Neuen Welt - deren Sch&#246;nheit und Reichtum nur einem Herren geh&#246;ren sollte ... Euch.[NEWLINE][NEWLINE]</German>
+  <Italian>You have won forty military victories.</Italian>
+  <Spanish>You have won forty military victories.</Spanish>
+ </TEXT>
+<TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY</Tag>
+  <English>Seventy military victories</English>
+  <French>Votre soixante-dizi&#232;me victoire militaire</French>
+  <German>Siebzig Gefechte gewonnen</German>
+  <Italian>Seventy military victories</Italian>
+  <Spanish>Seventy military victories</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_HEAD</Tag>
+  <English>Seventy military victories</English>
+  <French>Votre soixante-dizi&#232;me victoire militaire</French>
+  <German>Den Helden spielen</German>
+  <Italian>Seventy military victories</Italian>
+  <Spanish>Seventy military victories</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_TEXT</Tag>
+  <English>You have won seventy military victories.[NEWLINE][NEWLINE]</English>
+  <French>Vous venez de remporter votre soixante-dizi&#232;me victoire militaire</French>
+  <German>"Was soll denn daran ehrenhaft sein?", raunt der junge Soldat angewidert dem Veteranen an seiner Seite zu. "Den Tross des Feindes aus dem Hinterhalt zu &#252;berfallen und dessen wehrlose Eskorte abzuschlachten - von solchen Heldentaten hatte ich nicht getr&#228;umt, als ich mich freiwillig zu den Waffen meldete." Grimmig mustert ihn der Graubart. "Wenn dem Feind Proviant und Munition ausgehen, dann wird das so manchem in unseren Reihen das Leben retten - vielleicht auch dir, B&#252;rschchen. Wenn du lieber den Helden spielen willst, dann geh nach Hause und misch dich unter deine Zinnsoldaten."[NEWLINE][NEWLINE]</German>
+  <Italian>You have won seventy military victories.</Italian>
+  <Spanish>You have won seventy military victories.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY</Tag>
+  <English>Your hundredth military victory</English>
+  <French>Centi&#232;me victoire militaire</French>
+  <German>Hundert Gefechte gewonnen</German>
+  <Italian>Your hundredth military victory</Italian>
+  <Spanish>Your hundredth military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_HEAD</Tag>
+  <English>Your hundredth military victory</English>
+  <French>Centi&#232;me victoire militaire</French>
+  <German>Im Schatten des Krieges</German>
+  <Italian>Your hundredth military victory</Italian>
+  <Spanish>Your hundredth military victory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_TEXT</Tag>
+  <English>You have won your hundredth military victory. The New World trembles before you![NEWLINE][NEWLINE]</English>
+  <French>Vous venez de remporter votre soixante-dizi&#232;me victoire militaire. </French>
+  <German>Fr&#252;h ist die Wintersonne herab in ihre Gruft gestiegen, und der Mond bewacht das verwaiste Firmament. M&#252;den Schritts erklimmt der Soldat den H&#252;gel hinter dem Geh&#246;ft seiner Eltern. Heimaturlaub hat ihm sein Bataillonskommandant gew&#228;hrt. Die Schritte des Mannes knirschen im Schnee, und klamm ist ihm zumute, als er an der Kuppe anlangt. Ein einsames Kreuz aus Stein steht dort. Der Soldat schultert sein Gewehr ab und steht blo&#223; da, still und schweigend wie das Nachtgestirn. L&#228;ngst scheint die Ewigkeit angebrochen, als er schluckt und fl&#252;stert. "Bist vor mir aus dem Krieg heimgekehrt, Bruderherz."[NEWLINE][NEWLINE]</German>
+  <Italian>You have won your hundredth military victory.</Italian>
+  <Spanish>You have won your hundredth military victory.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON</Tag>
+  <English>Your first galleon</English>
+  <French>Votre premier Galion</French>
+  <German>Erste Galeone</German>
+  <Italian>Your first galleon</Italian>
+  <Spanish>Your first galleon</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_HEAD</Tag>
+  <English>Your first galleon</English>
+  <French>Votre premier Galion</French>
+  <German>Ein schwimmender Riese</German>
+  <Italian>Your first galleon</Italian>
+  <Spanish>Your first galleon</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_TEXT</Tag>
+  <English>You are now in command of your first galleon.[NEWLINE][NEWLINE]</English>
+  <French>Vous dirigez un somptueux galion</French>
+  <German>Ungl&#228;ubig stehen die Schaulustigen Spalier, als wieder und wieder Lastentr&#228;ger &#252;ber den Laufsteg das Schiff erklimmen. Auf ihren gebeugten R&#252;cken schleppen sie Ballen, Kisten und F&#228;sser. "Wieviel passt denn in ein Galoleoni rein?" kr&#228;ht ein kleiner Junge neugierig. Ein graub&#228;rtiger Maat beugt sich herab. "Soviel, wie muss", sagt er freundlich.[NEWLINE][NEWLINE]</German>
+  <Italian>You are commanding a galleon.</Italian>
+  <Spanish>You are commanding a galleon.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON</Tag>
+  <English>Three galleons</English>
+  <French>Trois Galions</French>
+  <German>Drei Galeonen</German>
+  <Italian>Three galleons</Italian>
+  <Spanish>Three galleons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_HEAD</Tag>
+  <English>Three galleons</English>
+  <French>Trois Galions</French>
+  <German>Wald und Wasser</German>
+  <Italian>Three galleons</Italian>
+  <Spanish>Three galleons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_TEXT</Tag>
+  <English>You are commanding three galleons.[NEWLINE][NEWLINE]</English>
+  <French>Vous dirigez trois somptueux galions</French>
+  <German>Pl&#246;tzlich wackelt die Welt. Erschrocken springt das Flugh&#246;rnchen ab und segelt hin&#252;ber zum n&#228;chsten Baum. Der Stamm, an dem es eben noch hing, erzittert, dann neigt er sich und f&#228;llt krachend um. Zu seinen F&#252;&#223;en feixen die Waldarbeiter. Etliche Klafter Holz mehr f&#252;r die Werft in der nahen Stadt. Gutes Bauholz f&#252;r feste Planken und einen strammen Kiel - f&#252;r die n&#228;chste Galeone.[NEWLINE][NEWLINE]</German>
+  <Italian>You are commanding three galleons.</Italian>
+  <Spanish>You are commanding three galleons.</Spanish>
+ </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FRIGATES</Tag>
+        <English>Five frigates</English>
+        <French>Cinq fr&#233;gates</French>
+        <German>F&#252;nf Fregatten</German>
+        <Italian>Five frigates</Italian>
+        <Spanish>Five frigates</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FRIGATES_HEAD</Tag>
+        <English>Five frigates</English>
+        <French>Cinq fr&#233;gates</French>
+        <German>Wolfsjagd</German>
+        <Italian>Five frigates</Italian>
+        <Spanish>Five frigates</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FRIGATES_TEXT</Tag>
+        <English>You have five frigates to guard your merchant ships against enemies.[NEWLINE][NEWLINE]</English>
+        <French>Vous dirigez cinq puissantes fr&#233;gates</French>
+        <German>Ihr verschattet die Augen mit Eurer Hand und sp&#228;ht hinaus auf die Hafeneinfahrt. Ein Kriegsschiff liegt dort auf der Lauer. Sein Rumpf ist schmal, damit es schnell &#252;ber die See fliegen kann. Die Decks starren vor Kanonen, in der Waffenkammer stapeln sich die Pulverf&#228;sser. Von Ost und West n&#228;hern sich kleinere Handelsschiffe, eine leichte Beute f&#252;r einen solchen J&#228;ger. Doch die Boote gleiten unbesorgt n&#228;her, denn die Kapit&#228;ne haben l&#228;ngst erkannt, dass sie sich einer Eurer Fregatten n&#228;hern - den Sch&#228;ferhunden, die die L&#228;mmer vor den W&#246;lfen sch&#252;tzen.[NEWLINE][NEWLINE]</German>
+        <Italian>You have five frigates to guard your merchant ships against enemies.</Italian>
+        <Spanish>You have five frigates to guard your merchant ships against enemies.</Spanish>
+    </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER</Tag>
+  <English>Your first privateer</English>
+  <French>Votre premier Corsaire</French>
+  <German>Erster Kaperfahrer</German>
+  <Italian>Your first privateer</Italian>
+  <Spanish>Your first privateer</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_HEAD</Tag>
+  <English>Jolly Roger</English>
+  <French>Jolly Roger</French>
+  <German>Totenkopfflagge</German>
+  <Italian>Jolly Roger</Italian>
+  <Spanish>Jolly Roger</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_TEXT</Tag>
+  <English>Formerly you were a gentleman. And now? A pirate.[NEWLINE][NEWLINE]</English>
+  <French>Avant vous &#233;tiez un gentilhomme. Et maintenant? Un corsaire. </French>
+  <German>"Meine Herren", verk&#252;ndet der Kapit&#228;n, "es ist soweit." Er hievt die kleine Truhe auf den Kartentisch seiner Kaj&#252;te. Neugierig blicken die Offiziere, wie er das Siegel zerbricht. "Sobald unser Hafen nicht mehr in Sicht ist, sollen wir dies &#246;ffnen. So lautet der Befehl des Gouverneurs." Er klappt den Deckel auf und muss grinsen. "Meine Herren, dies soll wohl an den Flaggenmast."[NEWLINE][NEWLINE]</German>
+  <Italian>Formerly you were a gentleman. And now? A pirate.</Italian>
+  <Spanish>Formerly you were a gentleman. And now? A pirate.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER</Tag>
+  <English>Three privateers</English>
+  <French>Trois Corsaires</French>
+  <German>Drei Kaperfahrer</German>
+  <Italian>Three privateers</Italian>
+  <Spanish>Three privateers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_HEAD</Tag>
+  <English>Three privateers</English>
+  <French>Trois Corsaires</French>
+  <German>Das Rudel jagt</German>
+  <Italian>Three privateers</Italian>
+  <Spanish>Three privateers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_TEXT</Tag>
+  <English>What's better than a pirate ship? Three of them.[NEWLINE][NEWLINE]</English>
+  <French>Quoi de mieux qu'un bateau corsaire? Trois Corsaires!</French>
+  <German>Mit angstvollem Blick taxiert der Kapit&#228;n das fremde Schiff, das seinen Handelskahn jagt. Vollzeug hat er setzen lassen, dennoch holt der Kaperfahrer auf. Er dreht sich gen Bug und blickt voraus. Die Nebelbank, in der er seinen Pott verstecken will, r&#252;ckt n&#228;her. "Wir k&#246;nnen es schaffen", murmelt er. Doch urpl&#246;tzlich bricht ein anderes Schiff aus dem Nebel, und auch dieses tr&#228;gt den Jolly Roger am Mast. "Ihr W&#246;lfe!", schreit der Kapit&#228;n in hilfloser Wut hin&#252;ber.[NEWLINE][NEWLINE]</German>
+  <Italian>What's better than a pirate ship? Three of them.</Italian>
+  <Spanish>What's better than a pirate ship? Three of them.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER</Tag>
+  <English>Five privateers</English>
+  <French>Cinq privateers</French>
+  <German>F&#252;nf Kaperfahrer</German>
+  <Italian>Five privateers</Italian>
+  <Spanish>Five privateers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_HEAD</Tag>
+  <English>Five privateers</English>
+  <French>Cinq Corsaires</French>
+  <German>Fette Beute</German>
+  <Italian>Five privateers</Italian>
+  <Spanish>Five privateers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_TEXT</Tag>
+  <English>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]</English>
+  <French>Votre flotte de Corsaires r&#232;gne sur les mers. Aucun navire n'est en s&#233;curit&#233; maintenant.[NEWLINE][NEWLINE]</French>
+  <German>"Eine fette Beute!", ruft der Harpunier den Matrosen an den Riemen zu. "Gleich haben wir den Wal. Pullt, M&#228;nner, pullt!" Doch pl&#246;tzlich lassen die Ruderer die Bl&#228;tter fallen. Schreckensbleich zeigen sie &#252;ber die Schulter des Harpuniers. Der dreht sich um - und schluckt. Ein Kaperfahrer gleitet heran, geschwind wie ein Falke. Die Piraten stehen an der Reling und grinsen herab. "Lasst Euch nicht bei der Arbeit st&#246;ren, Jungs!", ruft einer und lacht. "Wir nehmen Euch das Schiff erst weg, wenn ihr seinen Bauch mit Speck gef&#252;llt habt. Das soll eine fette Beute geben!"[NEWLINE][NEWLINE]</German>
+  <Italian>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]</Italian>
+  <Spanish>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON</Tag>
+  <English>Your first cannon</English>
+  <French>Votre premier Canon</French>
+  <German>Erste Schwere Artillerie</German>
+  <Italian>Your first cannon</Italian>
+  <Spanish>Your first cannon</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_HEAD</Tag>
+  <English>Your first cannon</English>
+  <French>Votre premier Canon</French>
+  <German>Erste Schwere Artillerie</German>
+  <Italian>Your first cannon</Italian>
+  <Spanish>Your first cannon</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_TEXT</Tag>
+  <English>You have a cannon. And more options for diplomatic negotiations ...[NEWLINE][NEWLINE]</English>
+  <French>Vous avez un Canon. Ainsi que davantage d'options diplomatiques...[NEWLINE]</French>
+  <German>"Was will er blo&#223; damit?", fragt der fremde Gouverneur entgeistert, als er die Botschaft vernommen hat. "Sind wir diesem Mann eine Bedrohung? F&#252;rchtet er sich so sehr vor uns, dass er glaubt, sich auf diese Weise sch&#252;tzen zu m&#252;ssen?" Dann springt er so abrupt auf, dass ihm die gepuderte Per&#252;cke in die Stirn rutscht und ein wei&#223;es W&#246;lkchen aufsteigt. "Oder will er, dass wir uns vor ihm f&#252;rchten?"[NEWLINE][NEWLINE]</German>
+  <Italian>You have a cannon. And more options for diplomatic negotiations ...</Italian>
+  <Spanish>You have a cannon. And more options for diplomatic negotiations ...</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_CANNON</Tag>
+  <English>Six cannons</English>
+  <French>Six Canons</French>
+  <German>Sechs Schwere Artillerien</German>
+  <Italian>Six cannons</Italian>
+  <Spanish>Six cannons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_CANNON_HEAD</Tag>
+  <English>Six cannons</English>
+  <French>Six Canons</French>
+  <German>W&#252;nsche</German>
+  <Italian>Six cannons</Italian>
+  <Spanish>Six cannons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_CANNON_TEXT</Tag>
+  <English>You have six cannons! Yeah. Let's give our neighbors a six-gun salute...[NEWLINE][NEWLINE]</English>
+  <French>Vous avez six Canons! Ouai ! Allons faire la f&#234;te avec nos voisins...</French>
+  <German>Der fremde Gesandte versucht, blasiert aus der W&#228;sche zu schauen, als er in Eurem Empfangszimmer sitzt. Doch seine roten Ohren verraten, wie aufgeregt er ist. "Herr Gouverneur", hebt er an, "wir haben geh&#246;rt, dass Ihr Euch sechs Bataillone an Schwerer Artillerie beschafft habt. Wir w&#252;nschen ..." Mit einer Handbewegung unterbrecht Ihr ihn. "Ihr w&#252;nscht etwas?", fragt Ihr mit mildem Spott, "wohlan, Ihr wisst von den Gesch&#252;tzen. Also wisst Ihr auch, dass nun die Zeit gekommen ist, dass ich meine eigenen W&#252;nsche vortrage." Der Gesandte beginnt zu schwitzen.[NEWLINE][NEWLINE]</German>
+  <Italian>You have six cannons! Yeah. Let's make a party with the neighbors ...</Italian>
+  <Spanish>You have six cannons! Yeah. Let's make a party with the neighbors ...</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE</Tag>
+  <English>Your first ship of the line</English>
+  <French>Votre premier Galion de Guerre</French>
+  <German>Euer Erstes Linienschiff</German>
+  <Italian>Your first ship of the line</Italian>
+  <Spanish>Your first ship of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_HEAD</Tag>
+  <English>Your first ship of the line</English>
+  <French>Votre premier Galion de Guerre</French>
+  <German>Eine schwimmende Festung</German>
+  <Italian>Your first ship of the line</Italian>
+  <Spanish>Your first ship of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_TEXT</Tag>
+  <English>Your navy has grown stronger. This ship of the line is a great battleship and a symbol of the power of your colonies.[NEWLINE][NEWLINE]</English>
+  <French>Votre puissance maritime cro&#238;t. Un Galion de Guerre est un navire de Guerre puissant et est un symbole de puissance pour les colonies.</French>
+  <German>"Segel in Sicht!" br&#252;llt die Schiffswache &#252;ber das Deck. Seine Kameraden recken die K&#246;pfe. "Endlich wieder Beute", lacht der Kapit&#228;n der Seer&#228;uber, ein H&#252;ne mit grimmigem Blick. Er st&#246;&#223;t den S&#228;bel in die Luft. "M&#228;nner! Da vorne schwimmt eine Prise heran!" Da zupft der Smutje an seinem &#196;rmel. "Kapit&#228;n!" stottert er, "seht!" Mit zitterndem Arm zeigt er &#252;ber die Reling. "Die Prise &#228;ndert ihren Kurs - sie h&#228;lt direkt auf uns zu!"[NEWLINE][NEWLINE]</German>
+  <Italian>Your navy has got stronger. This ship of the line is a great battleship and a symbol of the power of the colonies.</Italian>
+  <Spanish>Your navy has got stronger. This ship of the line is a great battleship and a symbol of the power of the colonies.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE</Tag>
+  <English>Six ships of the line</English>
+  <French>Six Galions de Guerre</French>
+  <German>Sechs Linienschiffe</German>
+  <Italian>Six ships of the line</Italian>
+  <Spanish>Six ships of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_HEAD</Tag>
+  <English>Six ships of the line</English>
+  <French>Six Galions de Guerre</French>
+  <German>Majest&#228;tisch</German>
+  <Italian>Six ships of the line</Italian>
+  <Spanish>Six ships of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_TEXT</Tag>
+  <English>Six great battleships patrol the waves.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez six Galions de Guerre.</French>
+  <German>Der Glutball der Abendsonne entflammt das Firmament, bevor er in den Fluten versinkt. Ermattet schreiten die Menschen vom vollbrachten Tagewerk nach Hause. Die Bauern verlassen die Felder, die Holzf&#228;ller den Forst, die Zimmerm&#228;nner ihre Werkst&#228;tten. Bevor sie ihre Heime betreten, werfen sie einen ehrfurchtsvoll staunenden Blick aufs Meer. Doch ist es nicht der Weltenbrand am Himmel, der sie bannt - es ist vielmehr der Anblick des m&#228;chtigen Linienschiffes, das in majest&#228;tischer Ruhe die K&#252;ste entlang gleitet. Einem von nunmehr sechs Ozeanriesen, mit denen Ihr, der Gouverneur, Euch zum Herrscher dieser Gestade aufschwingt.[NEWLINE][NEWLINE]</German>
+  <Italian>You have got six ships of the line.</Italian>
+  <Spanish>You have got six ships of the line.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE</Tag>
+  <English>Twelve ships of the line</English>
+  <French>Douze Galions de Guerre</French>
+  <German>Zw&#246;lf Linienschiffe</German>
+  <Italian>Twelve ships of the line</Italian>
+  <Spanish>Twelve ships of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_HEAD</Tag>
+  <English>Twelve ships of the line</English>
+  <French>Douze Galions de Guerre</French>
+  <German>B&#228;renjagd</German>
+  <Italian>Twelve ships of the line</Italian>
+  <Spanish>Twelve ships of the line</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_TEXT</Tag>
+  <English>Twelve great battleships strike fear into the hearts of your enemies.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez douze Galions de Guerre. Vos ennemis tremblent de peur</French>
+  <German>"Dieses Schiff ist schm&#228;chtiger als die unsrigen!" Stirnrunzelnd setzt der Kapit&#228;n der K&#246;niglichen Kriegsmarine sein Fernrohr ab. "Aber viele F&#252;chse k&#246;nnen einem B&#228;ren gef&#228;hrlich werden." Er dreht sich von der Reling weg und mustert seinen Spion, der in den letzten Wochen in den K&#252;stenst&#228;dten der Kolonie die Ohren gespitzt hatte. "Ihr sagtet, sie h&#228;tten bereits zw&#246;lf dieser Linienschiffe vom Stapel laufen lassen? Nun, das wird Ihre Majest&#228;t nicht gerne vernehmen."[NEWLINE][NEWLINE]</German>
+  <Italian>You have got twelve great battleships. Your enemies are very impressed.</Italian>
+  <Spanish>You have got twelve great battleships. Your enemies are very impressed.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC</Tag>
+  <English>Five native mercs</English>
+  <French>Cinq mercenaires indiens</French>
+  <German>F&#252;nf indianische S&#246;ldner</German>
+  <Italian>Five native mercs</Italian>
+  <Spanish>Five native mercs</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_HEAD</Tag>
+  <English>Five native mercs</English>
+  <French>Cinq mercenaires indiens</French>
+  <German>Nicht viel Federlesen</German>
+  <Italian>Five native mercs</Italian>
+  <Spanish>Five native mercs</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_TEXT</Tag>
+  <English>You have recruited five native mercenaries. Your enemies are losing their hair (and soon their scalps) in terror.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez cinq mercenaires indiens. Voil&#224; une force efficace mais disr&#232;te</French>
+  <German>"... und dann flattern sie davon mit ihren Adlerschwingen, gurruuh!" Lachend torkelt der junge Rekrut um das Lagerfeuer, eine H&#252;hnerfeder in der Hand. Da rei&#223;t ein vernarbter Soldat den Trunkenbold zu Boden. "Still du Narr, spotte nicht, du hast ja keine Ahnung!", schnauzt er ihn an. "Damals am Gebrochenen Horn, da haben sie eine Gesch&#252;tzstellung des Feindes ausgeschaltet, zu f&#252;nft! Dabei fiel nur ein einziger Schuss, ihr Signal, dass die Luft jetzt rein ist." Der Veteran dr&#252;ckt den Blassgewordenen mit einer Hand fest hinunter, hebt mit der anderen die H&#252;hnerfeder auf und streicht mit ihr langsam &#252;ber die Kehle des Jungen. "Nur ein Schuss, ansonsten Stille." Unsicher schaut der Rekrut zu den Kameraden, niemand erwidert sein schwaches L&#228;cheln.[NEWLINE][NEWLINE]</German>
+  <Italian>You have got five native mercs. That is quite a task force.</Italian>
+  <Spanish>You have got five native mercs. That is quite a task force.</Spanish>
+ </TEXT>
+  <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH</Tag>
+  <English>First stagecoach</English>
+  <French>Premi&#231;re diligence</French>
+  <German>Eure erste Postkutsche</German>
+  <Italian>First stagecoach</Italian>
+  <Spanish>First stagecoach</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_HEAD</Tag>
+  <English>First stagecoach</English>
+  <French>Premi&#231;re diligence</French>
+  <German>Schneller als der Tod</German>
+  <Italian>First stagecoach</Italian>
+  <Spanish>First stagecoach</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_TEXT</Tag>
+  <English>You have built a stagecoach. A bit of a bumpy ride, but it is quick.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez une diligence. &#199;a va secouer les colons, mais la diligence est un moyen de transport rapide et s&#251;r</French>
+  <German>"Was ist das nur f&#252;r ein sinnloses Hasten, Himmel noch eins, ich w&#252;rde ...", der Rest geht in einem heftigen Hustenanfall des alten Bauern unter. Sein Sohn packt die Z&#252;gel des Ochsengespanns fester und grinst unter seinem Staubtuch. Die vorbei gedonnerte Postkutsche verschwindet bereits im fernen Hitzeflimmern der Stra&#223;e, nur die aufgewirbelte Staubwolke h&#228;ngt noch tr&#228;ge in der Luft. Vorsichtig schiebt der Junge das Tuch nach unten: "Ohne die Postkutsche h&#228;tte es der alte Doktor aus der Stadt nie rechtzeitig zu Mutter geschafft, das wei&#223;t du, Vater!" Ger&#228;uschvoll spuckt der alte Bauer &#252;ber seine Ochsen und brummt: "Dank dieses vermaledeiten Wagens wirst du mir noch rechtzeitig nen Pfaffen ans Sterbebett holen." "Worauf du dich verlassen kannst, Vater!"[NEWLINE][NEWLINE]</German>
+  <Italian>You have got a stagecoach. It will rock your citizens bones, but it is quick.</Italian>
+  <Spanish>You have got a stagecoach. It will rock your citizens bones, but it is quick.</Spanish>
+ </TEXT>
+  <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER</Tag>
+  <English>First carrier</English>
+  <French>Premier Transport</French>
+  <German>Euer erster Truppentransporter</German>
+  <Italian>First carrier</Italian>
+  <Spanish>First carrier</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_HEAD</Tag>
+  <English>First carrier</English>
+  <French>Premier Transport</French>
+  <German>Hoch zu Ochs'</German>
+  <Italian>First carrier</Italian>
+  <Spanish>First carrier</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_TEXT</Tag>
+  <English>You have got a carrier. Dont let your lads march too far.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez un transport. Ne laissez pas vos gars trop s'&#233;loigner.[NEWLINE][NEWLINE]</French>
+  <German>"Mein Bruder, also der ist im Norden bei den 52. Berittenen, also wegen dem hab ich mich &#252;berhaupt gemeldet. Blitzschnell an den Feind jagen, mit Blei und S&#228;bel drauf, und dann zur&#252;ck wie der Wind, bevor die auch nur wissen, was sie da getroffen hat." Versonnen kratzt der schm&#228;chtige Bursche sein glattrasiertes Kinn. "Und nu sitzt du hier mit zwanzig anderen Gr&#252;nschn&#228;beln im Ochsenkarren und wirst in der Etappe rumgeruckelt, das nenn ich Pech." Tr&#246;stlich will der Feldwebel dem J&#252;ngling auf den R&#252;cken schlagen, als das n&#228;chste Schlagloch die uniformierte Schar durcheinander w&#252;rfelt. Fluchend sortieren die M&#228;nner ihre arg geschundenen Glieder. "Fahr er nur weiter so, " br&#252;llt einer, der sich die blutende Nase h&#228;lt, "und er br&#228;t heute im Lager neben seinen Zugtieren!" [NEWLINE][NEWLINE]</German>
+  <Italian>You have got a carrier. Dont let your lads march too far.</Italian>
+  <Spanish>You have got a carrier. Dont let your lads march too far.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL</Tag>
+  <English>First great general</English>
+  <French>Premier g&#233;n&#233;ral illustre</French>
+  <German>Euer erster Gro&#223;er General</German>
+  <Italian>First great general</Italian>
+  <Spanish>First great general</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_HEAD</Tag>
+  <English>First great general</English>
+  <French>Premier g&#233;n&#233;ral illustre</French>
+  <German>Wahre Gr&#246;&#223;e</German>
+  <Italian>First great general</Italian>
+  <Spanish>First great general</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_TEXT</Tag>
+  <English>Your first great general is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</English>
+  <French>Votre premier g&#233;n&#233;ral illustre attend vos ordres, utilisez le avec intelligence![NEWLINE][NEWLINE]</French>
+  <German>Aufgeregt spielt Ihr mit dem Orden in Euren H&#228;nden, gleich soll der allerorten ger&#252;hmte General eintreffen. Wenig sp&#228;ter steht ein kleiner Mann vor euch, der mit w&#228;ssrigem Blick, weichem H&#228;ndedruck und am Bauch spannender Uniform nicht gerade Eurem Bild eines Kriegshelden entspricht. Ihr rei&#223;t Euch zusammen und gratuliert, letztlich hat er doch Eure Sache zu einem siegreichen Ende gef&#252;hrt. Nach der Ordensverleihung verfolgt Ihr vom Fenster seinen Gang durch die jubelnde Menge, in der auff&#228;llig viele Verwundete zu sehen sind. Kopfsch&#252;ttelnd wendet Ihr Euch ab. Da f&#228;llt Euer Blick auf die Wundarzttasche, die der Gepriesene wohl verga&#223;, und Euch wird klar, warum viele seiner Soldaten des Jubelns noch f&#228;hig sind. Schnell &#246;ffnet Ihr das Fenster und stimmt in die Hochrufe mit ein.[NEWLINE][NEWLINE]</German>
+  <Italian>Your first great general is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Your first great general is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>  
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
+  <English>Three Warehouses</English>
+  <French>Trois Entrep&#244;ts</French>
+  <German>Viele Lagerhallen</German>
+  <Italian>Three Warehouses</Italian>
+  <Spanish>Three Warehouses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_HEAD</Tag>
+  <English>Three Warehouses</English>
+  <French>Trois Entrep&#244;ts</French>
+  <German>Eine Frage der Planung</German>
+  <Italian>Three Warehouses</Italian>
+  <Spanish>Three Warehouses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_TEXT</Tag>
+  <English>You have built great warehouses which will help your colonists increase the wealth of your nation.[NEWLINE][NEWLINE]</English>
+  <French>Vous avez construit trois entrep&#244;ts. Ces entrep&#244;ts vont contribuer &#224; l'accroissement des richesses du Nouveau Monde </French>
+  <German>Erstaunt hebt der Verwalter den Kopf. "Wo sollen wir das Bauholz lagern, mein Herr?", wiederholt der Fuhrmann seine Frage. "Na, wo wohl, guter Mann?" "Das frage ich Euch, es sind immerhin f&#252;nfzig Klafter. Acht Planwagen karrten ihn in unserem Tross heran. Wenn wir das abladen, versperrt der Stapel rasch die Hauptstra&#223;e dieses Dorfes." "Nun", l&#228;chelt der Verwalter darob, "dann schafft ihn doch in die Lagerhalle, die wir mit Eurer letzten Lieferung gebaut haben."[NEWLINE][NEWLINE]</German>
+  <Italian>You have built some great warehouses which will help your colonists to increase the wealth oy your nation.</Italian>
+  <Spanish>You have built some great warehouses which will help your colonists to increase the wealth oy your nation.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE</Tag>
+  <English>Your first weavers house</English>
+  <French>Premi&#232;re maison du tisserand</French>
+  <German>Eure erste Weberei</German>
+  <Italian>Your first weavers house</Italian>
+  <Spanish>Your first weavers house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_HEAD</Tag>
+  <English>Your first weavers house</English>
+  <French>Premi&#232;re maison du tisserand</French>
+  <German>Weberknecht</German>
+  <Italian>Your first weavers house</Italian>
+  <Spanish>Your first weavers house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_TEXT</Tag>
+  <English>Your colonists begin to produce cloth.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent du Tissu</French>
+  <German>Unabl&#228;ssig huschen H&#228;nde und Augen ihrer f&#252;nf Kinder hin und her, folgen den flinken Bewegungen des Webschiffs. Die Witwe zeigt Euch stolz den ersten Ballen Stoff, der fertig wurde. "Eine anst&#228;ndige Arbeit!" lobt Ihr. "Daf&#252;r werde ich einen guten Preis erzielen. Und Euch soll es auch nicht zum Schaden gereichen." Erwartungsfroh blickt Euch die gute Frau, deren Gatte im letzten Winter beim Holzhacken im nahen Wald von W&#246;lfen angefallen wurde, an. "Jeden ersten Samstag im Monat sollt Ihr schon am fr&#252;hen Abend mit der Arbeit aufh&#246;ren k&#246;nnen, um das Grab Eures Mannes zu pflegen." Dankbar strahlt Euch das wackere Weib an. Beim Hinausgehen zertreten Eure Stiefel beil&#228;ufig einen arglosen Weberknecht, der &#252;ber die T&#252;rschwelle krabbelt. Es k&#252;mmert Euch nicht.[NEWLINE][NEWLINE]</German>
+  <Italian>Your colonists begin to produce cloth.</Italian>
+  <Spanish>Your colonists begin to produce cloth.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE</Tag>
+  <English>Three weavers houses</English>
+  <French>Trois maisons du tisserand</French>
+  <German>Mehr Webereien</German>
+  <Italian>Three weavers houses</Italian>
+  <Spanish>Three weavers houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_HEAD</Tag>
+  <English>Three weavers houses</English>
+  <French>Trois maisons du tisserand</French>
+  <German>Stoff f&#252;r Geschichten</German>
+  <Italian>Three weavers houses</Italian>
+  <Spanish>Three weavers houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_TEXT</Tag>
+  <English>Now your colonists have enough buildings to produce a lot of clothes.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent du Tissu en quantit&#233;</French>
+  <German>"Ich wette, er verkauft das Tuch nach Europa!", meint der erste und winkt nach der Schankmaid. "I wo, der tauscht den Stoff bei den Wilden ein und l&#228;sst sich Goldnuggets daf&#252;r geben", h&#228;lt der zweite dagegen und r&#252;lpst bekr&#228;ftigend. "Weder noch!", behauptet der Dritte, "er l&#228;sst Segel daraus n&#228;hen und schickt Kaperfahrer aufs Meer! So w&#252;rde ich es jedenfalls tun, wenn ich der Gouverneur w&#228;re!" "Bist du aber nicht", f&#228;hrt die dralle Kellnerin dazwischen. "Du bist nur ein Weberknecht wie deine Saufkumpane. Aber ich kann euch sagen, wohin all das Tuch geht, dass ihr fertigen m&#252;sst ..." Die drei beugen sich neugierig vor. "Der feine Herr Gouverneur l&#228;sst mir Unterr&#246;cke daraus schneidern!" Die Weber feixen und johlen.[NEWLINE][NEWLINE]</German>
+  <Italian>Now your colonists have enough buildings to produce a lot of clothes.</Italian>
+  <Spanish>Now your colonists have enough buildings to produce a lot of clothes.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE</Tag>
+  <English>Your first distillery</English>
+  <French>Premi&#232;re distillerie</French>
+  <German>Eure erste Rumbrennerei</German>
+  <Italian>Your first distillery</Italian>
+  <Spanish>Your first distillery</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_HEAD</Tag>
+  <English>Your first distillery</English>
+  <French>Premi&#232;re distillerie</French>
+  <German>Hochgeistiges</German>
+  <Italian>Your first distillery</Italian>
+  <Spanish>Your first distillery</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_TEXT</Tag>
+  <English>Your colonists begin to produce rum.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent du Rhum.</French>
+  <German>Ihr wischt Euch die schwitzige Stirn. Hei&#223;e D&#228;mpfe f&#252;llen die Brennerei und Eure Lungen. Leichter Schwindel packt Euch, aber auch Heiterkeit. Eine Zeit der Entbehrungen, bisweilen der Not liegt hinter Euch. Heute abend werdet Ihr Euch mit einem kleinen Krug des ersten selbstgebrannten Rums Eurer Kolonie belohnen.[NEWLINE][NEWLINE]</German>
+  <Italian>Your colonists begin to produce rum.</Italian>
+  <Spanish>Your colonists begin to produce rum.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE</Tag>
+  <English>Three distilleries</English>
+  <French>Trois distilleries</French>
+  <German>Mehr Brennereien</German>
+  <Italian>Three distilleries</Italian>
+  <Spanish>Three distilleries</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_HEAD</Tag>
+  <English>Three distilleries</English>
+  <French>Trois distilleries</French>
+  <German>Rausch und Reibach</German>
+  <Italian>Three distilleries</Italian>
+  <Spanish>Three distilleries</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_TEXT</Tag>
+  <English>Now your colonists have enough buildings to produce a lot of rum.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent du Rhum en quantit&#233;</French>
+  <German>"Und so gebe ich kund", t&#246;nt der Ausrufer &#252;ber den Marktplatz, "dass unser Schutzherr, der Gouverneur, zur Wahrung von Gottesfurcht und Anstand das Edikt erl&#228;sst, dass ein jeglicher Genuss berauschender Getr&#228;nke bis auf weiteres untersagt ist." Mit einem lauten Murren antworten die Siedler. Vereinzelt werden F&#228;uste gesch&#252;ttelt. Doch der Aufruhr verstummt, als ein Trupp Uniformierter auf den Platz trabt und drohend vom Sattel herunter in die Menge blickt. Ihr l&#228;chelt sp&#246;ttisch und zieht den Vorhang der Kutsche zu, von der aus Ihr das Spektakel betrachtet habt. Wie nutzbringend es doch ist, fromm zu sein, denkt Ihr, wenn christliche Reinheit bewirkt, dass der selbstgebrannte Rum in der Kolonie nicht versoffen wird, sondern mit gr&#246;&#223;rem Gewinn in Europa verkauft werden kann.[NEWLINE][NEWLINE]</German>
+  <Italian>Now your colonists have enough buildings to produce a lot of rum.</Italian>
+  <Spanish>Now your colonists have enough buildings to produce a lot of rum.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE</Tag>
+  <English>Your first tobacconist's house</English>
+  <French>Premi&#232;re maison du marchand de tabac</French>
+  <German>Eure erste Zigarrenproduktion</German>
+  <Italian>Your first tobacconist's house</Italian>
+  <Spanish>Your first tobacconist's house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_HEAD</Tag>
+  <English>Your first tobacconist's house</English>
+  <French>Premi&#232;re maison du marchand de tabac</French>
+  <German>Rauchergeschichten</German>
+  <Italian>Your first tobacconist's house</Italian>
+  <Spanish>Your first tobacconist's house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_TEXT</Tag>
+  <English>Your colonists begin to produce cigars.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent des Cigaresen quantit&#233;</French>
+  <German>Eben habt Ihr den Qualm tief eingeatmet, jetzt quillt er Euch aus Mund und Nase wieder aus dem Leib. Widerw&#228;rtig! denkt Ihr. Vielleicht auch widernat&#252;rlich? Immerhin soll auch dem Satan Rauch aus den N&#252;stern fahren. Ihr schnuppert. Schwefelig riecht es nicht, vielleicht ist doch nicht der Beelzebub am Werke. Ihr denkt daran, was Euch der einheimische Dolmetscher erz&#228;hlt hat. Tabak lindere jedes Leiden und erquicke den Geist, hat er behauptet. Vielleicht keine wahre Geschichte, aber eine, die die Neugierde weckt. Ihr beschlie&#223;t, sie auch den H&#228;ndlern in Europa zu erz&#228;hlen, wenn Ihr ihnen die ersten Zigarren aus der Neuen Welt bringt.[NEWLINE][NEWLINE]</German>
+  <Italian>Your colonists begin to produce cigars.</Italian>
+  <Spanish>Your colonists begin to produce cigars.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE</Tag>
+  <English>Several tobacconist's houses</English>
+  <French>Plusieurs maison du marchand de tabac</French>
+  <German>Mehr Zigarren</German>
+  <Italian>Several tobacconist's houses</Italian>
+  <Spanish>Several tobacconist's houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_HEAD</Tag>
+  <English>Several tobacconist's houses</English>
+  <French>Plusieurs maison du marchand de tabac</French>
+  <German>Ein Nichtraucher als K&#246;nig</German>
+  <Italian>Several tobacconist's houses</Italian>
+  <Spanish>Several tobacconist's houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_TEXT</Tag>
+  <English>Now your colonists have enough buildings to produce a lot of cigars.[NEWLINE][NEWLINE]</English>
+  <French>Vos colons produisent des Cigares en quantit&#233;</French>
+  <German>"Herr Gouverneur, wir verkaufen mehr Tabak in Europa als je zuvor", berichtet Euer Handelsgesandter. "Doch in England hat nun der sittenstrenge K&#246;nig Jacobus den Thron bestiegen. Er hat h&#246;chstselbst ein Pamphlet verfasst, das &#252;berall kursiert." Stirnrunzelnd nehmt Ihr Eurem Handelsgesandten die Flugschrift ab und studiert sie. "Man h&#246;rt, der Rauch lindere Fieber, vermindere Schlaffheit, sch&#228;rfe den Geist, gew&#228;hre Schlaf. Man liest, der Rauch fliege in die windungsreichen H&#246;hlen des Gehirns hinauf. Nun, legt endlich diese Tollheit ab! Sie ist dem Geruch nach ekelhaft, f&#252;r das Hirn sch&#228;dlich, f&#252;r die Lunge nachteilig. Die D&#252;nste des schwarzen Rauchs sind Sinnbild des H&#246;llenbrodems!"[NEWLINE][NEWLINE]</German>
+  <Italian>Now your colonists have enough buildings to produce a lot of cigars.</Italian>
+  <Spanish>Now your colonists have enough buildings to produce a lot of cigars.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE</Tag>
+  <English>Your first fur trader's house</English>
+  <French>Premi&#232;re maison du Commer&#231;ant</French>
+  <German>Eure erste Pelzh&#228;ndlerh&#252;tte</German>
+  <Italian>Your first fur trader's house</Italian>
+  <Spanish>Your first fur trader's house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_HEAD</Tag>
+  <English>Your first fur trader's house</English>
+  <French>Your first fur trader's house</French>
+  <German>Nachruhm</German>
+  <Italian>Your first fur trader's house</Italian>
+  <Spanish>Your first fur trader's house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_TEXT</Tag>
+  <English>Your colonists begin to produce furs.[NEWLINE][NEWLINE]</English>
+  <French>Your colonists begin to produce furs.</French>
+  <German>Kaum vorstellbar, dass ein solch sch&#246;ner Pelz vor kurzem noch ein solch h&#228;ssliches Tier geschm&#252;ckt hat. Eines, das wie eine &#252;bergro&#223;e Wasserratte durch die Fl&#252;sse paddelt und sich mit seinen F&#252;&#223;chen Verstecke im Gestr&#252;pp baut. Dumm ist er wohl nicht, der Gevatter Biber. Aber nicht klug genug, als dass er sich von Euren M&#228;nnern nicht die Haut abziehen lassen m&#252;sste. Der Pelzh&#228;ndler zeigt Euch den ersten Mantel, den er aus dem weichen Pelz gefertigt hat. Ihr nickt wohlwollend. "Wohlan, Herr Biber!" murmelt Ihr, "Ich mache Euch in Europa ber&#252;hmt!"[NEWLINE][NEWLINE]</German>
+  <Italian>Your colonists begin to produce furs.</Italian>
+  <Spanish>Your colonists begin to produce furs.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE</Tag>
+  <English>Several first fur trader's houses</English>
+  <French>Several first fur trader's houses</French>
+  <German>Mehr Pelzh&#228;ndlerh&#252;tten</German>
+  <Italian>Several first fur trader's houses</Italian>
+  <Spanish>Several first fur trader's houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE_HEAD</Tag>
+  <English>Several first fur trader's houses</English>
+  <French>Several first fur trader's houses</French>
+  <German>Grausame G&#246;tter</German>
+  <Italian>Several first fur trader's houses</Italian>
+  <Spanish>Several first fur trader's houses</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE_TEXT</Tag>
+  <English>Now your colonists have enough buildings to produce a lot of coats.[NEWLINE][NEWLINE]</English>
+  <French>Now your colonists have enough buildings to produce a lot of coats.</French>
+  <German>"Gro&#223;vater", fragt der Indianerjunge, "Biber bauen H&#228;user, sie haben Familien, und sie haben geschickte Pfoten, die wie H&#228;nde sind. Sie sind fast wie wir. Glauben auch sie an G&#246;tter?" Der alte Mann zieht gem&#228;chlich an seiner Pfeife. "Hmm ... was meinst denn du, kleiner Krieger?" "Ich glaube, dass sie an G&#246;tter glauben. Sie sehen sie jeden Tag. Es sind viele G&#246;tter, und sie sind b&#246;se. Sie sind allm&#228;chtig und grausam. Sie t&#246;ten die Biber zu Hunderten, ziehen ihnen die Haut ab und lassen die nackten Leichen den Fluss hinabtreiben."[NEWLINE][NEWLINE]</German>
+  <Italian>Now your colonists have enough buildings to produce a lot of coats.</Italian>
+  <Spanish>Now your colonists have enough buildings to produce a lot of coats.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE</Tag>
+  <English>Your first blacksmith house</English>
+  <French>Your first blacksmith house</French>
+  <German>Eure erste Schmiede</German>
+  <Italian>Your first blacksmith house</Italian>
+  <Spanish>Your first blacksmith house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE_HEAD</Tag>
+  <English>You have built your first blacksmith house</English>
+  <French>You have built your first blacksmith house</French>
+  <German>Das Gl&#252;ck der kleinen Dinge</German>
+  <Italian>You have built your first blacksmith house</Italian>
+  <Spanish>You have built your first blacksmith house</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE_TEXT</Tag>
+  <English>After finishing your first blacksmith house, your colonists have a place to produce tools.[NEWLINE][NEWLINE]</English>
+  <French>After finishing your first blacksmith house the colonists have a place to produce tools.</French>
+  <German>"Hier, Herr!" Ehrerbietig &#246;ffnet der vierschr&#246;tige Mann seine schwielige Hand. Dann schaut er Euch ins Gesicht und l&#228;chelt stolz. Ihr nehmt entgegen, was der Schmied Euch gebracht hat - den ersten in Eurer Kolonie gefertigten Nagel. Ihr wisst, dass Hunderte, Tausende folgen werden, dass Eure Schmiede noch viele N&#228;gel, Bolzen, Nieten, Klammern herstellen werden. Doch wird jemals ein Nagel so wundersch&#246;n gl&#228;nzen wie dieser erste? Sicher nicht.[NEWLINE][NEWLINE]</German>
+  <Italian>After finishing your first blacksmith house the colonists have a place to produce tools.</Italian>
+  <Spanish>After finishing your first blacksmith house the colonists have a place to produce tools.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY</Tag>
+  <English>Your first armory</English>
+  <French>Your first armory</French>
+  <German>Eure erste Waffenkammer</German>
+  <Italian>Your first armory</Italian>
+  <Spanish>Your first armory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_HEAD</Tag>
+  <English>You have built your first armory</English>
+  <French>You have built your first armory</French>
+  <German>Wehrhaft</German>
+  <Italian>You have built your first armory</Italian>
+  <Spanish>You have built your first armory</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_TEXT</Tag>
+  <English>After finishing your first armory the colonists have a place to produce guns.[NEWLINE][NEWLINE]</English>
+  <French>After finishing your first armory the colonists have a place to produce guns.</French>
+  <German>Ihr wiegt die Muskete in Euren H&#228;nden, zieht den Ladestock hervor, bef&#252;hlt die Z&#252;ndpfanne, riecht am Schwarzpulverbeutel. Ihr nickt befriedigt. Dieses Probest&#252;ck ist so gut wie die Waffen aus der Heimat, diese erste Muskete, die hier in der Neuen Welt gefertigt wurde, in Eurer ersten Waffenkammer. Na dann![NEWLINE][NEWLINE]</German>
+  <Italian>After finishing your first armory the colonists have a place to produce guns.</Italian>
+  <Spanish>After finishing your first armory the colonists have a place to produce guns.</Spanish>
+ </TEXT>
+<TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE</Tag>
+  <English>Your first train oil manufactory</English>
+  <French>Your first train oil manufacture</French>
+  <German>Eure erste Trankocherei</German>
+  <Italian>Your first train oil manufacture</Italian>
+  <Spanish>Your first train oil manufacture</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE_HEAD</Tag>
+  <English>Your first train oil manufactory</English>
+  <French>Your first train oil manufacture</French>
+  <German>Es werde Licht</German>
+  <Italian>Your first train oil manufacture</Italian>
+  <Spanish>Your first train oil manufacture</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE_TEXT</Tag>
+  <English>Your colonists begin to produce train oil.[NEWLINE][NEWLINE]</English>
+  <French>Your colonists begin to produce train oil.</French>
+  <German>Behutsam dreht Ihr die feine Messingschraube. Der schmale Docht hebt sich aus seiner Fassung und das eben noch kleine bl&#228;uliche Geflacker w&#228;chst zu einer gro&#223;en hellgelben Flamme. Mild und ruhig beleuchtet sie Eure Schreibstube. Alles ist in einen heimeligen Schein getaucht, von den Papieren auf dem Tisch bis zur gegen&#252;berliegenden Wand. Euer Blick f&#228;llt auf den groben Eisenring dort und die ru&#223;geschw&#228;rzten Bohlen dahinter. Wie lange habt ihr Euch die Augen im flackernden Licht von Kiensp&#228;nen verdorben? Flink und m&#252;helos k&#246;nnen sie nun &#252;ber Buchstaben und Ziffern eilen, Ziffern, die auch bald schon von den Erl&#246;sen besten Lampen&#246;ls in Europa k&#252;nden werden.[NEWLINE][NEWLINE]</German>
+  <Italian>Your colonists begin to produce train oil.</Italian>
+  <Spanish>Your colonists begin to produce train oil.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE</Tag>
+  <English>Two train oil manufactories</English>
+  <French>Deux train oil manufactures</French>
+  <German>Mehr Trankochereien</German>
+  <Italian>Two train oil manufactures</Italian>
+  <Spanish>Two train oil manufactures</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE_HEAD</Tag>
+  <English>Two train oil manufactories</English>
+  <French>Deux train oil manufactures</French>
+  <German>Eine Frage der Lufthoheit</German>
+  <Italian>Two train oil manufactures</Italian>
+  <Spanish>Two train oil manufactures</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE_TEXT</Tag>
+  <English>Now your colonists have enough buildings to render a lot of blubber. Ah, the sweet smell of success![NEWLINE][NEWLINE]</English>
+  <French>Now your colonists have enough buildings to produce a lot of blubber.</French>
+  <German>Zugegeben, die frische Seeluft ist nicht mehr so, wie sie noch bei Eurer Ankunft in der Neuen Welt war. Vor allem die D&#252;nste der Trankochereien sind bei auflandigem Wind eine Anfechtung f&#252;r die Nase, man beginnt bereits zu murren. Damit sollte bald Schluss sein. Vor Euch stapelt der hiesige Quartiermeister F&#228;sschen feinsten Waffen&#246;ls f&#252;r die Gewehre der Milizen auf. Im schummrigen Licht der Lagerhalle erkennt ihr irdene Kr&#252;ge voll Lampen&#246;l, vortrefflich geeignet zur abendlichen Bibellekt&#252;re puritanischer Seelen. Auch an die eher den weltlichen Gen&#252;ssen Zugeneigten ist gedacht. Fischbeinmieder h&#228;ngen an ihren Schn&#252;ren von einem Balken, eine Kiste voll Ambrabrocken wartet auf kundige Weiterverarbeitung. Von fromm bis frivol w&#252;rde heute Abend ein jeder etwas Passendes mit nach Hause nehmen. Zufrieden nickt Ihr dem Quartiermeister zu.[NEWLINE][NEWLINE]</German>
+  <Italian>Now your colonists have enough buildings to produce a lot of blubber.</Italian>
+  <Spanish>Now your colonists have enough buildings to produce a lot of blubber.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE</Tag>
+  <English>Many landing stages</English>
+  <French>Many landing stages</French>
+  <German>Viele Bootsstege</German>
+  <Italian>Many landing stages</Italian>
+  <Spanish>Many landing stages</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_HEAD</Tag>
+  <English>You have built many landing stages</English>
+  <French>You have built many landing stages</French>
+  <German>Petri Heil!</German>
+  <Italian>You have built many landing stages</Italian>
+  <Spanish>You have built many landing stages</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_TEXT</Tag>
+  <English>You have many places for your colonists to cast their nets.[NEWLINE][NEWLINE]</English>
+  <French>In many places the colonists can feed on fishes.</French>
+  <German>Das scheue Licht der Morgensonne weckt Euch, doch seid Ihr keineswegs der erste, der zeitig sein Tagewerk beginnt. Ihr tretet an die Fensterluke und seht aufs Wasser. Viele schmale, wei&#223;fahle Flecken tanzen auf den Wellen, treiben auf dem Meer. In all Euren K&#252;stenst&#228;dtchen segeln die Fischer hinaus. Ihr t&#228;glicher Fang n&#228;hrt die Kolonisten allerorten.[NEWLINE][NEWLINE]</German>
+  <Italian>In many places the colonists can feed on fishes.</Italian>
+  <Spanish>In many places the colonists can feed on fishes.</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS</Tag>
+  <English>Two seasoned scouts</English>
+  <French>Deux seasoned scouts</French>
+  <German>Zwei Routinierte Sp&#228;her</German>
+  <Italian>Two seasoned scouts</Italian>
+  <Spanish>Two seasoned scouts</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS_HEAD</Tag>
+  <English>Two seasoned scouts</English>
+  <French>Deux seasoned scouts</French>
+  <German>Ein weitgereister Mann</German>
+  <Italian>Two seasoned scouts</Italian>
+  <Spanish>Two seasoned scouts</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS_TEXT</Tag>
+  <English>Now you have two seasoned scouts. Use them to unravel the mysteries of the unknown world![NEWLINE][NEWLINE]</English>
+  <French>Now you have two seasoned scouts. Use them to unravel the mysteries of that unknown world!</French>
+  <German>Von Kopf bis Fu&#223; mustert Ihr den Mann. Fleckig ist seine lederne Kleidung und l&#246;chrig sein Schuhwerk. Staub liegt auf seinem Haar und Vorsicht in seinen Augen. Dieser Scout ist vielen Gefahren begegnet und hat sie allesamt &#252;berlebt. Ihr l&#228;chelt und reicht ihm die Hand. "Willkommen in meinen Diensten!"[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have two seasoned scouts. Use them to unravel the mysteries of that unknown world!</Italian>
+  <Spanish>Now you have two seasoned scouts. Use them to unravel the mysteries of that unknown world!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS</Tag>
+  <English>Ten Cannon Garrisons</English>
+  <French>Dix Cannon Garrisons</French>
+  <German>Zehn Artilleriegarnisonen</German>
+  <Italian>Ten Cannon Garrisons</Italian>
+  <Spanish>Ten Cannon Garrisons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_HEAD</Tag>
+  <English>Ten Cannon Garrisons</English>
+  <French>Dix Cannon Garrisons</French>
+  <German>Achtsam</German>
+  <Italian>Ten Cannon Garrisons</Italian>
+  <Spanish>Ten Cannon Garrisons</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_TEXT</Tag>
+  <English>Now you have many cannon garrisons. Use them to defend your cities![NEWLINE][NEWLINE]</English>
+  <French>Now you have many cannon garrisons. Use them to defend your cities!</French>
+  <German>Der Morgen graut heran. Geduckt huscht der Fremde von Stamm zu Stamm, bis er sich fallen l&#228;sst. Der Waldrand reicht hier bis dicht an den Wall. Aufmerksam sp&#228;ht er hinauf zur Zinne - und erschrickt, als der erste Strahl der aufgehenden Sonne mit einem silbrigen Funkeln erwidert wird. Eine Artilleriegarnison wacht &#252;ber die Siedlung. Aufmerksam sp&#228;hen die Soldaten ins Umland. "Verflixt!", murmelt der Kundschafter. "Leichte Beute werden meine Leute hier keine finden ..."[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have many cannon garrisons. Use them to defend your cities!</Italian>
+  <Spanish>Now you have many cannon garrisons. Use them to defend your cities!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_RANCHERS</Tag>
+  <English>Two Master Ranchers</English>
+  <French>Deux Master Ranchers</French>
+  <German>Zwei Meisterrancher</German>
+  <Italian>Two Master Ranchers</Italian>
+  <Spanish>Two Master Ranchers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_RANCHERS_HEAD</Tag>
+  <English>Two Master Ranchers</English>
+  <French>Deux Master Ranchers</French>
+  <German>Unverdienter Spott</German>
+  <Italian>Two Master Ranchers</Italian>
+  <Spanish>Two Master Ranchers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_RANCHERS_TEXT</Tag>
+  <English>Now you have two master ranchers. Use them to breed a lot of horses![NEWLINE][NEWLINE]</English>
+  <French>Now you have two master ranchers. Use them to breed a lot of horses!</French>
+  <German>H&#228;misches Jungenlachen l&#228;sst Euch herumfahren. &#220;ber wen gackern die beiden G&#246;ren da? Mit ausgestreckten Fingern verfolgen sie den Gang des Mannes, halten sich die B&#228;uche und rufen so manches derbe Spottwort. Der Geschm&#228;hte stapft indes auf seinen O-Beinen unverdrossen vorbei und verzieht keine Miene. Mit ein paar geschwinden Schritten seid Ihr auf der anderen Stra&#223;enseite und zieht den Frechdachsen die Ohren lang. "Wisst ihr denn nicht, wer dieser Mann ist, was wir ihm verdanken? Dieser Rancher ist der wichtigste Pferdez&#252;chter unserer Kolonien. Ohne ihn m&#252;ssten unsere Soldaten zu Fu&#223; durchs Umland patrouillieren!" Besch&#228;mt neigen die Kinder die K&#246;pfe.[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have two master ranchers. Use them to breed a lot of horses!</Italian>
+  <Spanish>Now you have two master ranchers. Use them to breed a lot of horses!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
+  <English>Three Veterans</English>
+  <French>Trois Veterans</French>
+  <German>Drei Offiziere</German>
+  <Italian>Three Veterans</Italian>
+  <Spanish>Three Veterans</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS_HEAD</Tag>
+  <English>Three Veterans</English>
+  <French>Trois Veterans</French>
+  <German>Das R&#252;ckgrat der Armee</German>
+  <Italian>Three Veterans</Italian>
+  <Spanish>Three Veterans</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS_TEXT</Tag>
+  <English>Your Veterans could become the heart of a great army ...[NEWLINE][NEWLINE]</English>
+  <French>Your veterans could become the heart of a great army ...</French>
+  <German>Ein tiefes Br&#252;llen l&#228;sst Euch zusammenzucken. Es klingt wie das Toben eines wilden B&#228;ren. Ihr schreitet zum Fenster und sp&#228;ht hinaus. Auf der Stra&#223;e sind die B&#252;rger stehengeblieben, starren mit offenen M&#252;ndern auf das Spektakel, das sich ihnen bietet. Die Hauptstra&#223;e herauf marschiert ein Trupp junger Rekruten. Schweres Marschgep&#228;ck beugt ihren R&#252;cken, Schwei&#223; tropft von ihren roten Gesichtern. Hinter ihnen stapft ein Mann her und schreit die jungen Burschen unentwegt an. M&#252;tter am Stra&#223;enrand halten ihren Kindern erschrocken die Ohren zu, damit deren zarte Seelen nicht am rauen Kommandoton und den Fl&#252;chen des Offiziers Schaden nehmen. Ihr l&#228;chelt zufrieden, denn ihr wisst, dass Drill das R&#252;ckgrat der Armee bildet.[NEWLINE][NEWLINE]</German>
+  <Italian>Your veterans could become the heart of a great army ...</Italian>
+  <Spanish>Your veterans could become the heart of a great army ...</Spanish>
+ </TEXT> 
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS</Tag>
+  <English>Twenty Veterans</English>
+  <French>Twenty Veterans</French>
+  <German>Zwanzig Offiziere</German>
+  <Italian>Twenty Veterans</Italian>
+  <Spanish>Twenty Veterans</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS_HEAD</Tag>
+  <English>Twenty Veterans</English>
+  <French>Twenty Veterans</French>
+  <German>Wasserschlacht</German>
+  <Italian>Twenty Veterans</Italian>
+  <Spanish>Twenty Veterans</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS_TEXT</Tag>
+  <English>You have more than a bunch of Veterans, you have a well trained army![NEWLINE][NEWLINE]</English>
+  <French>You have now more than a bunch of veterans, you have a well trained army![NEWLINE][NEWLINE]</French>
+  <German>Der Griffel des alten Reserveoffiziers fliegt &#252;ber die Schiefertafel. "Wenn wir nun also die Artillerie im Winkel von 30 Grad ausrichten und ..." Schmatzend klatscht der nasse Tafelschwamm neben die Schreibhand. Entt&#228;uschtes Raunen ert&#246;nt aus den hinteren B&#228;nken des Vorlesungssaals der Milit&#228;rakademie. Ruhig dreht sich der knapp Verfehlte um: "Wenn die Herren in den oberen Reihen meinen Ausf&#252;hrung der letzten Woche &#252;ber den Drall von Projektilen gefolgt w&#228;ren, h&#228;tten sie jetzt ein Disziplinarverfahren am Hals. So d&#252;rfen sie es ihrer ballistischen Unf&#228;higkeit danken, dass sie lediglich die Reinigung des Schei&#223;hauses &#252;bernehmen werden." Er b&#252;ckt sich. "Im &#252;brigen hatte ich den Schwamm bereits vermisst. Wenn wir nun also die Artillerie ..."[NEWLINE][NEWLINE]</German>
+  <Italian>You have now more than a bunch of veterans, you have a well trained army![NEWLINE][NEWLINE]</Italian>
+  <Spanish>You have now more than a bunch of veterans, you have a well trained army![NEWLINE][NEWLINE]</Spanish>
+ </TEXT> 
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DISTILLERS</Tag>
+  <English>Three Master Distillers</English>
+  <French>Trois Master Distillers</French>
+  <German>Drei Meisterrumbrenner</German>
+  <Italian>Three Master Distillers</Italian>
+  <Spanish>Three Master Distillers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DISTILLERS_HEAD</Tag>
+  <English>Three Master Distillers</English>
+  <French>Trois Master Distillers</French>
+  <German>Prosit!</German>
+  <Italian>Three Master Distillers</Italian>
+  <Spanish>Three Master Distillers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_DISTILLERS_TEXT</Tag>
+  <English>Now you have some distinguished distillers. Let's drink to that![NEWLINE][NEWLINE]</English>
+  <French>Now you have some well versed distillers. Cheers![NEWLINE][NEWLINE]</French>
+  <German>"Herr Pfarrer", spricht die junge B&#252;rgersfrau den Geistlichen an, "warum duldet Ihr solche Gestalten in unserem St&#228;dtchen?" Mit dem Kopf winkt sie verstohlen hin&#252;ber. "Ein Trunkenbold ist dieser Kerl. Er stinkt nach Branntwein, bl&#228;st Darmwinde aus wie ein Ochse beim Weiden und kratzt sich im Schritt, wie es ihm beliebt." "Das mag sein", erkl&#228;rt der Gottesmann freundlich, "doch beherrscht er die Kunst des Fermentierens und Destillierens wie kein Zweiter. Von dem Gold, das sein Rum in Europa einbringt, hat der Herr Gouverneur meine Kirche bauen lassen."[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some well versed distillers. Cheers![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some well versed distillers. Cheers![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WEAVERS</Tag>
+  <English>Three Master Weavers</English>
+  <French>Trois Master Weavers</French>
+  <German>Drei Meisterweberinnen</German>
+  <Italian>Three Master Weavers</Italian>
+  <Spanish>Three Master Weavers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WEAVERS_HEAD</Tag>
+  <English>Three Master Weavers</English>
+  <French>Trois Master Weavers</French>
+  <German>Flink und flei&#223;ig</German>
+  <Italian>Three Master Weavers</Italian>
+  <Spanish>Three Master Weavers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WEAVERS_TEXT</Tag>
+  <English>Now you have some hard-working weavers. And not bad looking, too![NEWLINE][NEWLINE]</English>
+  <French>Now you have some hard-working weavers. And they are pretty too![NEWLINE][NEWLINE]</French>
+  <German>"Was gibt es denn hier zu sehen!?", ruft Ihr und klatscht in die H&#228;nde. Die drei Buben, die durch das Fenster hineinstierten, drehen sich erschrocken um, erkennen Euch und stieben auseinander. Ihr lacht ihnen hinterher - und tretet dann neugierig n&#228;her, um selber einen Blick zu riskieren. "Dunnerlittchen!" entf&#228;hrt es Euch leise. "Was f&#252;r ein Weib!" Mit offenem Mund staunt Ihr, welch fingerfertiges Geschick die junge Frau besitzt, die in der H&#252;tte ihrem Handwerk nachgeht. Pl&#246;tzlich bemerkt das Frauenzimmer, das es beobachtet wird, und blickt auf. "Na na, Herr Gouverneur", sagt es neckisch, "habt Ihr denn noch nie einer Frau beim Weben zugesehen?"[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some hard-working weavers. And they are pretty too![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some hard-working weavers. And they are pretty too![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TOBACCONISTS</Tag>
+  <English>Three Master Tobacconists</English>
+  <French>Trois Master Tobacconists</French>
+  <German>Drei Meisterzigarrendreher</German>
+  <Italian>Three Master Tobacconists</Italian>
+  <Spanish>Three Master Tobacconists</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TOBACCONISTS_HEAD</Tag>
+  <English>Three Master Tobacconists</English>
+  <French>Trois Master Tobacconists</French>
+  <German>Blauer Dunst</German>
+  <Italian>Three Master Tobacconists</Italian>
+  <Spanish>Three Master Tobacconists</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_TOBACCONISTS_TEXT</Tag>
+  <English>Now you have some trusty tobacconists. Let's sell their cigars! Or smoke them ...[NEWLINE][NEWLINE]</English>
+  <French>Now you have some well versed tobacconists. Let's sell their cigars! Or smoke them ...[NEWLINE][NEWLINE]</French>
+  <German>"Tabak ist ein Labsal f&#252;r Geist und K&#246;rper", raunt der Mann und schmaucht seine Pfeife. "Sein Rauch erfrischt und entkrampft und l&#228;sst einen das Leben leichter nehmen. Wenn ich aufstehe, z&#252;nde ich mir mein Pfeifchen an, und erst wenn ich schlafen gehe, l&#246;sche ich es. Glaubt mir, Herr Gouverneur, der Tabakgenuss dient der Gesundheit noch vortrefflicher als der Aderlass oder das Amulett eines Heiligen!" Ihr betrachtet die pergamentene Haut des Zigarrenmeisters und seine braunen Z&#228;hne, riecht seinen Atem und nickt beg&#252;tigend. "Gott sch&#252;tze Euch, guter Mann! ... Gott sch&#252;tze Euch."[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some well versed tobacconists. Let's sell their cigars! Or smoke them ...[NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some well versed tobacconists. Let's sell their cigars! Or smoke them ...[NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FUR_TRADERS</Tag>
+  <English>Three Fur Traders</English>
+  <French>Trois Fur Traders</French>
+  <German>Drei Meisterpelzh&#228;ndler</German>
+  <Italian>Three Fur Traders</Italian>
+  <Spanish>Three Fur Traders</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_HEAD</Tag>
+  <English>Three Fur Traders</English>
+  <French>Trois Fur Traders</French>
+  <German>Geldadel</German>
+  <Italian>Three Fur Traders</Italian>
+  <Spanish>Three Fur Traders</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_TEXT</Tag>
+  <English>Now you have some fine fur traders. Use them to produce splendid coats![NEWLINE][NEWLINE]</English>
+  <French>Now you have some well versed fur traders. Use them to produce splendid coats![NEWLINE][NEWLINE]</French>
+  <German>Absch&#228;tzend blickt Ihr ihn an. Als wichtigster B&#252;rger dieses St&#228;dtchens wurde er Euch angek&#252;ndigt bei Eurer Inspektionsreise. Statt eines Geistlichen oder Gelehrten stellt man Euch nun diesen H&#228;ndler vor. Einen Stutzer mit gl&#228;nzender Samtweste, einem Spazierstock mit goldnem Griff und einem Umhang aus edelstem Pelzwerk - den er indes, wie Ihr wisst, selbst zugeschneidert hat. Ihr ergreift seine Hand und schenkt diesem wohlbetuchten Herrn ein wohlwollendes L&#228;cheln. "Herr Pelzh&#228;ndler", sagt Ihr, "habt Dank daf&#252;r, dass Ihr mit Euren feinen Waren nicht nur Euren Wohlstand mehrt, sondern auch den unserer Kolonien."[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some well versed fur traders. Use them to produce splendid coats![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some well versed fur traders. Use them to produce splendid coats![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+<TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS</Tag>
+  <English>Two Train Oil Cookers</English>
+  <French>Deux raffineur d'huile de baleine</French>
+  <German>Zwei Meistertrankocher</German>
+  <Italian>Two Train Oil Cookers</Italian>
+  <Spanish>Two Train Oil Cookers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_HEAD</Tag>
+  <English>Two Train Oil Cookers</English>
+  <French>Deux raffineur d'huile de baleine</French>
+  <German>Das pralle Leben</German>
+  <Italian>Two Train Oil Cookers</Italian>
+  <Spanish>Two Train Oil Cookers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_TEXT</Tag>
+  <English>Now you have some well-versed whale oil cookers. What a bloody mess![NEWLINE][NEWLINE]</English>
+  <French>Now you have some well-versed whale oil cookers. What a bloody mess![NEWLINE][NEWLINE]</French>
+  <German>"Wenn Herr Gouverneur gestatten, also bei allem, was recht ist, das nenne ich ein prachtvolles Weibsbild!" Ihr fahrt zusammen und dreht Euch um. Ein Zimmerer steht breitbeinig hinter Euch und grinst unzweideutig. Euer Blick folgte wohl etwas zu lange der Frau des Trankochers ...[NEWLINE]"Ich frage mich nur", f&#228;hrt er fort, "warum diese Walfleischer immer die knackigsten Maiden erringen. Die Kerle stinken doch zum Himmel." Nun ist es an Euch zu l&#228;cheln. Dass die ebenso anregenden wie unnat&#252;rlichen Formen der holden Frau lediglich dem Fischbein ihres Gatten geschuldet sind, scheint dem braven Zimmermann nicht zu d&#228;mmern. [NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some well versed train oil cookers. What a bloody handcraft![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some well versed train oil cookers. What a bloody handcraft![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT</Tag>
+  <English>First Whaling Boat</English>
+  <French>Premier Whaling Boat</French>
+  <German>Erster Walf&#228;nger</German>
+  <Italian>First Whaling Boat</Italian>
+  <Spanish>First Whaling Boat</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_HEAD</Tag>
+  <English>First Whaling Boat</English>
+  <French>Premier Whaling Boat</French>
+  <German>Von Gr&#252;nschn&#228;beln und Grauwalen</German>
+  <Italian>First Whaling Boat</Italian>
+  <Spanish>First Whaling Boat</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_TEXT</Tag>
+  <English>You have obtained your first whaling boat. Yarr! From hell's heart I stab at thee![NEWLINE][NEWLINE]</English>
+  <French>You have got your first whaling boat. Good luck![NEWLINE][NEWLINE]</French>
+  <German>"Wer von euch abgetakelten Belegn&#228;geln hatte schon mal Planken unter den F&#252;&#223;en?" Der stoppelb&#228;rtige Maat stiert mit seinen grauen Augen durch das erste Licht des Tages. Vor ihm stehen mehr schlecht als recht eine Handvoll junger Burschen, die sich vor allem fragen, wo sie sind und was sie gestern getrunken haben. "Ich seh schon", ein schwarzer Strahl Tabaksaft landet vor einem zitternden J&#252;ngling auf dem Deck, "hier muss ich weit ausholen, also, habt ihr d&#252;rren Heringe so was schon mal gesehen?" Er pflanzt den Holzschaft einer monstr&#246;sen Harpune vor sich auf, bleiche Gesichter werden gr&#252;n, gr&#252;ne Gesichter aschfahl. "Ja, hol mich der Teufel, wei&#223; irgendeiner von euch Mutters&#246;hnchen &#252;berhaupt, dass es gr&#246;&#223;eres Viehzeuch auf der Welt gibt als Ratten und Fl&#246;he?"[NEWLINE][NEWLINE]</German>
+  <Italian>You have got your first whaling boat. Good luck![NEWLINE][NEWLINE]</Italian>
+  <Spanish>You have got your first whaling boat. Good luck![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS</Tag>
+  <English>Four Pioneers</English>
+  <French>Four Pioneers</French>
+  <German>Vier K&#252;hne Pioniere</German>
+  <Italian>Four Pioneers</Italian>
+  <Spanish>Four Pioneers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS_HEAD</Tag>
+  <English>Four Pioneers</English>
+  <French>Four Pioneers</French>
+  <German>Selbst ist der Mann</German>
+  <Italian>Four Pioneers</Italian>
+  <Spanish>Four Pioneers</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS_TEXT</Tag>
+  <English>Now you have some seasoned pioneers. Let them build roads, lodges, farms, plantations, mines and whatever your colonists need![NEWLINE][NEWLINE]</English>
+  <French>Now you have some seasoned pioneers. Let them build roads, lodges, farms, plantations, mines and whatever your colonists need![NEWLINE][NEWLINE]</French>
+  <German>B&#228;rbei&#223;ig steht der Mann da, mustert Euch von Kopf bis Fu&#223; - und schweigt. "Vielleicht habt Ihr mich beim ersten Mal nicht so recht verstanden", sprecht Ihr von Eurem Pferd herab, "ob Ihr einen Schluck Wasser f&#252;r einen Reisenden &#252;brig habt, fragte ich." Der Kerl spuckt aus. "Wer will das wissen?", grummelt er. "Nun, ich bin derjenige, der Euch den Auftrag gab, diesen Weg durchs Dickicht zu schlagen. Und den Lagerplatz anzulegen, vor dem Ihr steht." Kurz z&#246;gert er, dann glimmt Verst&#228;ndnis in den Augen des Manns auf und er l&#228;chelt. "Verzeiht meine Umgangsformen, Herr Gouverneur, ich komme selten unter Menschen."[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have some seasoned pioneers. Let them build roads, lodges, farms, plantations, mines and whatever your colonists need![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have some seasoned pioneers. Let them build roads, lodges, farms, plantations, mines and whatever your colonists need![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS</Tag>
+  <English>Eight Lumberjacks</English>
+  <French>Eight Lumberjacks</French>
+  <German>Viele Erfahrene Holzf&#228;ller</German>
+  <Italian>Eight Lumberjacks</Italian>
+  <Spanish>Eight Lumberjacks</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS_HEAD</Tag>
+  <English>Eight Lumberjacks</English>
+  <French>Eight Lumberjacks</French>
+  <German>Wo gehobelt wird</German>
+  <Italian>Eight Lumberjacks</Italian>
+  <Spanish>Eight Lumberjacks</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS_TEXT</Tag>
+  <English>Now you have many expert lumberjacks. T-I-M-B-E-R ... ![NEWLINE][NEWLINE]</English>
+  <French>Now you have many expert lumberjacks. T-I-M-B-E-R ... ![NEWLINE][NEWLINE]</French>
+  <German>Wehm&#252;tiger Schmerz umschn&#252;rt Euer Herz, als das sanft gl&#252;hende Licht der Abendsonne schr&#228;g &#252;ber die Lichtung f&#228;llt. Dieser Urwald mit seinen alten Baumriesen ist pr&#228;chtig, ein wahres Denkmal f&#252;r die Macht des Himmlischen Herrn, der diese Neue Welt mit ihren Wundern erschaffen hat. War es gottgef&#228;llig, was Ihr Euren M&#228;nnern befohlen habt? Viele Klafter Holz wurden hier in den letzten Wochen geschlagen. Und nicht nur in diesem Forst! &#220;berall in den K&#252;stenw&#228;ldern haben Kolonisten in Eurem Auftrag eine Schneise der Verw&#252;stung durch die Natur gepfl&#252;gt. Ihr sch&#252;ttelt den Kopf und l&#228;chelt grimmig. Nicht die B&#228;ume sind Eure Schutzbefohlenen, sondern die Siedler. Wer St&#228;dte bauen will, braucht Holz - und wo gehobelt wird, da fallen Sp&#228;ne ...[NEWLINE][NEWLINE]</German>
+  <Italian>Now you have many expert lumberjacks. T-I-M-B-E-R ... ![NEWLINE][NEWLINE]</Italian>
+  <Spanish>Now you have many expert lumberjacks. T-I-M-B-E-R ... ![NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES</Tag>
+		<English>Six Converted Natives</English>
+		<French>Six Convertis</French>
+		<German>Sechs Konvertierte</German>
+		<Italian>Six Converted Natives</Italian>
+		<Spanish>Six Converted Natives</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES_HEAD</Tag>
+		<English>Six Converted Natives</English>
+		<French>Six Convertis</French>
+		<German>Fromme Fron</German>
+		<Italian>Six Converted Natives</Italian>
+		<Spanish>Six Converted Natives</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES_TEXT</Tag>
+		<English>Now you have won many converted natives to your banner. Providence be praised![NEWLINE][NEWLINE]</English>
+		<French>Vous avez converti de nombreux indiens qui d&#233;sirent travailler avec leurs fr&#234;res aux visages pales[NEWLINE][NEWLINE]</French>
+		<German>Immer leerer werden die D&#246;rfer der Wilden, seitdem Eure Missionare die Einheimischen mit flammenden Predigten davon &#252;berzeugen, den heidnischen G&#246;tzen abzuschw&#246;ren und ihre Seelen dem Heiligen Herrn Jesu zu weihen. Ganze Familien lassen sich bekehren und ziehen auf Gehei&#223; des Priesters in die St&#228;dte der Wei&#223;en, um in deren Gottesh&#228;usern die Heilige Kommunion zu empfangen - und um sich in den Kirchengemeinden durch fromme Frondienste n&#252;tzlich zu machen.[NEWLINE][NEWLINE]</German>
+		<Italian>Now you have many converted natives who want to work for their white brothers.[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have many converted natives who want to work for their white brothers.[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN</Tag>
+		<English>Ten Statesmen</English>
+		<French>Dix Hommes d'Etat</French>
+		<German>Zehn Staatsm&#228;nner</German>
+		<Italian>Ten Statesmen</Italian>
+		<Spanish>Ten Statesmen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN_HEAD</Tag>
+		<English>Ten Statesmen</English>
+		<French>Dix Hommes d'Etat</French>
+		<German>Zur Treue verpflichtet</German>
+		<Italian>Ten Statesmen</Italian>
+		<Spanish>Ten Statesmen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN_TEXT</Tag>
+		<English>Now you have ten sagacious statesmen. Your King does not share their enthusiasm ...[NEWLINE][NEWLINE]</English>
+		<French>Vous avez d&#233;sormais dix Hommes d'Etat aguerris. Votre Roi est m&#233;content ...[NEWLINE][NEWLINE]</French>
+		<German>"Habt Dank, dass Ihr mich empfangt, Herr Gouverneur. Mein Anliegen dr&#228;ngt." Mit einer Handbewegung fordert Ihr Euren Gast auf, frei zu sprechen. Ihr wisst, dass er zu den Honoratioren Eurer Hauptstadt z&#228;hlt, dass sein Wort im Rat der Stadt Gewicht hat. "Die Z&#246;lle in Europa", erkl&#228;rt der Mann, "wachsen ins Unertr&#228;gliche. All unser Flei&#223; bleibt unbelohnt, wenn der K&#246;nig unsere Exportwaren mit horrenden Steuern belegt." Ihr nickt. "Seid versichert, dass solche Klagen mich auch von den Ratsherren anderer St&#228;dte erreichen. Gewiss, wir sind unserem Landesherrn Treue schuldig, doch ist umgekehrt ..." "... der Landesherr auch uns zu Treue und Wohlverhalten verpflichtet", erg&#228;nzt der Politiker Euren Gedanken. "Nun, Herr Gouverneur, solltet Ihr der Meinung sein, dass wir uns unsere Rechte erzwingen m&#252;ssen, dann k&#246;nnt Ihr auf mich z&#228;hlen ..." [NEWLINE][NEWLINE]</German>
+		<Italian>Now you have ten smart statesmen. Your king is not happy ...[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have ten smart statesmen. Your king is not happy ...[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS</Tag>
+		<English>Six Criminals</English>
+		<French>Six D&#233;linquants</French>
+		<German>Sechs Kleinkriminelle</German>
+		<Italian>Six Criminals</Italian>
+		<Spanish>Six Criminals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_HEAD</Tag>
+		<English>Six Criminals</English>
+		<French>Six D&#233;linquants</French>
+		<German>Unbegrenzte M&#246;glichkeiten</German>
+		<Italian>Six Criminals</Italian>
+		<Spanish>Six Criminals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_TEXT</Tag>
+		<English>Now you have six crafty criminals. Be patient! Perhaps some of them wish to take flight ...[NEWLINE][NEWLINE]</English>
+		<French>Maintenant vous avez six D&#233;linquants. Attention! Certains pourraient vouloir s'en aller ... [NEWLINE][NEWLINE]</French>
+		<German>Der Wohlstand in Euren Kolonien w&#228;chst - und zieht so manchen Schmarotzer an, der es mit Recht und Moral nicht sonderlich ernst nimmt. War es wirklich klug gewesen, auch noch den abgefeimtesten Strolch an Bord Eurer Einwanderungsschiffe Willkommen zu hei&#223;en? Daheim warfen die Dorfb&#252;ttel und Stadtwachen ein strenges Auge auf solche Tagediebe und Maulaffen, Streuner und Gossenschl&#228;ger. Kein Wunder, dass es das Pack in die Neue Welt zieht - in das Land der unbegrenzten M&#246;glichkeiten.[NEWLINE][NEWLINE]</German>
+		<Italian>Now you have six criminals. Be patient! Perhaps some of them wish to take flight ...[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have six criminals. Be patient! Perhaps some of them wish to take flight ...[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS</Tag>
+		<English>Six Indentured Servants</English>
+		<French>Six Engag&#233;s</French>
+		<German>Sechs Schuldknechte</German>
+		<Italian>Six Indentured Servants</Italian>
+		<Spanish>Six Indentured Servants</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_HEAD</Tag>
+		<English>Six Indentured Servants</English>
+		<French>Six Engag&#233;s</French>
+		<German>Der Lohn der Knechte</German>
+		<Italian>Six Indentured Servants</Italian>
+		<Spanish>Six Indentured Servants</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_TEXT</Tag>
+		<English>Now you have some Indentured Servants. Be patient! Perhaps some of them yearn for their freedom ...[NEWLINE][NEWLINE]</English>
+		<French>Maintenant vous avez quelques Engag&#233;s. Attention! Certains pourraient vouloir s'en aller ...[NEWLINE][NEWLINE]</French>
+		<German>Ein Zuckerschlecken ist ihr Leben nicht. Schwerste Arbeit verrichten sie, schleppen und schuften. Doch w&#228;hrt dies bittere Leben nur sieben Jahre. Einst in der Heimat haben sie aus freien St&#252;cken mit ihrem k&#252;nftigen Dienstherrn einen Vertrag geschlossen. Er spendiert ihnen die &#220;berfahrt in die Neue Welt, und sie verpf&#228;nden ihm im Gegenzug ihr Recht auf ein selbstbestimmtes Dasein. Sieben Jahre lang tun sie als Schuldknechte klaglos alles, was ihr Herr f&#252;r n&#246;tig erachtet. Und dann? Dann gew&#228;hrt er ihnen eine kleine Summe Geldes und schenkt ihnen einen Hof, der zwar unscheinbar, aber ihr Eigen ist. Und aus Schuldknechten werden freie B&#252;rger.[NEWLINE][NEWLINE]</German>
+		<Italian>Now you have some Indentured Servants. Be patient! Perhaps some of them wish to go away ...[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have some Indentured Servants. Be patient! Perhaps some of them wish to go away ...[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER</Tag>
+		<English>Three Cocoa Planters</English>
+		<French>Trois Planteurs de Cacao</French>
+		<German>Drei Erfahrene Kakaopfl&#252;cker</German>
+		<Italian>Three Cocoa Planters</Italian>
+		<Spanish>Three Cocoa Planters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER_HEAD</Tag>
+		<English>Three Cocoa Planters</English>
+		<French>Trois Planteurs de Cacao</French>
+		<German>Damenwahl</German>
+		<Italian>Three Cocoa Planters</Italian>
+		<Spanish>Three Cocoa Planters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER_TEXT</Tag>
+		<English>Now you have some capable cocoa planters. Fine![NEWLINE][NEWLINE]</English>
+		<French>Maintenant vous avez quelques Planteurs de Cacao. Parfait![NEWLINE][NEWLINE]</French>
+		<German>Ihr f&#252;hlt die schweren k&#246;niglichen Siegel bereits durch das grobe Leder, als Euch der Bote die Dokumentenmappe reicht. Sein Schmunzeln verr&#228;t, dass Ihr wohl etwas zu deutlich das Gesicht verzogen habt. Kein Wunder - Silber, mehr Silber, noch mehr Silber! - so lassen sich Inhalt und Tonfall der letzten Schreiben zusammenfassen. Verdrossen zieht Ihr das Pergament aus der sch&#252;tzenden Umh&#252;llung und brecht das rote Wachs. Ein zarter Duft und eine noch feinere Handschrift offenbaren sich Euren Sinnen. In ausgesucht h&#246;flichen Worten ersucht die K&#246;nigin h&#246;chstselbst um eine weitere Sendung des exotischen "Cacaos". Euch scheint, das eine gewisse Narrheit nach der w&#252;rzigen Bohne den Hof ergriffen hat. Gl&#252;cklicherweise z&#228;hlt es zu Euren bescheidenen Talenten, derartigen Marotten stets eine lukrative Seite abzugewinnen.[NEWLINE][NEWLINE]</German>
+		<Italian>Now you have some expert cocoa planters. Fine![NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have some expert cocoa planters. Fine![NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR</Tag>
+		<English>Three Prospectors</English>
+		<French>Trois Prospecteurs</French>
+		<German>Drei Erfahrene Sch&#252;rfer</German>
+		<Italian>Three Prospectors</Italian>
+		<Spanish>Three Prospectors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR_HEAD</Tag>
+		<English>Three Prospectors</English>
+		<French>Trois Prospecteurs</French>
+		<German>Schwarzer Humor</German>
+		<Italian>Three Prospectors</Italian>
+		<Spanish>Three Prospectors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR_TEXT</Tag>
+		<English>Now you have some perspicacious prospectors. Their job is dirty. But your profits will be great ...[NEWLINE][NEWLINE]</English>
+		<French>Maintenant vous avez quelques experts Prospecteurs. Leur travail est sale, mais votre profit sera cons&#333;quent ...[NEWLINE][NEWLINE]</French>
+		<German>"... und ich sag' noch, das ist doch nicht nur Neuschnee, was hier glitzert, b&#252;cke mich und ..." Ihr l&#228;chelt milde und lasst Eure Gedanken schweifen. Die Geschichte von den ersten Silberfunden in den hiesigen Bergen lernen heutzutage bereits die Kinder in der Schule. Der wei&#223;haarige Bergmann vor Euch ist eine lebende Legende. Polterndes Lachen l&#228;sst Euch wieder die Ohren spitzen. "... bis in die hei&#223;en Tiefen der H&#246;lle, dr&#252;ber fand man in der Alten Welt nix mehr. Aber hier kann ich ja fast noch im Sonnenschein die Picke schwingen!" Dr&#246;hnendes Gegr&#246;le vieler Bergleute hallt dumpf durch den nahezu schwarzen Gang. Ihr ringt Euch ein gequ&#228;ltes L&#228;cheln ab und schaut auf den nackten Stein &#252;ber Euch. Kalter Schwei&#223; rinnt langsam Eure Schl&#228;fen herab, als Ihr versucht, die Entfernung zur Sonne zu sch&#228;tzen.[NEWLINE][NEWLINE]</German>
+		<Italian>Now you have some expert prospectors. Their job is dirty. But your profit will be great ...[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Now you have some expert prospectors. Their job is dirty. But your profit will be great ...[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES</Tag>
+		<English>Many Printing Presses</English>
+		<French>De nombreuses Imprimeries</French>
+		<German>Viele Druckerpressen</German>
+		<Italian>Many Printing Presses</Italian>
+		<Spanish>Many Printing Presses</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES_HEAD</Tag>
+		<English>Many Printing Presses</English>
+		<French>De nombreuses Imprimeries</French>
+		<German>Keine falsche Bescheidenheit</German>
+		<Italian>Many Printing Presses</Italian>
+		<Spanish>Many Printing Presses</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES_TEXT</Tag>
+		<English>Your people wish to have a statue of their great leader ...[NEWLINE][NEWLINE]</English>
+		<French>Votre peuple souhaite avoir une statue de leur Chef charismatique ...[NEWLINE][NEWLINE]</French>
+		<German>Gro&#223;e, bl&#252;hende St&#228;dte sind in der Neuen Welt entstanden. Ihre prachtvollen Bauten sind steinerne Denkm&#228;ler f&#252;r den Wohlstand der B&#252;rger, aber auch f&#252;r Tatkraft und Weitsicht ihres Anf&#252;hrers. Der ver&#246;ffentlichten Meinung gen&#252;gt dies indes nicht. Druckerpressen und Zeitungsh&#228;user &#252;berschwemmen die Stadtb&#252;rger mit flammenden Appellen, dem Gouverneur m&#252;sse feierlich Reverenz erwiesen werden f&#252;r all die Jahre kluger F&#252;hrung. Ein nationales Denkmal solle her, stattlich und stolz, das seinen Ruhm noch in fernen Jahrhunderten preise. "Zeigt keine falsche Bescheidenheit, Gouverneur", schreibt das Hauptstadtblatt, "gebt dem Volk, was es w&#252;nscht - eine Statue des gr&#246;&#223;ten Staatsmannes unserer Zeit!"[NEWLINE][NEWLINE]</German>
+		<Italian>Your people wish to have a statue of their great leader ...[NEWLINE][NEWLINE]</Italian>
+		<Spanish>Your people wish to have a statue of their great leader ...[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_OXCART</Tag>
+		<English>Oxcarts</English>
+		<French>Oxcarts</French>
+		<German>Ochsenkarren</German>
+		<Italian>Oxcarts</Italian>
+		<Spanish>Oxcarts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_OXCART_HEAD</Tag>
+		<English>Slow but persistent</English>
+		<French>Slow but persistent</French>
+		<German>Langsam aber best&#228;ndig</German>
+		<Italian>Slow but persistent</Italian>
+		<Spanish>Slow but persistent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACHIEVE_OXCART_TEXT</Tag>
+		<English>You have obtained your first oxcarts. These wagons are slow but can transport goods in great quantities.[NEWLINE][NEWLINE]</English>
+		<French>You have got your first oxcarts. These wagons are slowly but can transport goods in great quantities.[NEWLINE][NEWLINE]</French>
+		<German>Ochsenkarren k&#246;nnen gro&#223;e Warenmengen &#252;ber weite Strecken transporieren. Daf&#252;r brauchen sie allerdings verflixt lange.[NEWLINE][NEWLINE]</German>
+		<Italian>You have got your first oxcarts. These wagons are slowly but can transport goods in great quantities.[NEWLINE][NEWLINE]</Italian>
+		<Spanish>You have got your first oxcarts. These wagons are slowly but can transport goods in great quantities.[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+</Civ4GameText>
+
+

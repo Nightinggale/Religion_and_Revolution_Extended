@@ -1,0 +1,207 @@
+***************************************************************************************
+***			Bienvenue dans le ficher Lisez-moi.txt du 		    ***
+***				mod Religion and Revolution 			    ***
+***************************************************************************************
+
+Pour de plus amples informations n'hésitez pas à visiter le forum de Civfanatics (en anglais):
+http://forums.civfanatics.com/forumdisplay.php?f=455
+
+ou sur le forum de Civfr.com (en Français):
+http://www.civfr.com/forums/index.php?s=761566cf93383bd5c9306990bdce5728&showforum=314
+
+--------------------------------------------------------------
+
+
+Religion and Revolution est un méga-mod pour le jeu "Sid Meier's Civilization IV: Colonization". Ce mod a été développé par une équipe de moddeurs passionnés.
+Ce mod est le fruit d'une coopération internationale. De plus, Religion and Revolution est basé sur TAC (The Autentic Colonization) version 2.03 (version finale).
+
+Ce mod, ainsi que le forum qui y est consacré ont pris des proportions considérables.
+J'essaierai de résumer (ou de renvoyer au forum si nécessaire) les principales caractéristiques du mod. 
+
+--------------------------------------------------------------
+
+Membres de l'équipe:
+
+	raystuttgart
+	Robert Surcouf
+	colonialfan
+	KJ Jansson
+	Androrc the Orc
+	Schmiddie
+	orlanth
+
+
++ de nombreux partenaires qui nous ont aidé de diverses manières.
+
+--------------------------------------------------------------
+
+Crédits:
+
+Naturellement nous tenons à remercier chaleureusement tous les membres de l'équipe de TAC (The Authentic Colonization)
+
+Sinon, en principe nous remercions tous les moddeurs du monde entier.
+Veuillez-nous signaler tout oubli de notre part.
+Voici une liste non-exhaustive de ceux qui nous ont aidé:
+
+	Isabelxxx
+	Willi_Tell
+	Writing Bull
+	Dale
+	Kailric
+	Aymerick
+	Jeckel
+	TC01
+	NeseryozniyVET
+	Trachmyr
+	Dazio
+	M07
+	bernie14
+	ekmek
+	SaibotLieh
+	The Capo
+	Sanotra
+	Aeterna
+	Roamty
+	Kathy
+	agnat86
+	Nightingale
+	...
+
+--------------------------------------------------------------
+
+Nous tenons aussi à remercier l'équipe d'Infracta qui héberge désormais notre mod! 
+
+--------------------------------------------------------------
+
+De nombreuses informations sont disponibles dans la Colonizopédie à l'intérieur du jeu.
+
+Crédits spéciaux pour la musique
+
+René Osmanczyk (qui a composé une grande partie de notre bande son)
+
+Crédits spéciaux et remerciements pour les créateurs/développeurs du jeu original
+
+Firaxis and 2Kgames
+
+--------------------------------------------------------------
+
+Voici la liste des modifications principales en plus de celles apportées par TAC v2.03
+
+1) Nouveautés:
+Professions multiples par bâtiment					
+Consommation/Production de ressources multiples par bâtiment				
+Elevage (chevaux, bétaile, mouton...)					
+Le placement géographique des Indiens est historiquement correct (TAC aussi)	
+Tempêtes et vents							
+Marché intérieur		
+Contrebande								
+Routes pavées	
+Évèques								
+Nouvelle option de jeu: La fin des variables cachées
+Amélioration de la table des scores
+Nouvel "écran": Conseiller des affaires indiennes
+Les pères fondateurs sont de nouveau disponibles lorsqu'une nation est éliminée du jeu
+Abandon des colonies
+Esclaves indiens et africains
+Écran du Poste de douane
+Les indiens gagnent de l'or chaque tour
+Ressources bonus sur les montagnes (voir CIV4BonusInfos.xml)
+Raids indiens comme dans Col94
+Franchissement des montagnes sans routes sous condition
+Marchandage (avec les indiens, comme dans Col94)
+Poste de douane
+Une citadelle peut bombarder les navires (comme dans Col94)
+Un soldat peut faire feu sur l'ennemi de manière automatique (une fois par tour)
+Les indiens convertissent leurs trésors en or
+Agiter les indiens (nouvelle fonction du missionnaire)
+Savane (nouveau terrain, comme dans Col94)
+Hutte du trappeur et plantation de cacao (aménagements)
+Les trésors ne révèlent pas la carte et ne peuvent plus explorer
+Nouveau mode de calcul de la capacité de stockage
+Événement diplomatique "Paix européenne"
+Événement diplomatique "Surpopulation dans les prisons européennes"
+Événement diplomatique "Noble révolutionnaire"
+
+
+2) Refontes:
+Augmentation du nombre maximum de joueurs dans une partie
+Refonte de la production des chevaux
+Refonte des missions
+Refonte des traits
+Amélioration de l'IA pour la construction des bâtiments
+Amélioration du système d'imposition
+Refonte de la production de chevaux
+Les criminels, les esclaves ne peuvent pas fonder de colonie
+
+3) Ajouts:
+Nouvelle nation indienne: Inuits
+Nouvelle nation indienne: Hurons
+Nouvelle nation indienne:  Zapotèque
+Nouvelle nation indienne: Guarani
+Nouvelle nation indienne:  Algonquin
+
+Nouvelle nation indienne:  Antillais
+Nouvelle nation indienne:  Navajo
+Nouvelle nation indienne:  Machiparo
+Nouvelle nation indienne:  Mixtèque
+Nouvelle nation indienne:  Chibchas   
+
+Nouvelle nation indienne:  Commanche
+Nouvelle nation indienne:  Shoshone
+Nouvelle nation indienne:  Toromona
+Nouvelle nation européenne: Danemark
+Nouveaux bâtiments: Totem, Autel de sacrifice
+Taïga (terrain)
+Rôdeurs
+Conquistadors
+Événements divers
+Carte "Gigantesque"
+De nouvelles ressources peuvent apparaître dans les mines
+
+4) Améliorations et correctifs:
+Améliorations des textes
+Ajout de certaines éléments du mod Iso-mod de Melcher Kürzer qui améliore les graphiques
+Amélioration de la bande son.
+Amélioration des écrans.
+Rééquilibrage de l'IA
+Rééquilibrage de l'immigration
+
+--------------------------------------------------------------
+FOIRE AUX QUESTIONS (FAQ)
+
+1) Comment installer le mod?
+Ce mod requiert le patch officiel 1.01f. (Le mod ne fonctionnera pas sans).
+Sinon "Religion and Revolution" s'installe comme n'importe quel autre mod. 
+Il suffit de copier l'archive dans le dossier consacré aux mods.
+Ne pas renommer le dossier du mod. Il faut garder "Religion_and_Revolution"
+Cela rend l'analyse des fichiers de sauvegarde plus aisé.
+
+2) Qu'est-ce que "Religion and Revolution"?
+Basiquement, Religion and Revolution est le plus gros mod de Civ4Col existant à ce jour. Nous avons essayé de combiner les meilleurs idées concernant Colonization pour faire le plus gros mod possible.
+Nous avons essayé d'améliorer le plaisir de jouer en améliorant l'IA, l'économoie, l'exploration, la diplomatie, etc...
+ 
+3) Est-ce que ce mod est basé sur TAC?
+Oui, notre mod est basé sur TAC et la quasi-totalité des améliorations du mod TAC 2.03 (version finale).
+Cependant nous avons considérablement modifié certains aspects du jeu, si bien que notre mod diffère du mod TAc de manière significative.
+
+Nous tenons à remercier l'équipe du mod TAC. sans eux Religion and Revolution n'aurait pas été possible.
+
+4) Peut-on réutiliser les fichiers de RaR?
+Oui! Vous pouvez utiliser à souhait le code sources, les fichiers images etc...
+!!! Cependant !!!
+
+- 	La bande son ne nous appartient pas. René Osmanczyk nous a autorisé à utiliser sa musique.
+	Si vous souhaitez utiliser sa musique, vous devez le contacter auparavant.
+- 	Il y a un certain nombre de fichiers qui sont l'oeuvre d'autres moddeurs (qui ne font pas partie de l'équipe). N'oubliez pas de les citer dans vos remerciements.
+
+5) Statut de Religion and Revolution.
+Religion and Revolution est un projet non-commerciel.
+Vous pouvez distribuer ce mod à condition de ne pas faire un usage commercial de celui-ci.
+
+6) Est-il possible de participer au développement de ce mod?
+Oui bien sûr. Toute aide sera la bienvenue (notamment pour les traductions en Français ou en Allemand).
+
+
+--------------------------------------------------------------
+
+Nous espérons que vous aurez autant de plaisir à jouer à RaR que nous avons eu de plaisir à le créer.
