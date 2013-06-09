@@ -5,6 +5,8 @@
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
 
+#include "JustInTimeArray.h"
+
 class CvPlot;
 class CvArea;
 class CvGenericBuilding;
@@ -682,13 +684,13 @@ protected:
 	//Androrc End
 	
 	// R&R, ray, finishing Custom House Screen
-	int* m_aiCustomHouseSellThreshold;
-	bool* m_aiCustomHouseNeverSell;
+	YieldArray<int> ma_aiCustomHouseSellThreshold;
+	YieldArray<bool> ma_aiCustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	int* m_OrderedStudents;
-	bool* m_OrderedStudentsRepeat;
+	UnitArray<int> ma_OrderedStudents;
+	UnitArray<bool> ma_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
 	int* m_aiDomainFreeExperience;

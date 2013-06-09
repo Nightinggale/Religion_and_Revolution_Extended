@@ -43,11 +43,6 @@ CvCity::CvCity()
 	m_aiYieldBuyPrice = new int[NUM_YIELD_TYPES];
 	//Androrc End
 
-	// R&R, ray, finishing Custom House Screen
-	m_aiCustomHouseSellThreshold = new int[NUM_YIELD_TYPES];
-	m_aiCustomHouseNeverSell = new bool[NUM_YIELD_TYPES];
-	// R&R, ray, finishing Custom House Screen END
-
 	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
 	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
 
@@ -63,10 +58,6 @@ CvCity::CvCity()
 	m_paiUnitProduction = NULL;
 	m_paiUnitProductionTime = NULL;
 	m_aiSpecialistWeights = NULL;
-	// Teacher List - start - Nightinggale
-	m_OrderedStudents = NULL;
-	m_OrderedStudentsRepeat = NULL;
-	// Teacher List - end - Nightinggale
 	m_paiUnitCombatFreeExperience = NULL;
 	m_paiFreePromotionCount = NULL;
 	m_pabHasRealBuilding = NULL;
@@ -107,11 +98,6 @@ CvCity::~CvCity()
 	// R&R, Androrc, Domestic Market
 	SAFE_DELETE_ARRAY(m_aiYieldBuyPrice);
 	//Androrc End
-
-	// R&R, ray, finishing Custom House Screen
-	SAFE_DELETE_ARRAY(m_aiCustomHouseSellThreshold);
-	SAFE_DELETE_ARRAY(m_aiCustomHouseNeverSell);
-	// R&R, ray, finishing Custom House Screen END
 
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
@@ -194,39 +180,39 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 				// strategic raw
 				if (eYield == YIELD_ORE || eYield == YIELD_HEMP)
 				{
-					m_aiCustomHouseSellThreshold[eYield] = GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD();
+					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD(), eYield);
 				}
 				// strategic produced
 				else if ( eYield == YIELD_TOOLS || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_CATTLE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_LUXURY_GOODS)
 				{
-					m_aiCustomHouseSellThreshold[eYield] = GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD();
+					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD(), eYield);
 				}
 
 				// raw
 				else if ( eYield == YIELD_HIDES || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_WOOL || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_TOBACCO || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
 				{
-					m_aiCustomHouseSellThreshold[eYield] = GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD();
+					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD(), eYield);
 				}
 
 				// produced
 				else if (eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT ||  eYield == YIELD_SPICES || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE)
 				{
-					m_aiCustomHouseSellThreshold[eYield] = GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD();
+					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD(), eYield);
 				}
 
 				// default for safety
 				else
 				{
-					m_aiCustomHouseSellThreshold[eYield]= getYieldStored(eYield) / 2;
+					ma_aiCustomHouseSellThreshold.set(getYieldStored(eYield) / 2, eYield);
 				}
 
 				if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
 				{
-					m_aiCustomHouseNeverSell[eYield] = true;
+					ma_aiCustomHouseNeverSell.set(true, eYield);
 				}
 				else
 				{
-					m_aiCustomHouseNeverSell[eYield] = false;
+					ma_aiCustomHouseNeverSell.set(false, eYield);
 				}
 			}
 		}
@@ -377,8 +363,8 @@ void CvCity::uninit()
 	SAFE_DELETE_ARRAY(m_paiUnitProductionTime);
 	SAFE_DELETE_ARRAY(m_aiSpecialistWeights);
 	// Teacher List - start - Nightinggale
-	SAFE_DELETE_ARRAY(m_OrderedStudents);
-	SAFE_DELETE_ARRAY(m_OrderedStudentsRepeat);
+	ma_OrderedStudents.reset();
+	ma_OrderedStudentsRepeat.reset();
 	// Teacher List - end - Nightinggale
 	SAFE_DELETE_ARRAY(m_paiUnitCombatFreeExperience);
 	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
@@ -472,12 +458,11 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		// R&R, Androrc, Domestic Market
 		m_aiYieldBuyPrice[iI] = 0;
 		//Androrc End
-
-		// R&R, ray, finishing Custom House Screen
-		m_aiCustomHouseSellThreshold[iI] = 0;
-		m_aiCustomHouseNeverSell[iI] = false;
-		// R&R, ray, finishing Custom House Screen END
 	}
+	// R&R, ray, finishing Custom House Screen
+	ma_aiCustomHouseSellThreshold.reset();
+	ma_aiCustomHouseNeverSell.reset();
+	// R&R, ray, finishing Custom House Screen END
 
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
@@ -540,19 +525,11 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_paiUnitProduction = new int[GC.getNumUnitInfos()];
 		m_paiUnitProductionTime = new int[GC.getNumUnitInfos()];
 		m_aiSpecialistWeights = new int[GC.getNumUnitInfos()];
-		// Teacher List - start - Nightinggale
-		m_OrderedStudents = new int[GC.getNumUnitInfos()];
-		m_OrderedStudentsRepeat = new bool[GC.getNumUnitInfos()];
-		// Teacher List - end - Nightinggale
 		for (iI = 0;iI < GC.getNumUnitInfos();iI++)
 		{
 			m_paiUnitProduction[iI] = 0;
 			m_paiUnitProductionTime[iI] = 0;
 			m_aiSpecialistWeights[iI] = 0;
-			// Teacher List - start - Nightinggale
-			m_OrderedStudents[iI] = 0;
-			m_OrderedStudentsRepeat[iI] = false;
-			// Teacher List - end - Nightinggale
 		}
 
 		FAssertMsg((0 < GC.getNumUnitCombatInfos()),  "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvCity::reset");
@@ -7323,15 +7300,40 @@ void CvCity::doMissionaries()
 
 // Private Functions...
 
+// just-in-time yield arrays - start - Nightinggale
+// bitmap to tell which arrays are saved
+enum
+{
+	SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD = 1,
+	SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL     = 1 << 1,
+	SAVE_BIT_ORDERED_STUDENTS            = 1 << 2,
+	SAVE_BIT_ORDERED_STUDENTS_REPEAT     = 1 << 3,
+};
+// just-in-time yield arrays - end - Nightinggale
+
 void CvCity::read(FDataStreamBase* pStream)
 {
 	int iNumElts;
 
 	// Init data before load
 	reset();
-
+	
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
+
+	// just-in-time yield arrays - start - Nightinggale
+	uint arrayBitmap = 0;
+	if (uiFlag > 3)
+	{
+		pStream->Read(&arrayBitmap);
+	} else {
+		arrayBitmap  = SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD | SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL;
+		if (uiFlag == 3)
+		{
+			arrayBitmap |= SAVE_BIT_ORDERED_STUDENTS | SAVE_BIT_ORDERED_STUDENTS_REPEAT;
+		}
+	}
+	// just-in-time yield arrays - start - Nightinggale
 
 	pStream->Read(&m_iID);
 	pStream->Read(&m_iX);
@@ -7419,16 +7421,13 @@ void CvCity::read(FDataStreamBase* pStream)
 	//Androrc End
 
 	// R&R, ray, finishing Custom House Screen
-	pStream->Read(NUM_YIELD_TYPES, m_aiCustomHouseSellThreshold);
-	pStream->Read(NUM_YIELD_TYPES, m_aiCustomHouseNeverSell);
+	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
+	ma_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	if (uiFlag >= 3)
-	{
-		pStream->Read(GC.getNumUnitInfos(), m_OrderedStudents);
-		pStream->Read(GC.getNumUnitInfos(), m_OrderedStudentsRepeat);
-	}
+	ma_OrderedStudents.read(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
+	ma_OrderedStudentsRepeat.read(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
 	// Teacher List - end - Nightinggale
 
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
@@ -7528,9 +7527,18 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=3;
+	uint uiFlag=4;
 	pStream->Write(uiFlag);		// flag for expansion
 
+	// just-in-time yield arrays - start - Nightinggale
+	uint arrayBitmap = 0;
+	arrayBitmap |= ma_aiCustomHouseSellThreshold.hasContent() ? SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD : 0;
+	arrayBitmap |= ma_aiCustomHouseNeverSell.hasContent()     ? SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL : 0;
+	arrayBitmap |= ma_OrderedStudents.hasContent()            ? SAVE_BIT_ORDERED_STUDENTS : 0;
+	arrayBitmap |= ma_OrderedStudentsRepeat.hasContent()      ? SAVE_BIT_ORDERED_STUDENTS_REPEAT : 0;
+	pStream->Write(arrayBitmap);
+	// just-in-time yield arrays - end - Nightinggale
+	
 	pStream->Write(m_iID);
 	pStream->Write(m_iX);
 	pStream->Write(m_iY);
@@ -7587,13 +7595,13 @@ void CvCity::write(FDataStreamBase* pStream)
 	//Androrc End
 
 	// R&R, ray, finishing Custom House Screen
-	pStream->Write(NUM_YIELD_TYPES, m_aiCustomHouseSellThreshold);
-	pStream->Write(NUM_YIELD_TYPES, m_aiCustomHouseNeverSell);
+	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
+	ma_aiCustomHouseNeverSell.write    (pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	pStream->Write(GC.getNumUnitInfos(), m_OrderedStudents);
-	pStream->Write(GC.getNumUnitInfos(), m_OrderedStudentsRepeat);
+	ma_OrderedStudents.write(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
+	ma_OrderedStudentsRepeat.write(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
 	// Teacher List - end - Nightinggale
 
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
@@ -8856,11 +8864,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 {
 	if (bClearAll)
 	{
-		for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
-		{
-			m_OrderedStudents[iUnit] = 0;
-			m_OrderedStudentsRepeat[iUnit] = false;
-		}
+		ma_OrderedStudents.reset();
+		ma_OrderedStudentsRepeat.reset();
 	} else {
 		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
 		{
@@ -8870,8 +8875,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 			return;
 		}
 	
-		m_OrderedStudents[eUnit] = iCount;
-		m_OrderedStudentsRepeat[eUnit] = bRepeat;
+		ma_OrderedStudents.set(iCount, eUnit);
+		ma_OrderedStudentsRepeat.set(bRepeat, eUnit);
 		if (bUpdateRepeat && iCount == 0)
 		{
 			checkOrderedStudentsForRepeats(eUnit);
@@ -8888,30 +8893,19 @@ void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
 
-	// return if player ordered at least one unit
-	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
+	if (ma_OrderedStudentsRepeat.isAllocated() && ma_OrderedStudents.isEmpty(false))
 	{
-		if (m_OrderedStudents[iUnit] > 0)
+		for (int iUnit = 0; iUnit < ma_OrderedStudentsRepeat.length; iUnit++)
 		{
-			return;
+			if (ma_OrderedStudentsRepeat.get(iUnit))
+			{
+				ma_OrderedStudents.set(1, iUnit);
+			}
 		}
-	}
-
-	bool bRepeatedSomething = false;
-
-	// no more ordered units
-	// set all repeats to 1
-	for (int iUnit = 0; iUnit < GC.getNumUnitInfos(); iUnit++)
-	{
-		if (m_OrderedStudentsRepeat[iUnit])
+		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
-			m_OrderedStudents[iUnit] = 1;
-			bRepeatedSomething = true;
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
 		}
-	}
-	if (bRepeatedSomething && getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
-	{
-		gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
 	}
 }
 
@@ -8919,14 +8913,14 @@ int CvCity::getOrderedStudents(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return m_OrderedStudents[eUnit];
+	return ma_OrderedStudents.get(eUnit);
 }
 
 bool CvCity::getOrderedStudentsRepeat(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return m_OrderedStudentsRepeat[eUnit];
+	return ma_OrderedStudentsRepeat.get(eUnit);
 }
 
 // Teacher List - end - Nightinggale
@@ -10870,7 +10864,7 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 	if (iCustomHouseSellThreshold != getCustomHouseSellThreshold(eYield))
 	{
-		m_aiCustomHouseSellThreshold[eYield] = iCustomHouseSellThreshold;
+		ma_aiCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
@@ -10880,16 +10874,14 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 int CvCity::getCustomHouseSellThreshold(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiCustomHouseSellThreshold[eYield];	
+	return ma_aiCustomHouseSellThreshold.get(eYield);
 }
 
 void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 {
 	if (isCustomHouseNeverSell(eYield) != bNeverSell)
 	{
-		m_aiCustomHouseNeverSell[eYield] = bNeverSell;
+		ma_aiCustomHouseNeverSell.set(bNeverSell, eYield);
 
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -10900,9 +10892,7 @@ void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 
 bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiCustomHouseNeverSell[eYield];
+	return ma_aiCustomHouseNeverSell.get(eYield);
 }
 // R&R, ray, finishing Custom House Screen END
 
