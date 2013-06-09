@@ -616,6 +616,9 @@ public:
 	void removeTradeRoutes();
 	void setMaintainLevel(YieldTypes eYield, int iMaintainLevel);
 	int getMaintainLevel(YieldTypes eYield) const;
+	// transport feeder - start - Nightinggale
+	bool getImportsMaintain(YieldTypes eYield) const;
+	// transport feeder - end - Nightinggale
 	// R&R, ray, finishing Custom House Screen START
 	void setCustomHouseSellThreshold(YieldTypes eYield, int iThreshold);
 	int getCustomHouseSellThreshold(YieldTypes eYield) const;
@@ -725,6 +728,9 @@ protected:
 	YieldArray<bool> ma_tradeExports;
 	YieldArray<int> ma_tradeThreshold;
 	// traderoute just-in-time - end - Nightinggale
+	// transport feeder - start - Nightinggale
+	YieldArray<bool> ma_tradeImportsMaintain;
+	// transport feeder - end - Nightinggale
 
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
@@ -767,6 +773,11 @@ protected:
 	void setUnitWorkingPlot(int iPlotIndex, int iUnitId);
 	void setUnitWorkingPlot(const CvPlot* pPlot, int iUnitId);
 	int getNextFreeUnitId() const;
+
+	// transport feeder - start - Nightinggale
+	void setImportsMaintain(YieldTypes eYield, bool bSetting);
+	void checkImportsMaintain(YieldTypes eYield);
+	// transport feeder - end - Nightinggale
 	virtual bool AI_addBestCitizen() = 0;
 	virtual bool AI_removeWorstCitizen() = 0;
 };

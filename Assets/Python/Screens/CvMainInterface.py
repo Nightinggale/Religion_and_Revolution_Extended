@@ -1895,9 +1895,18 @@ class CvMainInterface:
 							szExportText += " (%s %d)" % (localText.getText("TXT_KEY_TRADE_ROUTE_MAINTAIN", ()), pHeadSelectedCity.getMaintainLevel(iYield))
 						screen.setTableText("ExportTradeRouteText", 0, iExportRow, u"<font=3>%s</font>" % szExportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, false, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-					if (pHeadSelectedCity.isImport(iYield)):
+					if (pHeadSelectedCity.isImport(iYield) or pHeadSelectedCity.isImportFeeder(iYield)): # transport feeder - Nightinggale
 						iImportRow = screen.appendTableRow("ImportTradeRouteText")
 						szImportText = u"<font=3>%c %s</font>" % (gc.getYieldInfo(iYield).getChar(), gc.getYieldInfo(iYield).getDescription())
+						# transport feeder - start - Nightinggale
+						# turn text green or red for feeder serviced yields
+						if (pHeadSelectedCity.isImportFeeder(iYield)):
+							if (pHeadSelectedCity.isImport(iYield)):
+								szImportText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + szImportText
+							else:
+								szImportText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szImportText
+							szImportText += localText.getText("TXT_KEY_COLOR_REVERT", ())
+						# transport feeder - end - Nightinggale
 						screen.setTableText("ImportTradeRouteText", 0, iImportRow, szImportText, "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, true, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
 				# teacher list - start - Nightinggale

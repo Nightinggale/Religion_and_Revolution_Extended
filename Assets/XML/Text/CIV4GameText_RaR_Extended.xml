@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
+		<English>Import feeder
+Turn import on at 75%
+Turn import off at 100%</English>
+		<French>Import feeder
+Turn import on at 75%
+Turn import off at 100%</French>
+		<German>Import feeder
+Turn import on at 75%
+Turn import off at 100%</German>
+		<Italian>Import feeder
+Turn import on at 75%
+Turn import off at 100%</Italian>
+		<Spanish>Import feeder
+Turn import on at 75%
+Turn import off at 100%</Spanish>
+	</TEXT>
+</Civ4GameText>

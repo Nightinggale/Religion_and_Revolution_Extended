@@ -766,22 +766,17 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo((YieldTypes) iYield).isCargo())
 					{
+						// transport feeder - start - Nightinggale
 						bool bImport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						if (bImport != pCity->isImport(eYield))
-						{
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_IMPORT, iYield, bImport, false, false, false, false);
-						}
 						bool bExport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
-						if (bExport != pCity->isExport(eYield))
-						{
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_EXPORT, iYield, bExport, false, false, false, false);
-						}
-
+						bool bMaintainImport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
 						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
-						if (iLevel != pCity->getMaintainLevel(eYield))
+
+						if (bImport != pCity->isImport(eYield) || bExport != pCity->isExport(eYield) || bMaintainImport != pCity->getImportsMaintain(eYield) || iLevel != pCity->getMaintainLevel(eYield))
 						{
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_LEVEL, iYield, iLevel, false, false, false, false);
+							gDLL->sendDoTask(info.getData1(), TASK_YIELD_IMPORT, iYield, iLevel, bImport, bExport, bMaintainImport, false);
 						}
+						// transport feeder - end - Nightinggale
 					}
 				}
 			}
@@ -2914,11 +2909,15 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 		{
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
-			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_POPUP_IMPORT"), iYield);
+			// transport feeder - start - Nightinggale
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 3, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT") + L"</font>", iYield);
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, gDLL->getText("TXT_KEY_POPUP_EXPORT"), iYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_EXPORT") + L"</font>", iYield);
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isExport(eYield), iYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 2, pCity->getImportsMaintain(eYield), iYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 2, L"", iYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
+			// transport feeder - end - Nightinggale
 			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 		}

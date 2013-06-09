@@ -280,6 +280,9 @@ public:
 	void addImport(int /*YieldTypes*/ eYield);
 	void removeImport(int /*YieldTypes*/ eYield);
 	int getMaintainLevel(int /*YieldTypes*/ eYield) const;
+	// transport feeder - start - Nightinggale
+	bool CyCity::isImportFeeder(int /*YieldTypes*/ eYield) const;
+	// transport feeder - end - Nightinggale
 
 	python::tuple isOrderWaitingForYield(int /*YieldTypes*/ eYield);
 

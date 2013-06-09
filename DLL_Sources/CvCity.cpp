@@ -389,6 +389,9 @@ void CvCity::uninit()
 	ma_tradeExports.reset();
 	ma_tradeThreshold.reset();
 	// traderoute just-in-time - end - Nightinggale
+	// transport feeder - start - Nightinggale
+	ma_tradeImportsMaintain.reset();
+	// transport feeder - end - Nightinggale
 }
 
 // FUNCTION: reset()
@@ -955,7 +958,11 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		break;
 
 	case TASK_YIELD_IMPORT:
-		if (iData2 != 0)
+		// transport feeder - Nightinggale
+		// traderoute changes are now transmitted line by line (instead variable by variable)
+		// This means data for everything in the line in the popup is present in TASK_YIELD_IMPORT packages
+		// TASK_YIELD_EXPORT and TASK_YIELD_LEVEL aren't used anymore.
+		if (bOption)
 		{
 			addImport((YieldTypes) iData1);
 		}
@@ -963,10 +970,8 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		{
 			removeImport((YieldTypes) iData1);
 		}
-		break;
 
-	case TASK_YIELD_EXPORT:
-		if (iData2 != 0)
+		if (bAlt)
 		{
 			addExport((YieldTypes) iData1);
 		}
@@ -974,10 +979,9 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		{
 			removeExport((YieldTypes) iData1);
 		}
-		break;
 
-	case TASK_YIELD_LEVEL:
 		setMaintainLevel((YieldTypes) iData1, iData2);
+		setImportsMaintain((YieldTypes) iData1, bShift);
 		break;
 
 	case TASK_CLEAR_SPECIALTY:
@@ -4734,6 +4738,9 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 			}
 		}
 		// R&R, Androrc, Livestock Breeding, END
+		// transport feeder - start - Nightinggale
+		checkImportsMaintain(eYield);
+		// transport feeder - end - Nightinggale
 	}
 }
 
@@ -7315,6 +7322,9 @@ enum
 	SAVE_BIT_TRADE_EXPORTS               = 1 << 5,
 	SAVE_BIT_TRADE_THRESHOLD             = 1 << 6,
 	// traderoute just-in-time - end - Nightinggale
+	// transport feeder - start - Nightinggale
+	SAVE_BIT_IMPORT_FEEDER               = 1 << 7,
+	// transport feeder - end - Nightinggale
 };
 // just-in-time yield arrays - end - Nightinggale
 
@@ -7479,6 +7489,9 @@ void CvCity::read(FDataStreamBase* pStream)
 		ma_tradeImports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
 		ma_tradeExports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
 		ma_tradeThreshold.read(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
+		// transport feeder - start - Nightinggale
+		ma_tradeImportsMaintain.read(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
+		// transport feeder - end - Nightinggale
 	} else {
 		int iNumYields;
 		std::vector<YieldTypes> aYields;
@@ -7555,6 +7568,9 @@ void CvCity::write(FDataStreamBase* pStream)
 	arrayBitmap |= ma_tradeExports.hasContent()               ? SAVE_BIT_TRADE_EXPORTS : 0;
 	arrayBitmap |= ma_tradeThreshold.hasContent()             ? SAVE_BIT_TRADE_THRESHOLD : 0;
 	// traderoute just-in-time - end - Nightinggale
+	// transport feeder - start - Nightinggale
+	arrayBitmap |= ma_tradeImportsMaintain.hasContent()       ? SAVE_BIT_IMPORT_FEEDER : 0;
+	// transport feeder - end - Nightinggale
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
@@ -7659,7 +7675,10 @@ void CvCity::write(FDataStreamBase* pStream)
 	ma_tradeExports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
 	ma_tradeThreshold.write(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
 	// traderoute just-in-time - end - Nightinggale
-	
+	// transport feeder - start - Nightinggale
+	ma_tradeImportsMaintain.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
+	// transport feeder - end - Nightinggale
+
 	m_orderQueue.Write(pStream);
 
 	pStream->Write(m_iPopulationRank);
@@ -10086,7 +10105,39 @@ int CvCity::getMaintainLevel(YieldTypes eYield) const
 	return ma_tradeThreshold.get(eYield);
 	// traderoute just-in-time - end - Nightinggale
 }
-	
+
+// transport feeder - start - Nightinggale
+
+bool CvCity::getImportsMaintain(YieldTypes eYield) const
+{;
+	return ma_tradeImportsMaintain.get(eYield);
+}
+
+void CvCity::setImportsMaintain(YieldTypes eYield, bool bSetting)
+{
+	ma_tradeImportsMaintain.set(bSetting, eYield);
+	checkImportsMaintain(eYield);
+}
+
+void CvCity::checkImportsMaintain(YieldTypes eYield)
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	if (!ma_tradeImportsMaintain.get(eYield)) return;
+
+	int iMaintainLevel = ma_tradeThreshold.get(eYield);
+	int iStoredLevel   = getYieldStored(eYield);
+
+	if (iStoredLevel >= iMaintainLevel)
+	{
+		removeImport(eYield);
+	} else if ((iStoredLevel <= (iMaintainLevel*3)/4)) {
+		addImport(eYield);
+	}
+}
+// transport feeder - end - Nightinggale
+
 // PatchMod: Achievements START
 bool CvCity::isHasSpecialBuilding(int iValue)
 {
