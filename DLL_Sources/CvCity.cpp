@@ -384,9 +384,11 @@ void CvCity::uninit()
 	}
 	m_aPopulationUnits.clear();
 
-	m_setImports.clear();
-	m_setExports.clear();
-	m_mapMaintain.clear();
+	// traderoute just-in-time - start - Nightinggale
+	ma_tradeImports.reset();
+	ma_tradeExports.reset();
+	ma_tradeThreshold.reset();
+	// traderoute just-in-time - end - Nightinggale
 }
 
 // FUNCTION: reset()
@@ -7308,6 +7310,11 @@ enum
 	SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL     = 1 << 1,
 	SAVE_BIT_ORDERED_STUDENTS            = 1 << 2,
 	SAVE_BIT_ORDERED_STUDENTS_REPEAT     = 1 << 3,
+	// traderoute just-in-time - start - Nightinggale
+	SAVE_BIT_TRADE_IMPORTS               = 1 << 4,
+	SAVE_BIT_TRADE_EXPORTS               = 1 << 5,
+	SAVE_BIT_TRADE_THRESHOLD             = 1 << 6,
+	// traderoute just-in-time - end - Nightinggale
 };
 // just-in-time yield arrays - end - Nightinggale
 
@@ -7466,37 +7473,44 @@ void CvCity::read(FDataStreamBase* pStream)
 		m_aPopulationUnits.push_back(pUnit);
 	}
 
-	m_setImports.clear();
-	int iNumYields;
-	std::vector<YieldTypes> aYields;
-	pStream->Read(&iNumYields);
-	aYields.resize(iNumYields);
-	if (iNumYields > 0)
+	// traderoute just-in-time - start - Nightinggale
+	if (uiFlag > 4)
 	{
-		pStream->Read(iNumYields, (int*)&aYields[0]);
-		m_setImports.insert(aYields.begin(), aYields.end());
-	}
+		ma_tradeImports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
+		ma_tradeExports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
+		ma_tradeThreshold.read(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
+	} else {
+		int iNumYields;
+		std::vector<YieldTypes> aYields;
 
-	m_setExports.clear();
-	pStream->Read(&iNumYields);
-	aYields.resize(iNumYields);
-	if (iNumYields > 0)
-	{
-		pStream->Read(iNumYields, (int*)&aYields[0]);
-		m_setExports.insert(aYields.begin(), aYields.end());
-	}
+		pStream->Read(&iNumYields);
+		for (int iI = 0; iI < iNumYields; iI++)
+		{
+			int iIndex;
+			pStream->Read(&iIndex);
+			ma_tradeImports.set(true, iIndex);
+		}
 
-	m_mapMaintain.clear();
-	pStream->Read(&iNumYields);
-	for (int i = 0; i < iNumYields; ++i)
-	{
-		YieldTypes eYield;
-		int iLevel;
-		pStream->Read((int*)&eYield);
-		pStream->Read(&iLevel);
-		m_mapMaintain[eYield] = iLevel;
+		pStream->Read(&iNumYields);
+		for (int iI = 0; iI < iNumYields; iI++)
+		{
+			int iIndex;
+			pStream->Read(&iIndex);
+			ma_tradeExports.set(true, iIndex);
+		}
+
+		pStream->Read(&iNumYields);
+		for (int i = 0; i < iNumYields; ++i)
+		{
+			YieldTypes eYield;
+			int iLevel;
+			pStream->Read((int*)&eYield);
+			pStream->Read(&iLevel);
+			ma_tradeThreshold.set(iLevel, eYield);
+		}
 	}
-	
+	// traderoute just-in-time - end - Nightinggale
+
 	m_orderQueue.Read(pStream);
 
 	pStream->Read(&m_iPopulationRank);
@@ -7527,7 +7541,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=4;
+	uint uiFlag=5;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -7536,6 +7550,11 @@ void CvCity::write(FDataStreamBase* pStream)
 	arrayBitmap |= ma_aiCustomHouseNeverSell.hasContent()     ? SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL : 0;
 	arrayBitmap |= ma_OrderedStudents.hasContent()            ? SAVE_BIT_ORDERED_STUDENTS : 0;
 	arrayBitmap |= ma_OrderedStudentsRepeat.hasContent()      ? SAVE_BIT_ORDERED_STUDENTS_REPEAT : 0;
+	// traderoute just-in-time - start - Nightinggale
+	arrayBitmap |= ma_tradeImports.hasContent()               ? SAVE_BIT_TRADE_IMPORTS : 0;
+	arrayBitmap |= ma_tradeExports.hasContent()               ? SAVE_BIT_TRADE_EXPORTS : 0;
+	arrayBitmap |= ma_tradeThreshold.hasContent()             ? SAVE_BIT_TRADE_THRESHOLD : 0;
+	// traderoute just-in-time - end - Nightinggale
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
@@ -7635,22 +7654,11 @@ void CvCity::write(FDataStreamBase* pStream)
 		m_aPopulationUnits[i]->write(pStream);
 	}
 
-	pStream->Write((int)m_setImports.size());
-	for (std::set<YieldTypes>::iterator it = m_setImports.begin(); it != m_setImports.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-	pStream->Write((int)m_setExports.size());
-	for (std::set<YieldTypes>::iterator it = m_setExports.begin(); it != m_setExports.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-	pStream->Write((int)m_mapMaintain.size());
-	for (std::map<YieldTypes, int>::iterator it = m_mapMaintain.begin(); it != m_mapMaintain.end(); ++it)
-	{
-		pStream->Write(it->first);
-		pStream->Write(it->second);
-	}
+	// traderoute just-in-time - start - Nightinggale
+	ma_tradeImports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
+	ma_tradeExports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
+	ma_tradeThreshold.write(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
+	// traderoute just-in-time - end - Nightinggale
 	
 	m_orderQueue.Write(pStream);
 
@@ -9758,18 +9766,21 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 
 bool CvCity::isExport(YieldTypes eYield) const
 {
-	return (m_setExports.find(eYield) != m_setExports.end());
+	// traderoute just-in-time - start - Nightinggale
+	return ma_tradeExports.get(eYield);
+	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 {
-	std::pair<std::set<YieldTypes>::iterator, bool> zPair;
-
-	zPair = m_setExports.insert(eYield);
-	if (!zPair.second)
+	// traderoute just-in-time - start - Nightinggale
+	if (ma_tradeExports.get(eYield))
 	{
 		return;
 	}
+
+	ma_tradeExports.set(true, eYield);
+	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
 	{
@@ -9818,11 +9829,14 @@ void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 
 void CvCity::removeExport(YieldTypes eYield, bool bUpdateRoutes)
 {
-	int iNumErased = m_setExports.erase(eYield);
-	if (iNumErased == 0)
+	// traderoute just-in-time - start - Nightinggale
+	if (!ma_tradeExports.get(eYield))
 	{
 		return;
 	}
+
+	ma_tradeExports.set(false, eYield);
+	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
 	{
@@ -9899,18 +9913,21 @@ void CvCity::updateExports()
 
 bool CvCity::isImport(YieldTypes eYield) const
 {
-	return (m_setImports.find(eYield) != m_setImports.end());
+	// traderoute just-in-time - start - Nightinggale
+	return ma_tradeImports.get(eYield);
+	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 {
-	std::pair<std::set<YieldTypes>::iterator, bool> zPair;
-	
-	zPair = m_setImports.insert(eYield);
-	if (!zPair.second)
+	// traderoute just-in-time - start - Nightinggale
+	if (ma_tradeImports.get(eYield))
 	{
 		return;
 	}
+
+	ma_tradeImports.set(true, eYield);
+	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
 	{
@@ -9948,11 +9965,14 @@ void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 
 void CvCity::removeImport(YieldTypes eYield, bool bUpdateRoutes)
 {
-	int iNumErased = m_setImports.erase(eYield);
-	if (iNumErased == 0)
+	// traderoute just-in-time - start - Nightinggale
+	if (!ma_tradeImports.get(eYield))
 	{
 		return;
 	}
+
+	ma_tradeImports.set(false, eYield);
+	// traderoute just-in-time - end - Nightinggale
 
 	if (bUpdateRoutes)
 	{
@@ -10049,7 +10069,9 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
 {
 	if (getMaintainLevel(eYield) != iMaintainLevel)
 	{
-		m_mapMaintain[eYield] = iMaintainLevel;
+		// traderoute just-in-time - start - Nightinggale
+		ma_tradeThreshold.set(iMaintainLevel, eYield);
+		// traderoute just-in-time - end - Nightinggale
 
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -10060,13 +10082,9 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
 
 int CvCity::getMaintainLevel(YieldTypes eYield) const
 {
-	std::map<YieldTypes, int>::const_iterator it = m_mapMaintain.find(eYield);
-	if (it != m_mapMaintain.end())
-	{
-		return it->second;
-	}
-
-	return 0;
+	// traderoute just-in-time - start - Nightinggale
+	return ma_tradeThreshold.get(eYield);
+	// traderoute just-in-time - end - Nightinggale
 }
 	
 // PatchMod: Achievements START

@@ -719,9 +719,13 @@ protected:
 	std::vector<EventTypes> m_aEventsOccured;
 	std::vector<BuildingYieldChange> m_aBuildingYieldChange;
 	std::vector<CvUnit*> m_aPopulationUnits;
-	std::set<YieldTypes> m_setImports;
-	std::set<YieldTypes> m_setExports;
-	std::map<YieldTypes, int> m_mapMaintain;
+
+	// traderoute just-in-time - start - Nightinggale
+	YieldArray<bool> ma_tradeImports;
+	YieldArray<bool> ma_tradeExports;
+	YieldArray<int> ma_tradeThreshold;
+	// traderoute just-in-time - end - Nightinggale
+
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
