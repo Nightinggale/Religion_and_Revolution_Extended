@@ -23,4 +23,12 @@ Turn import off at 100%</Italian>
 Turn import on at 75%
 Turn import off at 100%</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
+		<English>Total production and storage</English>
+		<French>Total production and storage</French>
+		<German>Total production and storage</German>
+		<Italian>Total production and storage</Italian>
+		<Spanish>Total production and storage</Spanish>
+	</TEXT>
 </Civ4GameText>

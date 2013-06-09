@@ -682,6 +682,12 @@
 			<Type>INTERFACE_IMPORT_EXPORT_BUTTON</Type>
 			<Path>Art/Interface/Game Hud/Actions/import_export.dds</Path>
 		</InterfaceArtInfo>
+		<!-- total production page - start - Nightinggale -->
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TOTAL_PRODUCTION_BUTTON</Type>
+			<Path>Art/Interface/Screens/City_Management/yields.dds</Path>
+		</InterfaceArtInfo>
+		<!-- total production page - end - Nightinggale -->
 		<InterfaceArtInfo>
 			<Type>INTERFACE_CITY_GOVENOR_BUTTON</Type>
 			<Path>Art/Interface/Screens/City_Management/import_export.dds</Path>
