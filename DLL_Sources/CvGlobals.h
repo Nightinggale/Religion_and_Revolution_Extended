@@ -1372,3 +1372,860 @@ bool writeInfoArray(FDataStreamBase* pStream,  std::vector<T*>& array)
 }
 
 #endif
+
+
+// inlined functions
+// The following functions are copied from CvGlobals.cpp as they are ideal candidates for inlining
+// Nightinggale
+
+inline int CvGlobals::getMOVE_DENOMINATOR()
+{
+	return m_iMOVE_DENOMINATOR;
+}
+
+inline int CvGlobals::getFOOD_CONSUMPTION_PER_POPULATION()
+{
+	return m_iFOOD_CONSUMPTION_PER_POPULATION;
+}
+
+inline int CvGlobals::getMAX_HIT_POINTS()
+{
+	return m_iMAX_HIT_POINTS;
+}
+
+inline int CvGlobals::getHILLS_EXTRA_DEFENSE()
+{
+	return m_iHILLS_EXTRA_DEFENSE;
+}
+
+inline int CvGlobals::getRIVER_ATTACK_MODIFIER()
+{
+	return m_iRIVER_ATTACK_MODIFIER;
+}
+
+inline int CvGlobals::getAMPHIB_ATTACK_MODIFIER()
+{
+	return m_iAMPHIB_ATTACK_MODIFIER;
+}
+
+inline int CvGlobals::getHILLS_EXTRA_MOVEMENT()
+{
+	return m_iHILLS_EXTRA_MOVEMENT;
+}
+
+inline int CvGlobals::getPEAK_EXTRA_MOVEMENT()
+{
+	return m_iPEAK_EXTRA_MOVEMENT;
+}
+
+inline int CvGlobals::getMAX_PLOT_LIST_ROWS()
+{
+	return m_iMAX_PLOT_LIST_ROWS;
+}
+
+inline int CvGlobals::getUNIT_MULTISELECT_MAX()
+{
+	return m_iUNIT_MULTISELECT_MAX;
+}
+
+inline int CvGlobals::getEVENT_MESSAGE_TIME()
+{
+	return m_iEVENT_MESSAGE_TIME;
+}
+
+inline int CvGlobals::getROUTE_FEATURE_GROWTH_MODIFIER()
+{
+	return m_iROUTE_FEATURE_GROWTH_MODIFIER;
+}
+
+inline int CvGlobals::getFEATURE_GROWTH_MODIFIER()
+{
+	return m_iFEATURE_GROWTH_MODIFIER;
+}
+
+inline int CvGlobals::getMIN_CITY_RANGE()
+{
+	return m_iMIN_CITY_RANGE;
+}
+
+inline int CvGlobals::getCITY_MAX_NUM_BUILDINGS()
+{
+	return m_iCITY_MAX_NUM_BUILDINGS;
+}
+inline int CvGlobals::getLAKE_MAX_AREA_SIZE()
+{
+	return m_iLAKE_MAX_AREA_SIZE;
+}
+inline int CvGlobals::getMIN_WATER_SIZE_FOR_OCEAN()
+{
+	return m_iMIN_WATER_SIZE_FOR_OCEAN;
+}
+
+inline int CvGlobals::getFORTIFY_MODIFIER_PER_TURN()
+{
+	return m_iFORTIFY_MODIFIER_PER_TURN;
+}
+
+inline int CvGlobals::getMAX_CITY_DEFENSE_DAMAGE()
+{
+	return m_iMAX_CITY_DEFENSE_DAMAGE;
+}
+
+inline int CvGlobals::getPEAK_SEE_THROUGH_CHANGE()
+{
+	return m_iPEAK_SEE_THROUGH_CHANGE;
+}
+
+inline int CvGlobals::getHILLS_SEE_THROUGH_CHANGE()
+{
+	return m_iHILLS_SEE_THROUGH_CHANGE;
+}
+
+inline int CvGlobals::getSEAWATER_SEE_FROM_CHANGE()
+{
+	return m_iSEAWATER_SEE_FROM_CHANGE;
+}
+
+inline int CvGlobals::getPEAK_SEE_FROM_CHANGE()
+{
+	return m_iPEAK_SEE_FROM_CHANGE;
+}
+
+inline int CvGlobals::getHILLS_SEE_FROM_CHANGE()
+{
+	return m_iHILLS_SEE_FROM_CHANGE;
+}
+
+inline int CvGlobals::getMAX_REBEL_YIELD_MODIFIER()
+{
+	return m_iMAX_REBEL_YIELD_MODIFIER;
+}
+inline int CvGlobals::getNEW_CAPACITY()			//VET NewCapacity - 3/3
+{
+	return m_iNEW_CAPACITY;
+}				
+
+// TAC - AI Improved Navel AI - koma13 - START
+inline int CvGlobals::getAI_TRANSPORT_DANGER_RANGE()
+{
+	return m_iAI_TRANSPORT_DANGER_RANGE;
+}
+
+inline int CvGlobals::getAI_LOST_TRANSPORT_MEMORY_COUNT()
+{
+	return m_iAI_LOST_TRANSPORT_MEMORY_COUNT;
+}
+// TAC - AI Improved Navel AI - koma13 - END
+
+
+// R&R, ray, caching globals from Global Defines Alt - START
+// Caching Vanilla variables	
+inline int CvGlobals::getPLOT_VISIBILITY_RANGE()
+{
+	return m_PLOT_VISIBILITY_RANGE;
+}
+inline int CvGlobals::getUNIT_VISIBILITY_RANGE()
+{
+	return m_UNIT_VISIBILITY_RANGE;
+}
+inline int CvGlobals::getMIN_CITY_YIELD_DECAY()
+{
+	return m_MIN_CITY_YIELD_DECAY;
+}
+inline int CvGlobals::getCITY_YIELD_DECAY_PERCENT()
+{
+	return m_CITY_YIELD_DECAY_PERCENT;
+}
+inline int CvGlobals::getIMMIGRATION_THRESHOLD()
+{
+	return m_IMMIGRATION_THRESHOLD;
+}
+inline int CvGlobals::getIMMIGRATION_THRESHOLD_INCREASE()
+{
+	return m_IMMIGRATION_THRESHOLD_INCREASE;
+}
+inline int CvGlobals::getTAX_TRADE_THRESHOLD()
+{
+	return m_TAX_TRADE_THRESHOLD;
+}
+inline int CvGlobals::getTAX_TRADE_THRESHOLD_TAX_RATE_PERCENT()
+{
+	return m_TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT;
+}
+inline int CvGlobals::getTAX_INCREASE_CHANCE()
+{
+	return m_TAX_INCREASE_CHANCE;
+}
+// TAC reduced REF
+inline int CvGlobals::getENABLE_REDUCED_REF_FOR_AI()
+{
+	return m_ENABLE_REDUCED_REF_FOR_AI;
+}
+inline int CvGlobals::getREDUCED_REF_PERCENT()
+{
+	return m_REDUCED_REF_PERCENT;
+}
+// Domestic Market
+inline int CvGlobals::getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS()
+{
+	return m_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS;
+}
+inline int CvGlobals::getDOMESTIC_SALES_MESSAGES()
+{
+	return m_DOMESTIC_SALES_MESSAGES;
+}
+// Wild Animals	
+
+inline int CvGlobals::getWILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT()
+{
+	return m_WILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT;
+}
+inline int CvGlobals::getWILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT()
+{
+	return m_WILD_ANIMAL_LAND_UNIT_VARIATION_WEIGHT;
+}
+inline int CvGlobals::getWILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT()
+{
+	return m_WILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT;
+}
+inline int CvGlobals::getWILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT()
+{
+	return m_WILD_ANIMAL_SEA_UNIT_VARIATION_WEIGHT;
+}
+inline int CvGlobals::getWILD_ANIMAL_REWARD_RANDOM_BASE()
+{
+	return m_WILD_ANIMAL_REWARD_RANDOM_BASE;
+}
+// Max Cross Limit
+inline int CvGlobals::getIMMIGRATION_MAX_CROSS_LIMIT()
+{
+	return m_IMMIGRATION_MAX_CROSS_LIMIT;
+}
+// NBMOD REF
+inline int CvGlobals::getNBMOD_REF_ENABLE()
+{
+	return m_NBMOD_REF_ENABLE;
+}
+inline int CvGlobals::getNBMOD_REF_RANDOM_SHIPS()
+{
+	return m_NBMOD_REF_RANDOM_SHIPS;
+}
+inline int CvGlobals::getNBMOD_REF_REAL_WEAPONS()
+{
+	return m_NBMOD_REF_REAL_WEAPONS;
+}
+inline int CvGlobals::getNBMOD_REF_WEAPONS_BONUS()
+{
+	return m_NBMOD_REF_WEAPONS_BONUS;
+}
+inline int CvGlobals::getNBMOD_REF_REVOLUTION_PERCENT_ENABLE()
+{
+	return m_NBMOD_REF_REVOLUTION_PERCENT_ENABLE;
+}
+inline int CvGlobals::getNBMOD_REF_MAX_TAX_ENABLE()
+{
+	return m_NBMOD_REF_MAX_TAX_ENABLE;
+}
+inline int CvGlobals::getNBMOD_REF_WEAPONS_BONUS_PERCENT()
+{
+	return m_NBMOD_REF_WEAPONS_BONUS_PERCENT;
+}
+inline int CvGlobals::getNBMOD_REF_HORSES_BONUS_PERCENT()
+{
+	return m_NBMOD_REF_HORSES_BONUS_PERCENT;
+}
+inline float CvGlobals::getNBMOD_REF_WEAPONS_WEIGHT()
+{
+	return m_NBMOD_REF_WEAPONS_WEIGHT;
+}
+inline float CvGlobals::getNBMOD_REF_HORSES_WEIGHT()
+{
+	return m_NBMOD_REF_HORSES_WEIGHT;
+}
+inline int CvGlobals::getNBMOD_REF_NUM_UNITS_PERCENT()
+{
+	return m_NBMOD_REF_NUM_UNITS_PERCENT;
+}
+inline float CvGlobals::getNBMOD_REF_POPULATION_WEIGHT()
+{
+	return m_NBMOD_REF_POPULATION_WEIGHT;
+}
+inline float CvGlobals::getNBMOD_REF_TURN_WEIGHT()
+{
+	return m_NBMOD_REF_TURN_WEIGHT;
+}
+inline float CvGlobals::getNBMOD_REF_KING_PANIC_WEIGHT()
+{
+	return m_NBMOD_REF_KING_PANIC_WEIGHT;
+}
+inline int CvGlobals::getNBMOD_REF_START_VALUE_PERCENT()
+{
+	return m_NBMOD_REF_START_VALUE_PERCENT;
+}
+inline int CvGlobals::getNBMOD_REF_MAP_COEFFICIENT()
+{
+	return m_NBMOD_REF_MAP_COEFFICIENT;
+}
+inline int CvGlobals::getNBMOD_REF_DEBUG()
+{
+	return m_NBMOD_REF_DEBUG;
+}
+// NBMOD Education
+inline int CvGlobals::getEDUCATION_THRESHOLD_INCREASE()
+{
+	return m_EDUCATION_THRESHOLD_INCREASE;
+}
+inline int CvGlobals::getEDUCATION_THRESHOLD()
+{
+	return m_EDUCATION_THRESHOLD;
+}
+// TAC Education
+inline int CvGlobals::getUSE_TAC_EDUCATION_COST_SYSTEM()
+{
+	return m_USE_TAC_EDUCATION_COST_SYSTEM;
+}
+inline float CvGlobals::getTAC_EDUCATION_RANK1()
+{
+	return m_TAC_EDUCATION_RANK1;
+}
+inline float CvGlobals::getTAC_EDUCATION_RANK2()
+{
+	return m_TAC_EDUCATION_RANK2;
+}
+inline float CvGlobals::getTAC_EDUCATION_RANK3()
+{
+	return m_TAC_EDUCATION_RANK3;
+}
+// NBMod Tax
+inline int CvGlobals::getMAX_TAX_RATE()
+{
+	return m_MAX_TAX_RATE;
+}
+inline int CvGlobals::getMIN_TAX_RATE()
+{
+	return m_MIN_TAX_RATE;
+}
+inline int CvGlobals::getINCREASE_MAX_TAX_RATE()
+{
+	return m_INCREASE_MAX_TAX_RATE;
+}
+inline int CvGlobals::getDECREASE_MAX_TAX_RATE()
+{
+	return m_DECREASE_MAX_TAX_RATE;
+}
+// TAC AI hurries Immigrants
+inline int CvGlobals::getAI_HURRY_IMMIGRANTS()
+{
+	return m_AI_HURRY_IMMIGRANTS;
+}
+// TAC LbD
+inline int CvGlobals::getLBD_BASE_CHANCE_EXPERT()
+{
+	return m_LBD_BASE_CHANCE_EXPERT;
+}
+inline int CvGlobals::getLBD_CHANCE_INCREASE_EXPERT()
+{
+	return m_LBD_CHANCE_INCREASE_EXPERT;
+}
+inline int CvGlobals::getLBD_PRE_ROUNDS_EXPERT()
+{
+	return m_LBD_PRE_ROUNDS_EXPERT;
+}
+inline int CvGlobals::getLBD_KI_MOD_EXPERT()
+{
+	return m_LBD_KI_MOD_EXPERT;
+}
+inline int CvGlobals::getLBD_BASE_CHANCE_FREE()
+{
+	return m_LBD_BASE_CHANCE_FREE;
+}
+inline int CvGlobals::getLBD_CHANCE_INCREASE_FREE()
+{
+	return m_LBD_CHANCE_INCREASE_FREE;
+}
+inline int CvGlobals::getLBD_PRE_ROUNDS_FREE()
+{
+	return m_LBD_PRE_ROUNDS_FREE;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_FREE_CRIMINAL()
+{
+	return m_LBD_CHANCE_MOD_FREE_CRIMINAL;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_FREE_SERVANT()
+{
+	return m_LBD_CHANCE_MOD_FREE_SERVANT;
+}
+inline int CvGlobals::getLBD_CHANCE_ESCAPE()
+{
+	return m_LBD_CHANCE_ESCAPE;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_CRIMINAL()
+{
+	return m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_SERVANT()
+{
+	return m_LBD_CHANCE_MOD_ESCAPE_SERVANT;
+}
+// TAC price diff raw to produced
+inline int CvGlobals::getPRICE_DIFF_MAN_TO_RAW()
+{
+	return m_PRICE_DIFF_MAN_TO_RAW;
+}
+// TAC KI patch
+inline int CvGlobals::getAI_REBELS_FOR_REVOLUTION()
+{
+	return m_AI_REBELS_FOR_REVOLUTION;
+}
+inline int CvGlobals::getUNIT_REVOLUTION_RATIO()
+{
+	return m_UNIT_REVOLUTION_RATIO;
+}
+inline int CvGlobals::getAI_FREE_CITY_DEFENDERS()
+{
+	return m_AI_FREE_CITY_DEFENDERS;
+}
+// TAC capturing Ships
+inline int CvGlobals::getBASE_CHANCE_CAPTURING_SHIPS()
+{
+	return m_BASE_CHANCE_CAPTURING_SHIPS;
+}
+// Min Rounds and Base Chances for DLL-Diplo-Events
+inline int CvGlobals::getMIN_ROUND_NATIVE_MERCS()
+{
+	return m_MIN_ROUND_NATIVE_MERCS;
+}
+inline int CvGlobals::getMIN_ROUND_EUROPE_WARS()
+{
+	return m_MIN_ROUND_EUROPE_WARS;
+}
+inline int CvGlobals::getBASE_CHANCE_EUROPE_WARS()
+{
+	return m_BASE_CHANCE_EUROPE_WARS;
+}
+inline int CvGlobals::getBASE_CHANCE_EUROPE_PEACE()
+{
+	return m_BASE_CHANCE_EUROPE_PEACE;
+}
+inline int CvGlobals::getMIN_ROUND_PRISONS_CROWDED()
+{
+	return m_MIN_ROUND_PRISONS_CROWDED;
+}
+inline int CvGlobals::getPRISONS_CROWDED_CHANCE()
+{
+	return m_PRISONS_CROWDED_CHANCE;
+}
+inline int CvGlobals::getMIN_ROUND_REVOLUTIONARY_NOBLE()
+{
+	return m_MIN_ROUND_REVOLUTIONARY_NOBLE;
+}
+inline int CvGlobals::getREVOLUTIONARY_NOBLE_CHANCE()
+{
+	return m_REVOLUTIONARY_NOBLE_CHANCE;
+}
+inline int CvGlobals::getMIN_ROUND_SMUGGLERS_AVAILABLE()
+{
+	return m_MIN_ROUND_SMUGGLERS_AVAILABLE;
+}
+inline int CvGlobals::getBASE_CHANCE_SMUGGLERS_AVAILABLE()
+{
+	return m_BASE_CHANCE_SMUGGLERS_AVAILABLE;
+}
+inline int CvGlobals::getMIN_ROUND_PIRATES()
+{
+	return m_MIN_ROUND_PIRATES;
+}
+inline int CvGlobals::getBASE_CHANCE_PIRATES()
+{
+	return m_BASE_CHANCE_PIRATES;
+}
+inline int CvGlobals::getBASE_CHANCE_RANGERS_AVAILABLE()
+{
+	return m_BASE_CHANCE_RANGERS_AVAILABLE;
+}
+inline int CvGlobals::getBASE_CHANCE_CONQUISTADORS_AVAILABLE()
+{
+	return m_BASE_CHANCE_CONQUISTADORS_AVAILABLE;
+}
+inline int CvGlobals::getMIN_ROUND_NATIVE_SLAVE()
+{
+	return m_MIN_ROUND_NATIVE_SLAVE;
+}
+inline int CvGlobals::getMIN_ROUND_AFRICAN_SLAVES()
+{
+	return m_MIN_ROUND_AFRICAN_SLAVES;
+}
+inline int CvGlobals::getAFRICAN_SLAVES_CHANCE()
+{
+	return m_AFRICAN_SLAVES_CHANCE;
+}
+inline int CvGlobals::getMIN_ROUND_BISHOP()
+{
+	return m_MIN_ROUND_BISHOP;
+}
+inline int CvGlobals::getBISHOP_CHANCE()
+{
+	return m_BISHOP_CHANCE;
+}
+// Timers for DLL-Diplo-Events
+inline int CvGlobals::getTIMER_NATIVE_MERC()
+{
+	return m_TIMER_NATIVE_MERC;
+}
+inline int CvGlobals::getTIMER_EUROPEAN_WARS()
+{
+	return m_TIMER_EUROPEAN_WARS;
+}
+inline int CvGlobals::getTIMER_EUROPEAN_PEACE()
+{
+	return m_TIMER_EUROPEAN_PEACE;
+}
+inline int CvGlobals::getTIMER_PRISONS_CROWDED()
+{
+	return m_TIMER_PRISONS_CROWDED;
+}
+inline int CvGlobals::getTIMER_REVOLUTIONARY_NOBLE()
+{
+	return m_TIMER_REVOLUTIONARY_NOBLE;
+}
+inline int CvGlobals::getTIMER_BISHOP()
+{
+	return m_TIMER_BISHOP;
+}
+inline int CvGlobals::getTIMER_SMUGGLING_SHIP()
+{
+	return m_TIMER_SMUGGLING_SHIP;
+}
+inline int CvGlobals::getTIMER_PIRATES()
+{
+	return m_TIMER_PIRATES;
+}
+inline int CvGlobals::getTIMER_CONTINENTAL_GUARD()
+{
+	return m_TIMER_CONTINENTAL_GUARD;
+}
+
+inline int CvGlobals::getTIMER_MORTAR()
+{
+	return m_TIMER_MORTAR;
+}
+
+inline int CvGlobals::getTIMER_RANGER()
+{
+	return m_TIMER_RANGER;
+}
+inline int CvGlobals::getTIMER_CONQUISTADOR()
+{
+	return m_TIMER_CONQUISTADOR;
+}
+inline int CvGlobals::getTIMER_NATIVE_SLAVE()
+{
+	return m_TIMER_NATIVE_SLAVE;
+}
+inline int CvGlobals::getTIMER_AFRICAN_SLAVE()
+{
+	return m_TIMER_AFRICAN_SLAVE;
+}
+// Native Raids
+inline int CvGlobals::getNATIVE_POTENTIAL_RAID_TARGET_THRESHOLD()
+{
+	return m_NATIVE_POTENTIAL_RAID_TARGET_THRESHOLD;
+}
+inline int CvGlobals::getNATIVE_GOODS_RAID_PERCENT()
+{
+	return m_NATIVE_GOODS_RAID_PERCENT;
+}
+inline int CvGlobals::getRANDOM_NATIVE_RAID_BASECHANCE()
+{
+	return m_RANDOM_NATIVE_RAID_BASECHANCE;
+}
+inline int CvGlobals::getNATIVE_SPARE_AI_TREASURE_CHANCE()
+{
+	return m_NATIVE_SPARE_AI_TREASURE_CHANCE;
+}
+// Roundwise Native Income
+inline int CvGlobals::getPER_ROUND_PER_VILLAGE_INCOME_MAX()
+{
+	return m_PER_ROUND_PER_VILLAGE_INCOME_MAX;
+}
+inline int CvGlobals::getPER_VILLAGE_FEATURE_GENERATION_LIMIT()
+{
+	return m_PER_VILLAGE_FEATURE_GENERATION_LIMIT;
+}
+// New Storage
+inline int CvGlobals::getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD()
+{
+	return m_CUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD;
+}
+inline int CvGlobals::getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD()
+{
+	return m_CUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD;
+}
+inline int CvGlobals::getCUSTOMHOUSE_RAW_SELL_THRESHOLD()
+{
+	return m_CUSTOMHOUSE_RAW_SELL_THRESHOLD;
+}
+inline int CvGlobals::getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD()
+{
+	return m_CUSTOMHOUSE_PRODUCED_SELL_THRESHOLD;
+}
+// Improvement TAX mechanism
+inline int CvGlobals::getTAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE()
+{
+	return m_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
+}
+// New Rules for Profession Missionary
+inline int CvGlobals::getUSE_NEW_RULES_FOR_PROFESSION_MISSIONARY()
+{
+	return m_USE_NEW_RULES_FOR_PROFESSION_MISSIONARY;
+}
+// R&R, ray, caching globals from Global Defines Alt - END
+
+
+inline float CvGlobals::getCAMERA_MIN_YAW()
+{
+	return m_fCAMERA_MIN_YAW;
+}
+
+inline float CvGlobals::getCAMERA_MAX_YAW()
+{
+	return m_fCAMERA_MAX_YAW;
+}
+
+inline float CvGlobals::getCAMERA_FAR_CLIP_Z_HEIGHT()
+{
+	return m_fCAMERA_FAR_CLIP_Z_HEIGHT;
+}
+
+inline float CvGlobals::getCAMERA_MAX_TRAVEL_DISTANCE()
+{
+	return m_fCAMERA_MAX_TRAVEL_DISTANCE;
+}
+
+inline float CvGlobals::getCAMERA_START_DISTANCE()
+{
+	return m_fCAMERA_START_DISTANCE;
+}
+
+inline float CvGlobals::getPLOT_SIZE()
+{
+	return m_fPLOT_SIZE;
+}
+
+inline float CvGlobals::getCAMERA_SPECIAL_PITCH()
+{
+	return m_fCAMERA_SPECIAL_PITCH;
+}
+
+inline float CvGlobals::getCAMERA_MAX_TURN_OFFSET()
+{
+	return m_fCAMERA_MAX_TURN_OFFSET;
+}
+
+inline float CvGlobals::getCAMERA_MIN_DISTANCE()
+{
+	return m_fCAMERA_MIN_DISTANCE;
+}
+
+inline float CvGlobals::getCAMERA_UPPER_PITCH()
+{
+	return m_fCAMERA_UPPER_PITCH;
+}
+
+inline float CvGlobals::getCAMERA_LOWER_PITCH()
+{
+	return m_fCAMERA_LOWER_PITCH;
+}
+
+inline float CvGlobals::getFIELD_OF_VIEW()
+{
+	return m_fFIELD_OF_VIEW;
+}
+
+inline float CvGlobals::getUNIT_MULTISELECT_DISTANCE()
+{
+	return m_fUNIT_MULTISELECT_DISTANCE;
+}
+
+inline int CvGlobals::getUSE_CAN_FOUND_CITIES_ON_WATER_CALLBACK()
+{
+	return m_iUSE_CAN_FOUND_CITIES_ON_WATER_CALLBACK;
+}
+inline int CvGlobals::getUSE_CANNOT_DO_CIVIC_CALLBACK()
+{
+	return m_iUSE_CANNOT_DO_CIVIC_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CAN_DO_CIVIC_CALLBACK()
+{
+	return m_iUSE_CAN_DO_CIVIC_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CANNOT_CONSTRUCT_CALLBACK()
+{
+	return m_iUSE_CANNOT_CONSTRUCT_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CAN_CONSTRUCT_CALLBACK()
+{
+	return m_iUSE_CAN_CONSTRUCT_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CAN_DECLARE_WAR_CALLBACK()
+{
+	return m_iUSE_CAN_DECLARE_WAR_CALLBACK;
+}
+inline int CvGlobals::getUSE_GET_UNIT_COST_MOD_CALLBACK()
+{
+	return m_iUSE_GET_UNIT_COST_MOD_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_GET_BUILDING_COST_MOD_CALLBACK()
+{
+	return m_iUSE_GET_BUILDING_COST_MOD_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_GET_CITY_FOUND_VALUE_CALLBACK()
+{
+	return m_iUSE_GET_CITY_FOUND_VALUE_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CANNOT_HANDLE_ACTION_CALLBACK()
+{
+	return m_iUSE_CANNOT_HANDLE_ACTION_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CAN_BUILD_CALLBACK()
+{
+	return m_iUSE_CAN_BUILD_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CANNOT_TRAIN_CALLBACK()
+{
+	return m_iUSE_CANNOT_TRAIN_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_CAN_TRAIN_CALLBACK()
+{
+	return m_iUSE_CAN_TRAIN_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_UNIT_CANNOT_MOVE_INTO_CALLBACK()
+{
+	return m_iUSE_UNIT_CANNOT_MOVE_INTO_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_FINISH_TEXT_CALLBACK()
+{
+	return m_iUSE_FINISH_TEXT_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_UNIT_SET_XY_CALLBACK()
+{
+	return m_iUSE_ON_UNIT_SET_XY_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_UNIT_SELECTED_CALLBACK()
+{
+	return m_iUSE_ON_UNIT_SELECTED_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_MISSIONARY_CONVERTED_UNIT_CALLBACK()
+{
+	return m_iUSE_ON_MISSIONARY_CONVERTED_UNIT_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_UPDATE_CALLBACK()
+{
+	return m_iUSE_ON_UPDATE_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_UNIT_CREATED_CALLBACK()
+{
+	return m_iUSE_ON_UNIT_CREATED_CALLBACK;
+}
+
+inline int CvGlobals::getUSE_ON_UNIT_LOST_CALLBACK()
+{
+	return m_iUSE_ON_UNIT_LOST_CALLBACK;
+}
+
+inline int CvGlobals::getMAX_CIV_PLAYERS()
+{
+	return MAX_PLAYERS;
+}
+
+inline int CvGlobals::getMAX_PLAYERS()
+{
+	return MAX_PLAYERS;
+}
+
+inline int CvGlobals::getMAX_CIV_TEAMS()
+{
+	return MAX_TEAMS;
+}
+
+inline int CvGlobals::getMAX_TEAMS()
+{
+	return MAX_TEAMS;
+}
+
+inline int CvGlobals::getINVALID_PLOT_COORD()
+{
+	return INVALID_PLOT_COORD;
+}
+
+inline int CvGlobals::getNUM_CITY_PLOTS()
+{
+	return NUM_CITY_PLOTS;
+}
+
+inline int CvGlobals::getCITY_HOME_PLOT()
+{
+	return CITY_HOME_PLOT;
+}
+
+inline void CvGlobals::setDLLIFace(CvDLLUtilityIFaceBase* pDll)
+{
+	m_pDLL = pDll;
+}
+
+inline int CvGlobals::getNUM_ENGINE_DIRTY_BITS() const
+{
+	return NUM_ENGINE_DIRTY_BITS;
+}
+
+inline int CvGlobals::getNUM_INTERFACE_DIRTY_BITS() const
+{
+	return NUM_INTERFACE_DIRTY_BITS;
+}
+
+inline int CvGlobals::getNUM_YIELD_TYPES() const
+{
+	return NUM_YIELD_TYPES;
+}
+
+inline int CvGlobals::getNUM_FORCECONTROL_TYPES() const
+{
+	return NUM_FORCECONTROL_TYPES;
+}
+
+inline int CvGlobals::getNUM_INFOBAR_TYPES() const
+{
+	return NUM_INFOBAR_TYPES;
+}
+
+inline int CvGlobals::getNUM_HEALTHBAR_TYPES() const
+{
+	return NUM_HEALTHBAR_TYPES;
+}
+
+inline int CvGlobals::getNUM_CONTROL_TYPES() const
+{
+	return NUM_CONTROL_TYPES;
+}
+
+inline int CvGlobals::getNUM_LEADERANIM_TYPES() const
+{
+	return NUM_LEADERANIM_TYPES;
+}
