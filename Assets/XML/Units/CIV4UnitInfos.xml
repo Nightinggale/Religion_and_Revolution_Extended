@@ -653,6 +653,7 @@
 			<iNativeLearnTime>8</iNativeLearnTime>
 			<iStudentWeight>500</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
+			<iTurnsToFreedom>20</iTurnsToFreedom>
 			<ProfessionMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>NONE</ProfessionType>
@@ -1057,6 +1058,7 @@
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>100</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
+			<iTurnsToFreedom>40</iTurnsToFreedom>
 			<ProfessionMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>NONE</ProfessionType>

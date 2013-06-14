@@ -308,6 +308,18 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 	gDLL->getEventReporterIFace()->unitCreated(this);
 
 	FAssert(GET_PLAYER(getOwnerINLINE()).checkPopulation());
+
+	// PatchMod: Unit freedom START
+	if (getUnitInfo().getTurnsToFreedom() > 0)
+	{
+		int iTurns = GC.getGameINLINE().getSorenRandNum(getUnitInfo().getTurnsToFreedom(), "") + getUnitInfo().getTurnsToFreedom();
+		iTurns *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		iTurns /= 100;
+		setTurnsToFreedom(iTurns);
+	} else {
+		setTurnsToFreedom(0);
+	}
+	// PatchMod: Unit freedom END
 }
 
 
@@ -352,6 +364,10 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_AmountForNativeTrade = 0;
 	m_YieldForNativeTrade = NO_YIELD;
 	// R&R, ray, Natives Trading - END
+
+	// PatchMod: Unit freedom START
+	m_iTurnsToFreedom = 0;
+	// PatchMod: Unit freedom END
 
 	m_iGroupID = FFreeList::INVALID_INDEX;
 	m_iHotKeyNumber = -1;
@@ -934,6 +950,13 @@ void CvUnit::doTurn()
 		}
 	}
 	// R&R, Robert Surcouf, Damage on Storm plots, End
+
+	// PatchMod: Unit freedom START
+	if (getTurnsToFreedom() > 0)
+	{
+		processUnitFreedom();
+	}
+	// PatchMod: Unit freedom END
 	
 	if (hasMoved())
 	{
@@ -11544,12 +11567,29 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
 	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
 	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
+
+	// PatchMod: Unit freedom START
+	// Modified by Nightinggale
+	if (uiFlag > 0)
+	{
+		pStream->Read(&m_iTurnsToFreedom);
+	} else {
+		// Assume half the time has passed for all units already generated when loading old savegames.
+		if (m_iTurnsToFreedom == 0 && getUnitInfo().getTurnsToFreedom() > 0)
+		{
+			int iTurns = GC.getGameINLINE().getSorenRandNum(getUnitInfo().getTurnsToFreedom(), "") + getUnitInfo().getTurnsToFreedom();
+			iTurns *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+			iTurns /= 200;
+			setTurnsToFreedom(iTurns);
+		}
+	}
+	// PatchMod: Unit freedom END
 }
 
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	uint uiFlag=1;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iID);
@@ -11660,6 +11700,10 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
 	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
 	pStream->Write(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
+
+	// PatchMod: Unit freedom START
+	pStream->Write(m_iTurnsToFreedom);
+	// PatchMod: Unit freedom END
 }
 
 // Protected Functions...
@@ -13729,3 +13773,33 @@ int CvUnit::getAmountForNativeTrade() const
 	return m_AmountForNativeTrade;
 }
 // R&R, ray, Natives Trading - END
+
+// PatchMod: Unit freedom START
+// Modified by Nightinggale
+void CvUnit::processUnitFreedom()
+{
+	FAssert(getTurnsToFreedom() > 0);
+
+	setTurnsToFreedom(getTurnsToFreedom() - 1);
+	if (getTurnsToFreedom() > 0)
+	{
+		return;
+	}
+	CvCity* pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
+	if (pCity != NULL)
+	{
+		if (!pCity->removePopulationUnit(this, false, getProfession()))
+		{
+			setTurnsToFreedom(1);
+			return;
+		}
+	}
+	CvUnit* pLearnUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT")), NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	pLearnUnit->convert(this, false);
+	pLearnUnit->setProfession(getProfession(), true);
+	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), plot()->getX_INLINE(), plot()->getY_INLINE(), true, true);
+	kill(true);
+	return;
+}
+// PatchMod: Unit freedom END

@@ -638,6 +638,13 @@ public:
 	DllExport int getBerthSize() const;
 	// PatchMod: Berth size END
 
+	// PatchMod: Unit freedom START
+protected:
+	int m_iTurnsToFreedom;
+public:
+	int getTurnsToFreedom();
+	// PatchMod: Unit freedom END
+
 /** NBMOD EDU **/
     DllExport int NBMOD_GetTeachLevel() const;
     float NBMOD_GetStrengthWeight() const;
@@ -931,6 +938,13 @@ protected:
 	std::vector<CvUnitMeshGroups> m_aProfessionGroups;
 	std::vector<int> m_aiSeeInvisibleTypes;
 };
+
+// PatchMod: Unit freedom START
+inline int CvUnitInfo::getTurnsToFreedom()
+{
+	return m_iTurnsToFreedom;
+}
+// PatchMod: Unit freedom END
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //

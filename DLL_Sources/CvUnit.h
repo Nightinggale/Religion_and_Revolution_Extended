@@ -845,7 +845,27 @@ protected:
 	void processUnitCombatType(UnitCombatTypes eUnitCombat, int iChange);
 	void doUnloadYield(int iAmount);
 	bool raidWeapons(std::vector<int>& aYields);
+
+	// PatchMod: Unit freedom START
+protected:
+	int m_iTurnsToFreedom;
+public:
+	int getTurnsToFreedom() const;
+	void setTurnsToFreedom(int iValue);
+	void processUnitFreedom();
+	// PatchMod: Unit freedom END
 };
 
+// PatchMod: Unit freedom START
+inline int CvUnit::getTurnsToFreedom() const
+{
+	return m_iTurnsToFreedom;
+}
+
+inline void CvUnit::setTurnsToFreedom(int iValue)
+{
+	m_iTurnsToFreedom = iValue;
+}
+// PatchMod: Unit freedom END
 
 #endif

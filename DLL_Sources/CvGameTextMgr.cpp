@@ -566,6 +566,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
     }
 
+	// PatchMod: Freedom START
+	if (pUnit->getTurnsToFreedom() > 0)
+	{
+		szTempBuffer = NEWLINE + gDLL->getText("TXT_KEY_UNITFREEDOM", pUnit->getTurnsToFreedom());
+		szString.append(szTempBuffer);
+	}
+	// PatchMod: Freedom END
+
 	if (!bOneLine)
 	{
 		if (pUnit->cargoSpace() > 0)
@@ -7393,6 +7401,14 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 	{
 		return;
 	}
+
+	// PatchMod: Freedom START
+	if (kUnit.getTurnsToFreedom() > 0)
+	{
+		CvWString szTempBuffer = NEWLINE + gDLL->getText("TXT_KEY_UNITFREEDOM", kUnit.getTurnsToFreedom());
+		szString.append(szTempBuffer);
+	}
+	// PatchMod: Freedom END
 
 	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
 	{

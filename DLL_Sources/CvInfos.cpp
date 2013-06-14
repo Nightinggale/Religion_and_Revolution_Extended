@@ -2488,6 +2488,10 @@ CvUnitInfo::CvUnitInfo() :
 m_iBerthSize(1),
 // PatchMod: Berth size END
 
+// PatchMod: Unit freedom START
+m_iTurnsToFreedom(0),
+// PatchMod: Unit freedom END
+
 /** NBMOD EDU **/
 m_iTeachLevel(3),
 /** NBMOD EDU **/
@@ -3301,6 +3305,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iTeachLevel);
 	/** NBMOD EDU **/
 
+	// PatchMod: Unit freedom START
+	stream->Read(&m_iTurnsToFreedom);
+	// PatchMod: Unit freedom END
+
     /** NBMOD REF **/
 	stream->Read(&m_fNBMOD_REF_StrengthWeight);
     /** NBMOD REF **/
@@ -3511,6 +3519,10 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iTeachLevel);
 	/** NBMOD EDU **/
 
+	// PatchMod: Unit freedom START
+	stream->Write(m_iTurnsToFreedom);
+	// PatchMod: Unit freedom END
+
 	/** NBMOD REF **/
 	stream->Write(m_fNBMOD_REF_StrengthWeight);
 	/** NBMOD REF **/
@@ -3695,6 +3707,10 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	/** NBMOD EDU **/
 	pXML->GetChildXmlValByName(&m_iTeachLevel, "iTeachLevel");
 	/** NBMOD EDU **/
+
+	// PatchMod: Unit freedom START
+	pXML->GetChildXmlValByName(&m_iTurnsToFreedom, "iTurnsToFreedom");
+	// PatchMod: Unit freedom END
 
 	/** NBMOD REF **/
 	pXML->GetChildXmlValByName(&m_fNBMOD_REF_StrengthWeight, "fNBMOD_REF_StrengthWeight");

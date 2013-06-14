@@ -31,4 +31,12 @@ Turn import off at 100%</Spanish>
 		<Italian>Total production and storage</Italian>
 		<Spanish>Total production and storage</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNITFREEDOM</Tag>
+		<English>Turns to freedom: %d1_Num</English>
+		<French>Turns to freedom: %d1_Num</French>
+		<German>Turns to freedom: %d1_Num</German>
+		<Italian>Turns to freedom: %d1_Num</Italian>
+		<Spanish>Turns to freedom: %d1_Num</Spanish>
+	</TEXT>
 </Civ4GameText>

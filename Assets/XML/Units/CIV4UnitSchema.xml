@@ -107,6 +107,7 @@
 	<ElementType name="iStudentWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeacherWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="iTurnsToFreedom" content="textOnly" dt:type="int"/>
 	<ElementType name="fNBMOD_REF_StrengthWeight" content="textOnly" dt:type="float"/>
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
@@ -508,6 +509,7 @@
 		<element type="iNativeLearnTime"/>
 		<element type="iStudentWeight"/>
 		<element type="iTeacherWeight"/>
+		<element type="iTurnsToFreedom" minOccurs="0"/>
 		<element type="ProfessionMeshGroups"/>
 		<element type="FormationType"/>
 		<element type="HotKey"/>

@@ -10421,10 +10421,10 @@ void CvCity::doLbD()
 			}
 
 			// try to become free if poosible
-			if(pLoopUnit->getUnitInfo().LbD_canGetFree() && !lbd_expert_successful)
-			{
-				lbd_free_successful = LbD_try_get_free(pLoopUnit, base_chance_free, chance_increase_free, pre_rounds_free, mod_free_criminal, mod_free_servant, learn_level);
-			}
+			//if(pLoopUnit->getUnitInfo().LbD_canGetFree() && !lbd_expert_successful)
+			//{
+			//	lbd_free_successful = LbD_try_get_free(pLoopUnit, base_chance_free, chance_increase_free, pre_rounds_free, mod_free_criminal, mod_free_servant, learn_level);
+			//}
 
 			// try to escape if free unsuccesful and escape possible
 			if(pLoopUnit->getUnitInfo().LbD_canEscape() && !lbd_free_successful && !lbd_expert_successful)
