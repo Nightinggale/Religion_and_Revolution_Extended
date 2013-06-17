@@ -12153,7 +12153,7 @@ bool CvUnitAI::AI_targetCityNative(int iFlags)
 		if (pBestPlot != NULL)
 		{
 			FAssert(!(pBestCity->at(pBestPlot)) || 0 != (iFlags & MOVE_THROUGH_ENEMY)); // no suicide missions...
-			if (!atPlot(pBestPlot))
+			if (!atPlot(pBestPlot) && canMoveInto(pBestPlot, true)) // bugfix: don't attack plots the unit can't enter - Nightinggale
 			{
 				getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), iFlags);
 				return true;
