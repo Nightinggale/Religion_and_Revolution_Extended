@@ -6007,6 +6007,9 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 				GC.getGameINLINE().incrementBuildingClassCreatedCount((BuildingClassTypes)(GC.getBuildingInfo(eIndex).getBuildingClassType()));
 			}
 		}
+
+		// update cache
+		NBMOD_SetCityTeachLevelCache(); // NBMOD EDU cache - Nightinggale
 	}
 }
 
@@ -7550,6 +7553,8 @@ void CvCity::read(FDataStreamBase* pStream)
 		kChange.read(pStream);
 		m_aBuildingYieldChange.push_back(kChange);
 	}
+
+	NBMOD_SetCityTeachLevelCache(); // NBMOD EDU cache - Nightinggale
 }
 
 void CvCity::write(FDataStreamBase* pStream)
@@ -9663,7 +9668,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 /**                                                                 **/
 /*********************************************************************/
 
-int CvCity::NBMOD_GetCityTeachLevel() const
+void CvCity::NBMOD_SetCityTeachLevelCache() // NBMOD EDU cache - Nightinggale
 {
     int iMaxTeachLevel = 0;
 
@@ -9679,7 +9684,7 @@ int CvCity::NBMOD_GetCityTeachLevel() const
             }
         }
     }
-    return iMaxTeachLevel;
+    m_NBMOD_CityTeachLevel_cache = iMaxTeachLevel; // NBMOD EDU cache - Nightinggale
 }
 
 /** NBMOD EDU **/

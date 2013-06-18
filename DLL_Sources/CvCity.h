@@ -18,6 +18,14 @@ public:
 
 /** NBMOD EDU **/
 
+// NBMOD EDU cache - start - Nightinggale
+protected:
+	void NBMOD_SetCityTeachLevelCache();
+	int m_NBMOD_CityTeachLevel_cache; // nosave cache
+
+public:
+// NBMOD EDU cache - end - Nightinggale
+
     int NBMOD_GetCityTeachLevel() const;
 
 /** NBMOD EDU **/
@@ -781,4 +789,12 @@ protected:
 	virtual bool AI_addBestCitizen() = 0;
 	virtual bool AI_removeWorstCitizen() = 0;
 };
+
+// NBMOD EDU cache - start - Nightinggale
+inline int CvCity::NBMOD_GetCityTeachLevel() const
+{
+	return m_NBMOD_CityTeachLevel_cache;
+};
+// NBMOD EDU cache - end - Nightinggale
+
 #endif
