@@ -13794,12 +13794,11 @@ void CvUnit::processUnitFreedom()
 			return;
 		}
 	}
-	CvUnit* pLearnUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT")), NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
-	pLearnUnit->convert(this, false);
-	pLearnUnit->setProfession(getProfession(), true);
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
+	CvUnit* pLearnUnit = GET_PLAYER(getOwnerINLINE()).initUnit((UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT")), NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	FAssert(pLearnUnit != NULL);
+	pLearnUnit->convert(this, true);
 	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), plot()->getX_INLINE(), plot()->getY_INLINE(), true, true);
-	kill(true);
 	return;
 }
 // PatchMod: Unit freedom END
