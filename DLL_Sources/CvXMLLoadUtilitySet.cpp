@@ -900,6 +900,16 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 
 	DestroyFXml();
 
+// precompile XML values - start - Nightinggale
+	if (NUM_PROFESSION_TYPES != GC.getNumProfessionInfos())
+	{
+		char szMessage[1024];
+
+		sprintf(szMessage, "XML has %d professions while CvEnums.h:NUM_PROFESSION_TYPES is set to %d.\nRecompile DLL to avoid bugs/crashes.", GC.getNumProfessionInfos(), NUM_PROFESSION_TYPES);
+		gDLL->MessageBox(szMessage, "XML Error");
+	}
+// precompile XML values - end - Nightinggale
+
 	return true;
 }
 

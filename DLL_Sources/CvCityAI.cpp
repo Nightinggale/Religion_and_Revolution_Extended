@@ -1761,17 +1761,20 @@ int CvCityAI::AI_numPotentialDefenders() const
 				//int iEquipable = getPopulation();
 				int iEquipable = std::max(0, getPopulation() - 1);
 				// TAC - AI City Defense - koma13 - END
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				if (kOwner.hasContentsYieldEquipmentAmount(eLoopProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 				{
-					int iAmount = kOwner.getYieldEquipmentAmount(eLoopProfession, (YieldTypes)iYield);
-					
-					if (iAmount > 0)
+					for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 					{
-						// TAC - AI Buildings - koma13 - START
-						//iEquipable = std::min(iEquipable, getYieldStored((YieldTypes)iYield) / iAmount);
-						int iYieldsAvailabe = std::min(getYieldStored((YieldTypes)iYield), getMaxYieldCapacity() * 60 / 100);
-						iEquipable = std::min(iEquipable, iYieldsAvailabe / iAmount);
-						// TAC - AI Buildings - koma13 - END
+						int iAmount = kOwner.getYieldEquipmentAmount(eLoopProfession, (YieldTypes)iYield);
+					
+						if (iAmount > 0)
+						{
+							// TAC - AI Buildings - koma13 - START
+							//iEquipable = std::min(iEquipable, getYieldStored((YieldTypes)iYield) / iAmount);
+							int iYieldsAvailabe = std::min(getYieldStored((YieldTypes)iYield), getMaxYieldCapacity() * 60 / 100);
+							iEquipable = std::min(iEquipable, iYieldsAvailabe / iAmount);
+							// TAC - AI Buildings - koma13 - END
+						}
 					}
 				}
 				

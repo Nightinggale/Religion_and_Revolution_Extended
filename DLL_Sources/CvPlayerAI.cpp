@@ -11115,15 +11115,18 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		}
 		else
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			if (hasContentsYieldEquipmentAmount((ProfessionTypes)kUnit.getDefaultProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				if (getYieldEquipmentAmount((ProfessionTypes)kUnit.getDefaultProfession(), (YieldTypes) iYield) > 0)
+				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 				{
-					if (getYieldEquipmentAmount(eProfession, (YieldTypes) iYield) == 0)
+					if (getYieldEquipmentAmount((ProfessionTypes)kUnit.getDefaultProfession(), (YieldTypes) iYield) > 0)
 					{
-						iConModifiers += 50;
+						if (getYieldEquipmentAmount(eProfession, (YieldTypes) iYield) == 0)
+						{
+							iConModifiers += 50;
+						}
+						break;
 					}
-					break;
 				}
 			}
 		}

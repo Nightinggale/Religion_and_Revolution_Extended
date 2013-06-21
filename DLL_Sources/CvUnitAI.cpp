@@ -14442,29 +14442,32 @@ bool CvUnitAI::AI_joinCityDefender()
 	CvProfessionInfo& kProfession = GC.getProfessionInfo(getProfession());
 	
 	int iCapacity = pCity->getMaxYieldCapacity();
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	{
-		int iAmount = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), (YieldTypes)iYield);
-		if (iAmount > 0)
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 		{
-//VET NewCapacity - begin 3/4
-			if (GC.getNEW_CAPACITY())
+			int iAmount = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), (YieldTypes)iYield);
+			if (iAmount > 0)
 			{
-				if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
-					{return false;}
-			}
-			else
+//VET NewCapacity - begin 3/4
+				if (GC.getNEW_CAPACITY())
+				{
+					if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
+						{return false;}
+				}
+				else
 //VET NewCapacity - begin 3/4 (ray fix)
 			{
 //VET NewCapacity - end 3/4 (ray fix)
 //VET NewCapacity - end 3/4
-				if ((pCity->getYieldStored((YieldTypes)iYield) + (iAmount * 2)) > iCapacity)
-				{
-					return false;
-				}
+					if ((pCity->getYieldStored((YieldTypes)iYield) + (iAmount * 2)) > iCapacity)
+					{
+						return false;
+					}
 //VET NewCapacity - begin 3/4 (ray fix)
-			}
+				}
 //VET NewCapacity - end 3/4 (ray fix)
+			}
 		}
 	}
 

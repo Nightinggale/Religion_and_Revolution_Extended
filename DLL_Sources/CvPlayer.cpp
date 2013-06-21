@@ -224,6 +224,7 @@ void CvPlayer::init(PlayerTypes eID)
 	}
 
 	AI_init();
+	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
 
@@ -594,6 +595,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	{
 		AI_reset();
 	}
+	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
 
@@ -1994,6 +1996,7 @@ bool CvPlayer::isHuman() const
 
 void CvPlayer::updateHuman()
 {
+	bool old_m_bHuman = m_bHuman; // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	if (getID() == NO_PLAYER)
 	{
 		m_bHuman = false;
@@ -2009,6 +2012,13 @@ void CvPlayer::updateHuman()
 		m_bHuman = false;
 	}
 	// Dale - AoD: AI Autoplay END
+
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	if (old_m_bHuman != m_bHuman)
+	{
+		Update_cache_YieldEquipmentAmount();
+	}
+	// cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
 bool CvPlayer::isNative() const
@@ -12073,6 +12083,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iRevolutionEuropeTradeCount);
 	pStream->Read(&m_iFatherPointMultiplier);
 	pStream->Read(&m_iMissionaryRateModifier);
+
+	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
 //
@@ -15890,10 +15902,12 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 		}
 
 		FAssert(getProfessionEquipmentModifier(eProfession) >= -100);
+		Update_cache_YieldEquipmentAmount(eProfession); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	}
 }
 
-int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
+// cache CvPlayer::getYieldEquipmentAmount - function rename - Nightinggale
+int CvPlayer::getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const
 {
 	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
@@ -15914,6 +15928,29 @@ int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eY
 
 	return std::max(0, iAmount);
 }
+
+// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+void CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++) {
+		m_cache_YieldEquipmentAmount[eProfession].set(getYieldEquipmentAmountUncached(eProfession, (YieldTypes)iYield), iYield);
+	}
+	m_cache_YieldEquipmentAmount[eProfession].isEmpty(); // This will release the array if it's empty
+}
+
+void CvPlayer::Update_cache_YieldEquipmentAmount()
+{
+	if (m_eID <= NO_PLAYER || m_aiProfessionEquipmentModifier == NULL)
+	{
+		// Some update calls gets triggered during player init. They can safely be ignored.
+		return;
+	}
+
+	for (int iProfession = 0; iProfession < NUM_PROFESSION_TYPES; iProfession++) {
+		Update_cache_YieldEquipmentAmount((ProfessionTypes)iProfession);
+	}
+}
+// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const
 {

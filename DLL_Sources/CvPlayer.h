@@ -704,6 +704,11 @@ public:
 	int getProfessionEquipmentModifier(ProfessionTypes eProfession) const;
 	void setProfessionEquipmentModifier(ProfessionTypes eProfession, int iValue);
 	int getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const;
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	bool hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const;
+	int getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const;
+	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	bool isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const;
 	void changeProfessionEurope(int iUnitId, ProfessionTypes eProfession);
 
@@ -934,6 +939,13 @@ protected:
 	int* m_aiProfessionEquipmentModifier;
 	int* m_aiTraitCount;
 
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	YieldArray<int> m_cache_YieldEquipmentAmount[NUM_PROFESSION_TYPES];
+	void Update_cache_YieldEquipmentAmount();
+	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
+	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+
 	std::vector<EventTriggerTypes> m_triggersFired;
 	CivicTypes* m_paeCivics;
 	int** m_ppiImprovementYieldChange;
@@ -990,5 +1002,33 @@ protected:
 	virtual void write(FDataStreamBase* pStream);
 	void doUpdateCacheOnTurn();
 };
+
+// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+inline int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const
+{
+	FAssert(eProfession >= 0 && eProfession < NUM_PROFESSION_TYPES);
+	return m_cache_YieldEquipmentAmount[eProfession].get(eYield);
+}
+
+inline bool CvPlayer::hasContentsYieldEquipmentAmount(ProfessionTypes eProfession) const
+{
+	// strictly speaking it returns true if the array is allocated without considering the content of the array.
+	// The reason why it works is because Update_cache_YieldEquipmentAmount() will only allocate arrays if they contain anything
+	//   and deallocate them if it is changed to contain only 0.
+	FAssert(eProfession >= 0 && eProfession < NUM_PROFESSION_TYPES);
+	return m_cache_YieldEquipmentAmount[eProfession].isAllocated();
+}
+
+// same functions, but with the added return 0 if professions is NO_PROFESSION or INVALID_PROFESSION
+inline int CvPlayer::getYieldEquipmentAmountSecure(ProfessionTypes eProfession, YieldTypes eYield) const
+{
+	return eProfession > NO_PROFESSION ? getYieldEquipmentAmount(eProfession, eYield) : 0;
+}
+
+inline bool CvPlayer::hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const
+{
+	return eProfession > NO_PROFESSION ? hasContentsYieldEquipmentAmount(eProfession) : false;
+}
+// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 
 #endif
