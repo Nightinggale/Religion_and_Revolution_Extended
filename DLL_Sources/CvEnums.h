@@ -1236,7 +1236,6 @@ enum DllExport ProfessionTypes
 {
 	INVALID_PROFESSION = -2,
 	NO_PROFESSION = -1,
-	NUM_PROFESSION_TYPES = 69, // precompile XML values - Nightinggale
 };
 
 enum DllExport SpecialUnitTypes

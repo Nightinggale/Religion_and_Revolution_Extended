@@ -98,6 +98,8 @@ CvPlayer::CvPlayer()
 	m_ppiImprovementYieldChange = NULL;
 	m_ppiBuildingYieldChange = NULL;
 
+	m_cache_YieldEquipmentAmount = NULL; // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
 	reset(NO_PLAYER, true);
 }
 
@@ -121,6 +123,16 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
 	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
 	SAFE_DELETE_ARRAY(m_abOptions);
+
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	if (m_cache_YieldEquipmentAmount != NULL)
+	{
+		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
+			m_cache_YieldEquipmentAmount[iProfession].reset();
+		}
+		SAFE_DELETE_ARRAY(m_cache_YieldEquipmentAmount);
+	}
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 }
 
 
@@ -224,7 +236,19 @@ void CvPlayer::init(PlayerTypes eID)
 	}
 
 	AI_init();
-	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	if (m_cache_YieldEquipmentAmount == NULL)
+	{
+		// only init NULL pointers.
+		// don't do anything about already allocated arrays as data is overwritten anyway.
+		m_cache_YieldEquipmentAmount = new YieldArray<int>[GC.getNumProfessionInfos()];
+		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
+			m_cache_YieldEquipmentAmount[iProfession].init();
+		}
+	}
+	Update_cache_YieldEquipmentAmount();
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 }
 
 
@@ -15946,7 +15970,9 @@ void CvPlayer::Update_cache_YieldEquipmentAmount()
 		return;
 	}
 
-	for (int iProfession = 0; iProfession < NUM_PROFESSION_TYPES; iProfession++) {
+	FAssert(m_cache_YieldEquipmentAmount != NULL);
+
+	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
 		Update_cache_YieldEquipmentAmount((ProfessionTypes)iProfession);
 	}
 }

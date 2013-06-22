@@ -54,6 +54,12 @@ public:
 		return tArray != NULL;
 	}
 
+	// used when constructor isn't called, like in an array
+	inline void init()
+	{
+		tArray = NULL;
+	}
+
 protected:
 	inline T zParentGet(int iLength, int iIndex) const
 	{
@@ -150,12 +156,12 @@ template<class T>
 class UnitArray: public JustInTimeArray<T>
 {
 public:
-	enum {length = 156};
+	int length;
 
 	UnitArray()
 	{
-		// TODO: Figure out how to put length in precompiler without using a magic number
-		FAssert(length == GC.getNumUnitInfos());
+		length = GC.getNumUnitInfos();
+		FAssertMsg(length > 0, "Array length is set before XML is read")
 	}
 
 	inline T get(int iIndex) const                            {return zParentGet(length, iIndex);}
