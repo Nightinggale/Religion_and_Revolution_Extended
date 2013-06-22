@@ -348,6 +348,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 		}
 	}
 
+	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+
 	GET_PLAYER(getOwnerINLINE()).AI_invalidateDistanceMap();
 	AI_init();
 }
@@ -6009,7 +6011,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 		}
 
 		// update cache
-		NBMOD_SetCityTeachLevelCache(); // NBMOD EDU cache - Nightinggale
+		UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	}
 }
 
@@ -7554,7 +7556,7 @@ void CvCity::read(FDataStreamBase* pStream)
 		m_aBuildingYieldChange.push_back(kChange);
 	}
 
-	NBMOD_SetCityTeachLevelCache(); // NBMOD EDU cache - Nightinggale
+	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 }
 
 void CvCity::write(FDataStreamBase* pStream)
@@ -9025,7 +9027,8 @@ bool CvCity::canProduceYield(YieldTypes eYield)
 	return false;
 }
 
-int CvCity::getMaxYieldCapacity() const
+// cache getMaxYieldCapacity - function namechange - Nightinggale
+int CvCity::getMaxYieldCapacityUncached() const
 {
 	int iCapacity = GC.getGameINLINE().getCargoYieldCapacity();
 
@@ -11051,3 +11054,11 @@ void CvCity::doEntertainmentBuildings()
 	}
 }
 // R&R, ray, Entertainment Buildings - END
+
+// building affected cache - start - Nightinggale
+void CvCity::UpdateBuildingAffectedCache()
+{
+	NBMOD_SetCityTeachLevelCache(); // NBMOD EDU cache - Nightinggale
+	m_cache_MaxYieldCapacity = getMaxYieldCapacityUncached(); // cache getMaxYieldCapacity - Nightinggale
+}
+// building affected cache - end - Nightinggale

@@ -16,6 +16,8 @@ class CvCity : public CvDLLEntity
 {
 public:
 
+	void UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+
 /** NBMOD EDU **/
 
 // NBMOD EDU cache - start - Nightinggale
@@ -29,6 +31,13 @@ public:
     int NBMOD_GetCityTeachLevel() const;
 
 /** NBMOD EDU **/
+
+// cache getMaxYieldCapacity - start - Nightinggale
+protected:
+	int getMaxYieldCapacityUncached() const;
+	int m_cache_MaxYieldCapacity; // nosave cache
+public:
+// cache getMaxYieldCapacity - end - Nightinggale
 
 	CvCity();
 	virtual ~CvCity();
@@ -796,5 +805,12 @@ inline int CvCity::NBMOD_GetCityTeachLevel() const
 	return m_NBMOD_CityTeachLevel_cache;
 };
 // NBMOD EDU cache - end - Nightinggale
+
+// cache getMaxYieldCapacity - start - Nightinggale
+inline int CvCity::getMaxYieldCapacity() const
+{
+	return m_cache_MaxYieldCapacity;
+};
+// cache getMaxYieldCapacity - end - Nightinggale
 
 #endif
