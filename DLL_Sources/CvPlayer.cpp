@@ -237,18 +237,7 @@ void CvPlayer::init(PlayerTypes eID)
 
 	AI_init();
 
-	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-	if (m_cache_YieldEquipmentAmount == NULL)
-	{
-		// only init NULL pointers.
-		// don't do anything about already allocated arrays as data is overwritten anyway.
-		m_cache_YieldEquipmentAmount = new YieldArray<int>[GC.getNumProfessionInfos()];
-		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
-			m_cache_YieldEquipmentAmount[iProfession].init();
-		}
-	}
-	Update_cache_YieldEquipmentAmount();
-	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
+	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
 
@@ -15970,7 +15959,15 @@ void CvPlayer::Update_cache_YieldEquipmentAmount()
 		return;
 	}
 
-	FAssert(m_cache_YieldEquipmentAmount != NULL);
+	if (m_cache_YieldEquipmentAmount == NULL)
+	{
+		// only init NULL pointers.
+		// don't do anything about already allocated arrays as data is overwritten anyway.
+		m_cache_YieldEquipmentAmount = new YieldArray<int>[GC.getNumProfessionInfos()];
+		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
+			m_cache_YieldEquipmentAmount[iProfession].init();
+		}
+	}
 
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
 		Update_cache_YieldEquipmentAmount((ProfessionTypes)iProfession);
