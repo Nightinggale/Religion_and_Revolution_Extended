@@ -9958,7 +9958,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	}
 
 	//TAC Whaling, ray
-	if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING"))
+	if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING()) // cache ship profession - Nightinggale
 	{
 		if (!isWhalingBoat())
 		{
@@ -9968,7 +9968,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	//End TAC Whaling, ray
 
 	// R&R, ray, High Sea Fishing - START
-	if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING"))
+	if (eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING()) // cache ship profession - Nightinggale
 	{
 		if (!isFishingBoat())
 		{
@@ -13593,12 +13593,12 @@ void CvUnit::convertFishingBoat()
 		{
 			if (eCurrentProfession == NO_PROFESSION)
 			{
-				setProfession((ProfessionTypes)(GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING")));
+				setProfession((ProfessionTypes)(GC.getPROFESSION_WHALING_BOAT_WORKING()));
 			}
 		}
 		else
 		{
-			if (eCurrentProfession == ((ProfessionTypes)(GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING"))))
+			if (eCurrentProfession == ((ProfessionTypes)(GC.getPROFESSION_WHALING_BOAT_WORKING())))
 			{
 				setProfession(NO_PROFESSION);
 			}
@@ -13612,12 +13612,12 @@ void CvUnit::convertFishingBoat()
 		{
 			if (eCurrentProfession == NO_PROFESSION)
 			{
-				setProfession((ProfessionTypes)(GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING")));
+				setProfession((ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING());
 			}
 		}
 		else
 		{
-			if (eCurrentProfession == ((ProfessionTypes)(GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING"))))
+			if (eCurrentProfession == ((ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING()))
 			{
 				setProfession(NO_PROFESSION);
 			}

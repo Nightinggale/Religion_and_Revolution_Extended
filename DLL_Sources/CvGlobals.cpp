@@ -245,6 +245,11 @@ m_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE(0),
 m_USE_NEW_RULES_FOR_PROFESSION_MISSIONARY(0),
 // R&R, ray, caching globals from Global Defines Alt - END
 
+// cache ship profession - start - Nightinggale
+m_PROFESSION_WHALING_BOAT_WORKING(-1),
+m_PROFESSION_FISHING_BOAT_WORKING(-1),
+// cache ship profession - end - Nightinggale
+
 m_fCAMERA_MIN_YAW(0),
 m_fCAMERA_MAX_YAW(0),
 m_fCAMERA_FAR_CLIP_Z_HEIGHT(0),
@@ -2732,3 +2737,11 @@ CvAchieveInfo& CvGlobals::getAchieveInfo(AchieveTypes eAchieve)
 	return *(m_paAchieveInfo[eAchieve]);
 }
 // PatchMod: Achievements END
+
+// cache ship profession - start - Nightinggale
+void CvGlobals::setProfessionCache()
+{
+	m_PROFESSION_WHALING_BOAT_WORKING = GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING");
+	m_PROFESSION_FISHING_BOAT_WORKING = GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING");
+}
+// cache ship profession - end - Nightinggale

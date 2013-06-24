@@ -313,6 +313,14 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 {
 	int iI, iJ;
 
+	// cache ship profession - start - Nightinggale
+	// Ideally this should be placed right after the XML files is loaded and never called again.
+	// However at that time getDefineINT() can't find the boat professions.
+	// I placed it here instead because it's late enough for getDefineINT() to do it's job and before the loops starts to read the cache.
+	// Also this isn't an often called function meaning updating the cache a few times too many will not hurt performance.
+	GC.setProfessionCache();
+	// cache ship profession - end - Nightinggale
+
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -16003,11 +16011,11 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 					return false;
 				}
 				// R&R, ray, High Sea Fishing
-				else if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING") && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getDefineINT("UNITCLASS_WHALING_BOAT"))
+				else if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING() && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getDefineINT("UNITCLASS_WHALING_BOAT"))
 				{
 					return false;
 				}
-				else if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING") && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getDefineINT("UNITCLASS_FISHING_BOAT"))
+				else if (eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING() && GC.getUnitInfo(eUnit).getUnitClassType() != (UnitClassTypes)GC.getDefineINT("UNITCLASS_FISHING_BOAT"))
 				{
 					return false;
 				}
@@ -16015,7 +16023,7 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 		}
 		// R&R, ray, High Sea Fishing
 		//else if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING"))
-		else if (eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_WHALING_BOAT_WORKING") || eProfession == (ProfessionTypes)GC.getDefineINT("PROFESSION_FISHING_BOAT_WORKING"))
+		else if (eProfession == (ProfessionTypes)GC.getPROFESSION_WHALING_BOAT_WORKING() || eProfession == (ProfessionTypes)GC.getPROFESSION_FISHING_BOAT_WORKING())
 		{
 			return false;
 		}

@@ -139,6 +139,8 @@ public:
 	DllExport CvAchieveInfo& getAchieveInfo(AchieveTypes eAchieve);
 	// PatchMod: Achievements END
 
+	void setProfessionCache(); // cache ship profession - Nightinggale
+
 	DllExport void init();
 	DllExport void uninit();
 	DllExport void clearTypesMap();
@@ -766,6 +768,11 @@ public:
 	int getUSE_NEW_RULES_FOR_PROFESSION_MISSIONARY();
 	// R&R, ray, caching globals from Global Defines Alt - END
 
+	// cache ship profession - start - Nightinggale
+	int getPROFESSION_WHALING_BOAT_WORKING();
+	int getPROFESSION_FISHING_BOAT_WORKING();
+	// cache ship profession - end - Nightinggale
+
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();
 	DllExport float getCAMERA_FAR_CLIP_Z_HEIGHT();
@@ -1235,6 +1242,11 @@ protected:
 	// New Rules for Profession Missionary
 	int m_USE_NEW_RULES_FOR_PROFESSION_MISSIONARY;
 	// R&R, ray, caching globals from Global Defines Alt - END
+
+	// cache ship profession - start - Nightinggale
+	int m_PROFESSION_WHALING_BOAT_WORKING;
+	int m_PROFESSION_FISHING_BOAT_WORKING;
+	// cache ship profession - end - Nightinggale
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;
@@ -1981,6 +1993,17 @@ inline int CvGlobals::getUSE_NEW_RULES_FOR_PROFESSION_MISSIONARY()
 }
 // R&R, ray, caching globals from Global Defines Alt - END
 
+// cache ship profession - start - Nightinggale
+inline int CvGlobals::getPROFESSION_WHALING_BOAT_WORKING()
+{
+	return m_PROFESSION_WHALING_BOAT_WORKING;
+}
+
+inline int CvGlobals::getPROFESSION_FISHING_BOAT_WORKING()
+{
+	return m_PROFESSION_FISHING_BOAT_WORKING;
+}
+// cache ship profession - end - Nightinggale
 
 inline float CvGlobals::getCAMERA_MIN_YAW()
 {
