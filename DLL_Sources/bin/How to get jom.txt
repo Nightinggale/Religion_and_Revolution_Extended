@@ -1,0 +1,6 @@
+jom is a tool, which works just like NMAKE, except it supports multiple CPU cores.
+
+Download it from http://qt-project.org/wiki/jom
+The latest stable jom release is most likely the version you want.
+
+Place jom.exe here (in DLL_Sources\bin) and the fast targets will be able to compile.
